@@ -1,0 +1,10 @@
+c.ncce.wiki.FLP.c:68: warning: FLP02-C: Consider avoiding floating point numbers when precise computation is needed
+c.ncce.wiki.FLP.c:95: error: FLP30-C: Do not use floating point variables as loop counters
+c.ncce.wiki.FLP.c:99: error: FLP30-C: Do not use floating point variables as loop counters
+c.ncce.wiki.FLP.c:136: error: FLP33-C: Convert integers to floating point for floating point operations
+c.ncce.wiki.FLP.c:137: error: FLP33-C: Convert integers to floating point for floating point operations
+c.ncce.wiki.FLP.c:138: error: FLP33-C: Convert integers to floating point for floating point operations
+c.ncce.wiki.FLP.c:147: error: FLP34-C: Ensure that floating point conversions are within range of the new type
+c.ncce.wiki.FLP.c:161: error: FLP34-C: Ensure that floating point conversions are within range of the new type
+c.ncce.wiki.FLP.c:162: error: FLP34-C: Ensure that floating point conversions are within range of the new type
+c.ncce.wiki.FLP.c:163: error: FLP34-C: Ensure that floating point conversions are within range of the new type

@@ -1,0 +1,23 @@
+"./test/c.ncce.wiki.MSC.c", line 107: warning: expression has no effect
+    a == b;
+    ^
+
+"./test/c.ncce.wiki.MSC.c", line 122: warning: nested comment is not allowed
+       /* some other comment */
+       ^
+
+"./test/c.ncce.wiki.MSC.c", line 172: warning: statement is unreachable
+      if (s) {
+      ^
+
+"./test/c.ncce.wiki.MSC.c", line 200: warning: expression has no effect
+    a == b;
+    ^
+
+c.ncce.wiki.MSC.c:71: warning: MSC01-C: Strive for logical completeness
+c.ncce.wiki.MSC.c:107: warning: MSC03-C: Avoid errors of addition
+c.ncce.wiki.MSC.c:135: warning: MSC05-C: Do not manipulate time_t typed values directly
+c.ncce.wiki.MSC.c:135: warning: MSC05-C: Do not manipulate time_t typed values directly
+c.ncce.wiki.MSC.c:200: warning: MSC03-C: Avoid errors of addition
+c.ncce.wiki.MSC.c:276: error: MSC30-C: Do not use rand()
+c.ncce.wiki.MSC.c:286: error: MSC31-C: Ensure that return values are compared against the proper type

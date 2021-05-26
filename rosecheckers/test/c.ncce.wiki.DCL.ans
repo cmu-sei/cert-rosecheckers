@@ -1,0 +1,6 @@
+c.ncce.wiki.DCL.c:197: error: DCL31-C: Guarantee that mutually visible identifiers are unique: global_symbol_definition_lookup_table_b
+c.ncce.wiki.DCL.c:55: warning: DCL00-C: Const-qualify immutable objects: pi
+c.ncce.wiki.DCL.c:59: warning: FLP03-C: Detect and handle floating point errors
+c.ncce.wiki.DCL.c:69: warning: DCL02-C: Use visually distinct identifiers: DCL01_msg
+c.ncce.wiki.DCL.c:69: warning: DCL01-C: Do not reuse variable names in subscopes: DCL01_msg
+c.ncce.wiki.DCL.c:103: warning: DCL05-C: Use typedefs to improve code readability

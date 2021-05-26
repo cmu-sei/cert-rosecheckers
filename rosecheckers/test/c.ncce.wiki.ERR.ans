@@ -1,0 +1,3 @@
+c.ncce.wiki.ERR.c:56: error: FIO42-C: Ensure files are properly closed when they are no longer needed
+c.ncce.wiki.ERR.c:62: warning: ERR06-C: Understand the termination behavior of assert() and abort()
+c.ncce.wiki.ERR.c:116: error: SIG30-C: Call only asynchronous-safe functions within signal handlers: perror

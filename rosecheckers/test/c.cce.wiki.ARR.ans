@@ -1,0 +1,1 @@
+c.cce.wiki.ARR.c:105: warning: MEM08-C: Use realloc() only to resize dynamically allocated arrays

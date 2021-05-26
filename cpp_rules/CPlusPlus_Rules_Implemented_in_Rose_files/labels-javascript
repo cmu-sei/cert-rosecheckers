@@ -1,0 +1,5646 @@
+
+function AddLabelToEntity() { }
+AddLabelToEntity._path = '/confluence/dwr';
+
+AddLabelToEntity.addLabel = function(p0, p1, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'addLabel', p0, p1, callback);
+}
+
+AddLabelToEntity.setLabelManager = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'setLabelManager', p0, callback);
+}
+
+AddLabelToEntity.isPermitted = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'isPermitted', p0, callback);
+}
+
+AddLabelToEntity.setPermissionManager = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'setPermissionManager', p0, callback);
+}
+
+AddLabelToEntity.setPageManager = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'setPageManager', p0, callback);
+}
+
+AddLabelToEntity.isPersonalLabel = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'isPersonalLabel', p0, callback);
+}
+
+AddLabelToEntity.getText = function(p0, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'getText', p0, callback);
+}
+
+AddLabelToEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'getText', p0, p1, callback);
+}
+
+AddLabelToEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(AddLabelToEntity._path, 'AddLabelToEntity', 'getText', p0, p1, callback);
+}
+
+function RemoveLabelFromEntity() { }
+RemoveLabelFromEntity._path = '/confluence/dwr';
+
+RemoveLabelFromEntity.setLabelManager = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'setLabelManager', p0, callback);
+}
+
+RemoveLabelFromEntity.removeLabel = function(p0, p1, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'removeLabel', p0, p1, callback);
+}
+
+RemoveLabelFromEntity.isPermitted = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'isPermitted', p0, callback);
+}
+
+RemoveLabelFromEntity.setPermissionManager = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'setPermissionManager', p0, callback);
+}
+
+RemoveLabelFromEntity.setPageManager = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'setPageManager', p0, callback);
+}
+
+RemoveLabelFromEntity.isPersonalLabel = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'isPersonalLabel', p0, callback);
+}
+
+RemoveLabelFromEntity.getText = function(p0, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'getText', p0, callback);
+}
+
+RemoveLabelFromEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'getText', p0, p1, callback);
+}
+
+RemoveLabelFromEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(RemoveLabelFromEntity._path, 'RemoveLabelFromEntity', 'getText', p0, p1, callback);
+}
+
+function ViewLabelsForEntity() { }
+ViewLabelsForEntity._path = '/confluence/dwr';
+
+ViewLabelsForEntity.isPermitted = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'isPermitted', p0, callback);
+}
+
+ViewLabelsForEntity.setPermissionManager = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'setPermissionManager', p0, callback);
+}
+
+ViewLabelsForEntity.setPageManager = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'setPageManager', p0, callback);
+}
+
+ViewLabelsForEntity.isPersonalLabel = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'isPersonalLabel', p0, callback);
+}
+
+ViewLabelsForEntity.viewLabels = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'viewLabels', p0, callback);
+}
+
+ViewLabelsForEntity.getText = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'getText', p0, callback);
+}
+
+ViewLabelsForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'getText', p0, p1, callback);
+}
+
+ViewLabelsForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(ViewLabelsForEntity._path, 'ViewLabelsForEntity', 'getText', p0, p1, callback);
+}
+
+function ViewLabelsForEntityWithoutDeleteLinks() { }
+ViewLabelsForEntityWithoutDeleteLinks._path = '/confluence/dwr';
+
+ViewLabelsForEntityWithoutDeleteLinks.setPageManager = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntityWithoutDeleteLinks._path, 'ViewLabelsForEntityWithoutDeleteLinks', 'setPageManager', p0, callback);
+}
+
+ViewLabelsForEntityWithoutDeleteLinks.viewLabels = function(p0, p1, callback) {
+    DWREngine._execute(ViewLabelsForEntityWithoutDeleteLinks._path, 'ViewLabelsForEntityWithoutDeleteLinks', 'viewLabels', p0, p1, callback);
+}
+
+ViewLabelsForEntityWithoutDeleteLinks.getText = function(p0, callback) {
+    DWREngine._execute(ViewLabelsForEntityWithoutDeleteLinks._path, 'ViewLabelsForEntityWithoutDeleteLinks', 'getText', p0, callback);
+}
+
+ViewLabelsForEntityWithoutDeleteLinks.getText = function(p0, p1, callback) {
+    DWREngine._execute(ViewLabelsForEntityWithoutDeleteLinks._path, 'ViewLabelsForEntityWithoutDeleteLinks', 'getText', p0, p1, callback);
+}
+
+ViewLabelsForEntityWithoutDeleteLinks.getText = function(p0, p1, callback) {
+    DWREngine._execute(ViewLabelsForEntityWithoutDeleteLinks._path, 'ViewLabelsForEntityWithoutDeleteLinks', 'getText', p0, p1, callback);
+}
+
+function SuggestedLabelsForEntity() { }
+SuggestedLabelsForEntity._path = '/confluence/dwr';
+
+SuggestedLabelsForEntity.setLabelManager = function(p0, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'setLabelManager', p0, callback);
+}
+
+SuggestedLabelsForEntity.setPageManager = function(p0, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'setPageManager', p0, callback);
+}
+
+SuggestedLabelsForEntity.viewLabels = function(p0, p1, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'viewLabels', p0, p1, callback);
+}
+
+SuggestedLabelsForEntity.getText = function(p0, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'getText', p0, callback);
+}
+
+SuggestedLabelsForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'getText', p0, p1, callback);
+}
+
+SuggestedLabelsForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(SuggestedLabelsForEntity._path, 'SuggestedLabelsForEntity', 'getText', p0, p1, callback);
+}
+
+function GenerateAutocompleteLabelsListForEntity() { }
+GenerateAutocompleteLabelsListForEntity._path = '/confluence/dwr';
+
+GenerateAutocompleteLabelsListForEntity.setLabelManager = function(p0, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'setLabelManager', p0, callback);
+}
+
+GenerateAutocompleteLabelsListForEntity.setPageManager = function(p0, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'setPageManager', p0, callback);
+}
+
+GenerateAutocompleteLabelsListForEntity.autocompleteLabels = function(p0, p1, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'autocompleteLabels', p0, p1, callback);
+}
+
+GenerateAutocompleteLabelsListForEntity.getText = function(p0, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'getText', p0, callback);
+}
+
+GenerateAutocompleteLabelsListForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'getText', p0, p1, callback);
+}
+
+GenerateAutocompleteLabelsListForEntity.getText = function(p0, p1, callback) {
+    DWREngine._execute(GenerateAutocompleteLabelsListForEntity._path, 'GenerateAutocompleteLabelsListForEntity', 'getText', p0, p1, callback);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (DWREngine == null) var DWREngine = {};
+
+
+
+
+
+DWREngine.setErrorHandler = function(handler) {
+DWREngine._errorHandler = handler;
+};
+
+
+
+
+
+DWREngine.setWarningHandler = function(handler) {
+DWREngine._warningHandler = handler;
+};
+
+
+
+
+
+DWREngine.setTimeout = function(timeout) {
+DWREngine._timeout = timeout;
+};
+
+
+
+
+
+DWREngine.setPreHook = function(handler) {
+DWREngine._preHook = handler;
+};
+
+
+
+
+
+DWREngine.setPostHook = function(handler) {
+DWREngine._postHook = handler;
+};
+
+
+DWREngine.XMLHttpRequest = 1;
+
+
+DWREngine.IFrame = 2;
+
+
+
+
+
+
+DWREngine.setMethod = function(newMethod) {
+if (newMethod != DWREngine.XMLHttpRequest && newMethod != DWREngine.IFrame) {
+DWREngine._handleError("Remoting method must be one of DWREngine.XMLHttpRequest or DWREngine.IFrame");
+return;
+}
+DWREngine._method = newMethod;
+};
+
+
+
+
+
+DWREngine.setVerb = function(verb) {
+if (verb != "GET" && verb != "POST") {
+DWREngine._handleError("Remoting verb must be one of GET or POST");
+return;
+}
+DWREngine._verb = verb;
+};
+
+
+
+
+
+DWREngine.setOrdered = function(ordered) {
+DWREngine._ordered = ordered;
+};
+
+
+
+
+
+DWREngine.setAsync = function(async) {
+DWREngine._async = async;
+};
+
+
+
+
+
+DWREngine.setTextHtmlHandler = function(handler) {
+DWREngine._textHtmlHandler = handler;
+}
+
+
+
+
+
+DWREngine.defaultMessageHandler = function(message) {
+if (typeof message == "object" && message.name == "Error" && message.description) {
+alert("Error: " + message.description);
+}
+else {
+
+if (message.toString().indexOf("0x80040111") == -1) {
+alert(message);
+}
+}
+};
+
+
+
+
+
+DWREngine.beginBatch = function() {
+if (DWREngine._batch) {
+DWREngine._handleError("Batch already started.");
+return;
+}
+
+DWREngine._batch = {
+map:{ callCount:0 },
+paramCount:0,
+ids:[],
+preHooks:[],
+postHooks:[]
+};
+};
+
+
+
+
+
+DWREngine.endBatch = function(options) {
+var batch = DWREngine._batch;
+if (batch == null) {
+DWREngine._handleError("No batch in progress.");
+return;
+}
+
+if (options && options.preHook) batch.preHooks.unshift(options.preHook);
+if (options && options.postHook) batch.postHooks.push(options.postHook);
+if (DWREngine._preHook) batch.preHooks.unshift(DWREngine._preHook);
+if (DWREngine._postHook) batch.postHooks.push(DWREngine._postHook);
+
+if (batch.method == null) batch.method = DWREngine._method;
+if (batch.verb == null) batch.verb = DWREngine._verb;
+if (batch.async == null) batch.async = DWREngine._async;
+if (batch.timeout == null) batch.timeout = DWREngine._timeout;
+
+batch.completed = false;
+
+
+DWREngine._batch = null;
+
+
+
+if (!DWREngine._ordered) {
+DWREngine._sendData(batch);
+DWREngine._batches[DWREngine._batches.length] = batch;
+}
+else {
+if (DWREngine._batches.length == 0) {
+
+DWREngine._sendData(batch);
+DWREngine._batches[DWREngine._batches.length] = batch;
+}
+else {
+
+DWREngine._batchQueue[DWREngine._batchQueue.length] = batch;
+}
+}
+};
+
+
+
+
+
+
+DWREngine._errorHandler = DWREngine.defaultMessageHandler;
+
+
+DWREngine._warningHandler = null;
+
+
+DWREngine._preHook = null;
+
+
+DWREngine._postHook = null;
+
+
+DWREngine._batches = [];
+
+
+DWREngine._batchQueue = [];
+
+
+DWREngine._handlersMap = {};
+
+
+DWREngine._method = DWREngine.XMLHttpRequest;
+
+
+DWREngine._verb = "POST";
+
+
+DWREngine._ordered = false;
+
+
+DWREngine._async = true;
+
+
+DWREngine._batch = null;
+
+
+DWREngine._timeout = 0;
+
+
+DWREngine._DOMDocument = ["Msxml2.DOMDocument.6.0", "Msxml2.DOMDocument.5.0", "Msxml2.DOMDocument.4.0", "Msxml2.DOMDocument.3.0", "MSXML2.DOMDocument", "MSXML.DOMDocument", "Microsoft.XMLDOM"];
+
+
+DWREngine._XMLHTTP = ["Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"];
+
+
+
+
+
+
+
+
+
+
+DWREngine._execute = function(path, scriptName, methodName, vararg_params) {
+var singleShot = false;
+if (DWREngine._batch == null) {
+DWREngine.beginBatch();
+singleShot = true;
+}
+
+var args = [];
+for (var i = 0; i < arguments.length - 3; i++) {
+args[i] = arguments[i + 3];
+}
+
+if (DWREngine._batch.path == null) {
+DWREngine._batch.path = path;
+}
+else {
+if (DWREngine._batch.path != path) {
+DWREngine._handleError("Can't batch requests to multiple DWR Servlets.");
+return;
+}
+}
+
+
+var params;
+var callData;
+var firstArg = args[0];
+var lastArg = args[args.length - 1];
+
+if (typeof firstArg == "function") {
+callData = { callback:args.shift() };
+params = args;
+}
+else if (typeof lastArg == "function") {
+callData = { callback:args.pop() };
+params = args;
+}
+else if (lastArg != null && typeof lastArg == "object" && lastArg.callback != null && typeof lastArg.callback == "function") {
+callData = args.pop();
+params = args;
+}
+else if (firstArg == null) {
+
+
+
+if (lastArg == null && args.length > 2) {
+DWREngine._handleError("Ambiguous nulls at start and end of parameter list. Which is the callback function?");
+}
+callData = { callback:args.shift() };
+params = args;
+}
+else if (lastArg == null) {
+callData = { callback:args.pop() };
+params = args;
+}
+else {
+DWREngine._handleError("Missing callback function or metadata object.");
+return;
+}
+
+
+var random = Math.floor(Math.random() * 10001);
+var id = (random + "_" + new Date().getTime()).toString();
+var prefix = "c" + DWREngine._batch.map.callCount + "-";
+DWREngine._batch.ids.push(id);
+
+
+if (callData.method != null) {
+DWREngine._batch.method = callData.method;
+delete callData.method;
+}
+if (callData.verb != null) {
+DWREngine._batch.verb = callData.verb;
+delete callData.verb;
+}
+if (callData.async != null) {
+DWREngine._batch.async = callData.async;
+delete callData.async;
+}
+if (callData.timeout != null) {
+DWREngine._batch.timeout = callData.timeout;
+delete callData.timeout;
+}
+
+
+if (callData.preHook != null) {
+DWREngine._batch.preHooks.unshift(callData.preHook);
+delete callData.preHook;
+}
+if (callData.postHook != null) {
+DWREngine._batch.postHooks.push(callData.postHook);
+delete callData.postHook;
+}
+
+
+if (callData.errorHandler == null) callData.errorHandler = DWREngine._errorHandler;
+if (callData.warningHandler == null) callData.warningHandler = DWREngine._warningHandler;
+
+
+DWREngine._handlersMap[id] = callData;
+
+DWREngine._batch.map[prefix + "scriptName"] = scriptName;
+DWREngine._batch.map[prefix + "methodName"] = methodName;
+DWREngine._batch.map[prefix + "id"] = id;
+
+
+for (i = 0; i < params.length; i++) {
+DWREngine._serializeAll(DWREngine._batch, [], params[i], prefix + "param" + i);
+}
+
+
+DWREngine._batch.map.callCount++;
+if (singleShot) {
+DWREngine.endBatch();
+}
+};
+
+
+DWREngine._sendData = function(batch) {
+
+if (batch.map.callCount == 0) return;
+
+for (var i = 0; i < batch.preHooks.length; i++) {
+batch.preHooks[i]();
+}
+batch.preHooks = null;
+
+if (batch.timeout && batch.timeout != 0) {
+batch.interval = setInterval(function() { DWREngine._abortRequest(batch); }, batch.timeout);
+}
+
+var urlPostfix;
+if (batch.map.callCount == 1) {
+urlPostfix = batch.map["c0-scriptName"] + "." + batch.map["c0-methodName"] + ".dwr";
+}
+else {
+urlPostfix = "Multiple." + batch.map.callCount + ".dwr";
+}
+
+
+if (batch.method == DWREngine.XMLHttpRequest) {
+if (window.XMLHttpRequest) {
+batch.req = new XMLHttpRequest();
+}
+
+else if (window.ActiveXObject && !(navigator.userAgent.indexOf("Mac") >= 0 && navigator.userAgent.indexOf("MSIE") >= 0)) {
+batch.req = DWREngine._newActiveXObject(DWREngine._XMLHTTP);
+}
+}
+
+var query = "";
+var prop;
+
+
+if (batch.req) {
+batch.map.xml = "true";
+
+if (batch.async) {
+batch.req.onreadystatechange = function() { DWREngine._stateChange(batch); };
+}
+
+var indexSafari = navigator.userAgent.indexOf("Safari/");
+if (indexSafari >= 0) {
+var version = navigator.userAgent.substring(indexSafari + 7);
+if (parseInt(version, 10) < 400) batch.verb == "GET";
+}
+if (batch.verb == "GET") {
+
+
+
+batch.map.callCount = "" + batch.map.callCount;
+
+for (prop in batch.map) {
+var qkey = encodeURIComponent(prop);
+var qval = encodeURIComponent(batch.map[prop]);
+if (qval == "") DWREngine._handleError("Found empty qval for qkey=" + qkey);
+query += qkey + "=" + qval + "&";
+}
+
+try {
+batch.req.open("GET", batch.path + "/exec/" + urlPostfix + "?" + query, batch.async);
+batch.req.send(null);
+if (!batch.async) DWREngine._stateChange(batch);
+}
+catch (ex) {
+DWREngine._handleMetaDataError(null, ex);
+}
+}
+else {
+for (prop in batch.map) {
+if (typeof batch.map[prop] != "function") {
+query += prop + "=" + batch.map[prop] + "\n";
+}
+}
+
+try {
+batch.req.open("POST", batch.path + "/exec/" + urlPostfix, batch.async);
+batch.req.setRequestHeader('Content-Type', 'text/plain');
+batch.req.send(query);
+if (!batch.async) DWREngine._stateChange(batch);
+}
+catch (ex) {
+DWREngine._handleMetaDataError(null, ex);
+}
+}
+}
+else {
+batch.map.xml = "false";
+var idname = "dwr-if-" + batch.map["c0-id"];
+
+batch.div = document.createElement("div");
+batch.div.innerHTML = "<iframe src='javascript:void(0)' frameborder='0' width='0' height='0' id='" + idname + "' name='" + idname + "'></iframe>";
+document.body.appendChild(batch.div);
+batch.iframe = document.getElementById(idname);
+batch.iframe.setAttribute("style", "width:0px; height:0px; border:0px;");
+
+if (batch.verb == "GET") {
+for (prop in batch.map) {
+if (typeof batch.map[prop] != "function") {
+query += encodeURIComponent(prop) + "=" + encodeURIComponent(batch.map[prop]) + "&";
+}
+}
+query = query.substring(0, query.length - 1);
+
+batch.iframe.setAttribute("src", batch.path + "/exec/" + urlPostfix + "?" + query);
+document.body.appendChild(batch.iframe);
+}
+else {
+batch.form = document.createElement("form");
+batch.form.setAttribute("id", "dwr-form");
+batch.form.setAttribute("action", batch.path + "/exec" + urlPostfix);
+batch.form.setAttribute("target", idname);
+batch.form.target = idname;
+batch.form.setAttribute("method", "POST");
+for (prop in batch.map) {
+var formInput = document.createElement("input");
+formInput.setAttribute("type", "hidden");
+formInput.setAttribute("name", prop);
+formInput.setAttribute("value", batch.map[prop]);
+batch.form.appendChild(formInput);
+}
+document.body.appendChild(batch.form);
+batch.form.submit();
+}
+}
+};
+
+
+DWREngine._stateChange = function(batch) {
+if (!batch.completed && batch.req.readyState == 4) {
+try {
+var reply = batch.req.responseText;
+
+if (reply == null || reply == "") {
+DWREngine._handleMetaDataWarning(null, "No data received from server");
+}
+else {
+var contentType = batch.req.getResponseHeader("Content-Type");
+if (!contentType.match(/^text\/plain/) && !contentType.match(/^text\/javascript/)) {
+if (DWREngine._textHtmlHandler && contentType.match(/^text\/html/)) {
+DWREngine._textHtmlHandler();
+}
+else {
+DWREngine._handleMetaDataWarning(null, "Invalid content type from server: '" + contentType + "'");
+}
+}
+else {
+
+
+
+if (reply.search("DWREngine._handle") == -1) {
+DWREngine._handleMetaDataWarning(null, "Invalid reply from server");
+}
+else {
+eval(reply);
+}
+}
+}
+
+
+DWREngine._clearUp(batch);
+}
+catch (ex) {
+if (ex == null) ex = "Unknown error occured";
+DWREngine._handleMetaDataWarning(null, ex);
+}
+finally {
+
+
+
+if (DWREngine._batchQueue.length != 0) {
+var sendbatch = DWREngine._batchQueue.shift();
+DWREngine._sendData(sendbatch);
+DWREngine._batches[DWREngine._batches.length] = sendbatch;
+}
+}
+}
+};
+
+
+
+
+
+
+DWREngine._handleResponse = function(id, reply) {
+
+var handlers = DWREngine._handlersMap[id];
+DWREngine._handlersMap[id] = null;
+
+if (handlers) {
+
+
+try {
+if (handlers.callback) handlers.callback(reply);
+}
+catch (ex) {
+DWREngine._handleMetaDataError(handlers, ex);
+}
+}
+
+
+if (DWREngine._method == DWREngine.IFrame) {
+var responseBatch = DWREngine._batches[DWREngine._batches.length-1];
+
+if (responseBatch.map["c"+(responseBatch.map.callCount-1)+"-id"] == id) {
+DWREngine._clearUp(responseBatch);
+}
+}
+};
+
+
+DWREngine._handleServerError = function(id, error) {
+
+var handlers = DWREngine._handlersMap[id];
+DWREngine._handlersMap[id] = null;
+
+if (error.message) DWREngine._handleMetaDataError(handlers, error.message, error);
+else DWREngine._handleMetaDataError(handlers, error);
+};
+
+
+DWREngine._eval = function(script) {
+return eval(script);
+}
+
+
+DWREngine._abortRequest = function(batch) {
+if (batch && !batch.completed) {
+clearInterval(batch.interval);
+DWREngine._clearUp(batch);
+if (batch.req) batch.req.abort();
+
+var handlers;
+for (var i = 0; i < batch.ids.length; i++) {
+handlers = DWREngine._handlersMap[batch.ids[i]];
+DWREngine._handleMetaDataError(handlers, "Timeout");
+}
+}
+};
+
+
+DWREngine._clearUp = function(batch) {
+if (batch.completed) {
+DWREngine._handleError("Double complete");
+return;
+}
+
+
+if (batch.div) batch.div.parentNode.removeChild(batch.div);
+if (batch.iframe) batch.iframe.parentNode.removeChild(batch.iframe);
+if (batch.form) batch.form.parentNode.removeChild(batch.form);
+
+
+if (batch.req) delete batch.req;
+
+for (var i = 0; i < batch.postHooks.length; i++) {
+batch.postHooks[i]();
+}
+batch.postHooks = null;
+
+
+for (var i = 0; i < DWREngine._batches.length; i++) {
+if (DWREngine._batches[i] == batch) {
+DWREngine._batches.splice(i, 1);
+break;
+}
+}
+
+batch.completed = true;
+};
+
+
+DWREngine._handleError = function(reason, ex) {
+if (DWREngine._errorHandler) DWREngine._errorHandler(reason, ex);
+};
+
+
+DWREngine._handleWarning = function(reason, ex) {
+if (DWREngine._warningHandler) DWREngine._warningHandler(reason, ex);
+};
+
+
+DWREngine._handleMetaDataError = function(handlers, reason, ex) {
+if (handlers && typeof handlers.errorHandler == "function") handlers.errorHandler(reason, ex);
+else DWREngine._handleError(reason, ex);
+};
+
+
+DWREngine._handleMetaDataWarning = function(handlers, reason, ex) {
+if (handlers && typeof handlers.warningHandler == "function") handlers.warningHandler(reason, ex);
+else DWREngine._handleWarning(reason, ex);
+};
+
+
+
+
+
+
+
+
+DWREngine._serializeAll = function(batch, referto, data, name) {
+if (data == null) {
+batch.map[name] = "null:null";
+return;
+}
+
+switch (typeof data) {
+case "boolean":
+batch.map[name] = "boolean:" + data;
+break;
+case "number":
+batch.map[name] = "number:" + data;
+break;
+case "string":
+batch.map[name] = "string:" + encodeURIComponent(data);
+break;
+case "object":
+if (data instanceof String) batch.map[name] = "String:" + encodeURIComponent(data);
+else if (data instanceof Boolean) batch.map[name] = "Boolean:" + data;
+else if (data instanceof Number) batch.map[name] = "Number:" + data;
+else if (data instanceof Date) batch.map[name] = "Date:" + data.getTime();
+else if (data instanceof Array) batch.map[name] = DWREngine._serializeArray(batch, referto, data, name);
+else batch.map[name] = DWREngine._serializeObject(batch, referto, data, name);
+break;
+case "function":
+
+break;
+default:
+DWREngine._handleWarning("Unexpected type: " + typeof data + ", attempting default converter.");
+batch.map[name] = "default:" + data;
+break;
+}
+};
+
+
+DWREngine._lookup = function(referto, data, name) {
+var lookup;
+
+for (var i = 0; i < referto.length; i++) {
+if (referto[i].data == data) {
+lookup = referto[i];
+break;
+}
+}
+if (lookup) return "reference:" + lookup.name;
+referto.push({ data:data, name:name });
+return null;
+};
+
+
+DWREngine._serializeObject = function(batch, referto, data, name) {
+var ref = DWREngine._lookup(referto, data, name);
+if (ref) return ref;
+
+
+
+if (data.nodeName && data.nodeType) {
+return DWREngine._serializeXml(batch, referto, data, name);
+}
+
+
+var reply = "Object:{";
+var element;
+for (element in data) {
+batch.paramCount++;
+var childName = "c" + DWREngine._batch.map.callCount + "-e" + batch.paramCount;
+DWREngine._serializeAll(batch, referto, data[element], childName);
+
+reply += encodeURIComponent(element) + ":reference:" + childName + ", ";
+}
+
+if (reply.substring(reply.length - 2) == ", ") {
+reply = reply.substring(0, reply.length - 2);
+}
+reply += "}";
+
+return reply;
+};
+
+
+DWREngine._serializeXml = function(batch, referto, data, name) {
+var ref = DWREngine._lookup(referto, data, name);
+if (ref) return ref;
+
+var output;
+if (window.XMLSerializer) output = new XMLSerializer().serializeToString(data);
+else output = data.toXml;
+
+return "XML:" + encodeURIComponent(output);
+};
+
+
+DWREngine._serializeArray = function(batch, referto, data, name) {
+var ref = DWREngine._lookup(referto, data, name);
+if (ref) return ref;
+
+var reply = "Array:[";
+for (var i = 0; i < data.length; i++) {
+if (i != 0) reply += ",";
+batch.paramCount++;
+var childName = "c" + DWREngine._batch.map.callCount + "-e" + batch.paramCount;
+DWREngine._serializeAll(batch, referto, data[i], childName);
+reply += "reference:";
+reply += childName;
+}
+reply += "]";
+
+return reply;
+};
+
+
+DWREngine._unserializeDocument = function(xml) {
+var dom;
+if (window.DOMParser) {
+var parser = new DOMParser();
+dom = parser.parseFromString(xml, "text/xml");
+if (!dom.documentElement || dom.documentElement.tagName == "parsererror") {
+var message = dom.documentElement.firstChild.data;
+message += "\n" + dom.documentElement.firstChild.nextSibling.firstChild.data;
+throw message;
+}
+return dom;
+}
+else if (window.ActiveXObject) {
+dom = DWREngine._newActiveXObject(DWREngine._DOMDocument);
+dom.loadXML(xml);
+return dom;
+}
+else {
+var div = document.createElement("div");
+div.innerHTML = xml;
+return div;
+}
+};
+
+
+
+
+
+DWREngine._newActiveXObject = function(axarray) {
+var returnValue;
+for (var i = 0; i < axarray.length; i++) {
+try {
+returnValue = new ActiveXObject(axarray[i]);
+break;
+}
+catch (ex) {   }
+}
+return returnValue;
+};
+
+
+if (typeof window.encodeURIComponent === 'undefined') {
+DWREngine._utf8 = function(wide) {
+wide = "" + wide;
+var c;
+var s;
+var enc = "";
+var i = 0;
+while (i < wide.length) {
+c = wide.charCodeAt(i++);
+
+if (c >= 0xDC00 && c < 0xE000) continue;
+if (c >= 0xD800 && c < 0xDC00) {
+if (i >= wide.length) continue;
+s = wide.charCodeAt(i++);
+if (s < 0xDC00 || c >= 0xDE00) continue;
+c = ((c - 0xD800) << 10) + (s - 0xDC00) + 0x10000;
+}
+
+if (c < 0x80) {
+enc += String.fromCharCode(c);
+}
+else if (c < 0x800) {
+enc += String.fromCharCode(0xC0 + (c >> 6), 0x80 + (c & 0x3F));
+}
+else if (c < 0x10000) {
+enc += String.fromCharCode(0xE0 + (c >> 12), 0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
+}
+else {
+enc += String.fromCharCode(0xF0 + (c >> 18), 0x80 + (c >> 12 & 0x3F), 0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
+}
+}
+return enc;
+}
+
+DWREngine._hexchars = "0123456789ABCDEF";
+
+DWREngine._toHex = function(n) {
+return DWREngine._hexchars.charAt(n >> 4) + DWREngine._hexchars.charAt(n & 0xF);
+}
+
+DWREngine._okURIchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-";
+
+window.encodeURIComponent = function(s)  {
+s = DWREngine._utf8(s);
+var c;
+var enc = "";
+for (var i= 0; i<s.length; i++) {
+if (DWREngine._okURIchars.indexOf(s.charAt(i)) == -1) {
+enc += "%" + DWREngine._toHex(s.charCodeAt(i));
+}
+else {
+enc += s.charAt(i);
+}
+}
+return enc;
+}
+}
+
+
+if (typeof Array.prototype.splice === 'undefined') {
+Array.prototype.splice = function(ind, cnt)
+{
+if (arguments.length == 0) return ind;
+if (typeof ind != "number") ind = 0;
+if (ind < 0) ind = Math.max(0,this.length + ind);
+if (ind > this.length) {
+if (arguments.length > 2) ind = this.length;
+else return [];
+}
+if (arguments.length < 2) cnt = this.length-ind;
+
+cnt = (typeof cnt == "number") ? Math.max(0, cnt) : 0;
+removeArray = this.slice(ind, ind + cnt);
+endArray = this.slice(ind + cnt);
+this.length = ind;
+
+for (var i = 2; i < arguments.length; i++) this[this.length] = arguments[i];
+for (i = 0; i < endArray.length; i++) this[this.length] = endArray[i];
+
+return removeArray;
+}
+}
+
+
+if (typeof Array.prototype.shift === 'undefined') {
+Array.prototype.shift = function(str) {
+var val = this[0];
+for (var i = 1; i < this.length; ++i) this[i - 1] = this[i];
+this.length--;
+return val;
+}
+}
+
+
+if (typeof Array.prototype.unshift === 'undefined') {
+Array.prototype.unshift = function() {
+var i = unshift.arguments.length;
+for (var j = this.length - 1; j >= 0; --j) this[j + i] = this[j];
+for (j = 0; j < i; ++j) this[j] = unshift.arguments[j];
+}
+}
+
+
+if (typeof Array.prototype.push === 'undefined') {
+Array.prototype.push = function() {
+var sub = this.length;
+for (var i = 0; i < push.arguments.length; ++i) {
+this[sub] = push.arguments[i];
+sub++;
+}
+}
+}
+
+
+if (typeof Array.prototype.pop === 'undefined') {
+Array.prototype.pop = function() {
+var lastElement = this[this.length - 1];
+this.length--;
+return lastElement;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function DWRUtil() { }
+
+
+
+
+
+DWRUtil.onReturn = function(event, action) {
+if (!event) {
+event = window.event;
+}
+if (event && event.keyCode && event.keyCode == 13) {
+action();
+}
+};
+
+
+
+
+
+DWRUtil.selectRange = function(ele, start, end) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("selectRange() can't find an element with id: " + orig + ".");
+return;
+}
+if (ele.setSelectionRange) {
+ele.setSelectionRange(start, end);
+}
+else if (ele.createTextRange) {
+var range = ele.createTextRange();
+range.moveStart("character", start);
+range.moveEnd("character", end - ele.value.length);
+range.select();
+}
+ele.focus();
+};
+
+
+
+
+DWRUtil._getSelection = function(ele) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("selectRange() can't find an element with id: " + orig + ".");
+return;
+}
+return ele.value.substring(ele.selectionStart, ele.selectionEnd);
+
+
+
+
+
+}
+
+
+
+
+
+var $;
+if (!$ && document.getElementById) {
+$ = function() {
+var elements = new Array();
+for (var i = 0; i < arguments.length; i++) {
+var element = arguments[i];
+if (typeof element == 'string') {
+element = document.getElementById(element);
+}
+if (arguments.length == 1) {
+return element;
+}
+elements.push(element);
+}
+return elements;
+}
+}
+else if (!$ && document.all) {
+$ = function() {
+var elements = new Array();
+for (var i = 0; i < arguments.length; i++) {
+var element = arguments[i];
+if (typeof element == 'string') {
+element = document.all[element];
+}
+if (arguments.length == 1) {
+return element;
+}
+elements.push(element);
+}
+return elements;
+}
+}
+
+
+
+
+
+DWRUtil.toDescriptiveString = function(data, level, depth) {
+var reply = "";
+var i = 0;
+var value;
+var obj;
+if (level == null) level = 0;
+if (depth == null) depth = 0;
+if (data == null) return "null";
+if (DWRUtil._isArray(data)) {
+if (data.length == 0) reply += "[]";
+else {
+if (level != 0) reply += "[\n";
+else reply = "[";
+for (i = 0; i < data.length; i++) {
+try {
+obj = data[i];
+if (obj == null || typeof obj == "function") {
+continue;
+}
+else if (typeof obj == "object") {
+if (level > 0) value = DWRUtil.toDescriptiveString(obj, level - 1, depth + 1);
+else value = DWRUtil._detailedTypeOf(obj);
+}
+else {
+value = "" + obj;
+value = value.replace(/\/n/g, "\\n");
+value = value.replace(/\/t/g, "\\t");
+}
+}
+catch (ex) {
+value = "" + ex;
+}
+if (level != 0)  {
+reply += DWRUtil._indent(level, depth + 2) + value + ", \n";
+}
+else {
+if (value.length > 13) value = value.substring(0, 10) + "...";
+reply += value + ", ";
+if (i > 5) {
+reply += "...";
+break;
+}
+}
+}
+if (level != 0) reply += DWRUtil._indent(level, depth) + "]";
+else reply += "]";
+}
+return reply;
+}
+if (typeof data == "string" || typeof data == "number" || DWRUtil._isDate(data)) {
+return data.toString();
+}
+if (typeof data == "object") {
+var typename = DWRUtil._detailedTypeOf(data);
+if (typename != "Object")  reply = typename + " ";
+if (level != 0) reply += "{\n";
+else reply = "{";
+var isHtml = DWRUtil._isHTMLElement(data);
+for (var prop in data) {
+if (isHtml) {
+
+if (prop.toUpperCase() == prop || prop == "title" ||
+prop == "lang" || prop == "dir" || prop == "className" ||
+prop == "form" || prop == "name" || prop == "prefix" ||
+prop == "namespaceURI" || prop == "nodeType" ||
+prop == "firstChild" || prop == "lastChild" ||
+prop.match(/^offset/)) {
+continue;
+}
+}
+value = "";
+try {
+obj = data[prop];
+if (obj == null || typeof obj == "function") {
+continue;
+}
+else if (typeof obj == "object") {
+if (level > 0) {
+value = "\n";
+value += DWRUtil._indent(level, depth + 2);
+value = DWRUtil.toDescriptiveString(obj, level - 1, depth + 1);
+}
+else {
+value = DWRUtil._detailedTypeOf(obj);
+}
+}
+else {
+value = "" + obj;
+value = value.replace(/\/n/g, "\\n");
+value = value.replace(/\/t/g, "\\t");
+}
+}
+catch (ex) {
+value = "" + ex;
+}
+if (level == 0 && value.length > 13) value = value.substring(0, 10) + "...";
+var propStr = prop;
+if (propStr.length > 30) propStr = propStr.substring(0, 27) + "...";
+if (level != 0) reply += DWRUtil._indent(level, depth + 1);
+reply += prop + ":" + value + ", ";
+if (level != 0) reply += "\n";
+i++;
+if (level == 0 && i > 5) {
+reply += "...";
+break;
+}
+}
+reply += DWRUtil._indent(level, depth);
+reply += "}";
+return reply;
+}
+return data.toString();
+};
+
+
+
+
+DWRUtil._indent = function(level, depth) {
+var reply = "";
+if (level != 0) {
+for (var j = 0; j < depth; j++) {
+reply += "\u00A0\u00A0";
+}
+reply += " ";
+}
+return reply;
+};
+
+
+
+
+
+DWRUtil.useLoadingMessage = function(message) {
+var loadingMessage;
+if (message) loadingMessage = message;
+else loadingMessage = "Loading";
+DWREngine.setPreHook(function() {
+var disabledZone = $('disabledZone');
+if (!disabledZone) {
+disabledZone = document.createElement('div');
+disabledZone.setAttribute('id', 'disabledZone');
+disabledZone.style.position = "absolute";
+disabledZone.style.zIndex = "1000";
+disabledZone.style.left = "0px";
+disabledZone.style.top = "0px";
+disabledZone.style.width = "100%";
+disabledZone.style.height = "100%";
+document.body.appendChild(disabledZone);
+var messageZone = document.createElement('div');
+messageZone.setAttribute('id', 'messageZone');
+messageZone.style.position = "absolute";
+messageZone.style.top = "0px";
+messageZone.style.right = "0px";
+messageZone.style.background = "red";
+messageZone.style.color = "white";
+messageZone.style.fontFamily = "Arial,Helvetica,sans-serif";
+messageZone.style.padding = "4px";
+disabledZone.appendChild(messageZone);
+var text = document.createTextNode(loadingMessage);
+messageZone.appendChild(text);
+}
+else {
+$('messageZone').innerHTML = loadingMessage;
+disabledZone.style.visibility = 'visible';
+}
+});
+DWREngine.setPostHook(function() {
+$('disabledZone').style.visibility = 'hidden';
+});
+}
+
+
+
+
+
+DWRUtil.setValue = function(ele, val, options) {
+if (val == null) val = "";
+if (options != null) {
+if (options.escapeHtml) {
+val = val.replace(/&/, "&amp;");
+val = val.replace(/'/, "&apos;");
+val = val.replace(/</, "&lt;");
+val = val.replace(/>/, "&gt;");
+}
+}
+
+var orig = ele;
+var nodes, node, i;
+
+ele = $(ele);
+
+if (ele == null) {
+nodes = document.getElementsByName(orig);
+if (nodes.length >= 1) {
+ele = nodes.item(0);
+}
+}
+if (ele == null) {
+DWRUtil.debug("setValue() can't find an element with id/name: " + orig + ".");
+return;
+}
+
+if (DWRUtil._isHTMLElement(ele, "select")) {
+if (ele.type == "select-multiple" && DWRUtil._isArray(val)) {
+DWRUtil._selectListItems(ele, val);
+}
+else {
+DWRUtil._selectListItem(ele, val);
+}
+return;
+}
+
+if (DWRUtil._isHTMLElement(ele, "input")) {
+if (ele.type == "radio") {
+
+if (nodes == null) nodes = document.getElementsByName(orig);
+if (nodes != null && nodes.length > 1) {
+for (i = 0; i < nodes.length; i++) {
+node = nodes.item(i);
+if (node.type == "radio") {
+node.checked = (node.value == val);
+}
+}
+}
+else {
+ele.checked = (val == true);
+}
+}
+else if (ele.type == "checkbox") {
+ele.checked = val;
+}
+else {
+ele.value = val;
+}
+return;
+}
+
+if (DWRUtil._isHTMLElement(ele, "textarea")) {
+ele.value = val;
+return;
+}
+
+
+
+if (val.nodeType) {
+if (val.nodeType == 9  ) {
+val = val.documentElement;
+}
+
+val = DWRUtil._importNode(ele.ownerDocument, val, true);
+ele.appendChild(val);
+return;
+}
+
+
+ele.innerHTML = val;
+};
+
+
+
+
+
+
+DWRUtil._selectListItems = function(ele, val) {
+
+
+var found  = false;
+var i;
+var j;
+for (i = 0; i < ele.options.length; i++) {
+ele.options[i].selected = false;
+for (j = 0; j < val.length; j++) {
+if (ele.options[i].value == val[j]) {
+ele.options[i].selected = true;
+}
+}
+}
+
+if (found) return;
+
+for (i = 0; i < ele.options.length; i++) {
+for (j = 0; j < val.length; j++) {
+if (ele.options[i].text == val[j]) {
+ele.options[i].selected = true;
+}
+}
+}
+};
+
+
+
+
+
+
+DWRUtil._selectListItem = function(ele, val) {
+
+
+var found  = false;
+var i;
+for (i = 0; i < ele.options.length; i++) {
+if (ele.options[i].value == val) {
+ele.options[i].selected = true;
+found = true;
+}
+else {
+ele.options[i].selected = false;
+}
+}
+
+
+if (found) return;
+
+for (i = 0; i < ele.options.length; i++) {
+if (ele.options[i].text == val) {
+ele.options[i].selected = true;
+}
+else {
+ele.options[i].selected = false;
+}
+}
+}
+
+
+
+
+
+DWRUtil.getValue = function(ele, options) {
+if (options == null) {
+options = {};
+}
+var orig = ele;
+ele = $(ele);
+
+
+var nodes = document.getElementsByName(orig);
+if (ele == null && nodes.length >= 1) {
+ele = nodes.item(0);
+}
+if (ele == null) {
+DWRUtil.debug("getValue() can't find an element with id/name: " + orig + ".");
+return "";
+}
+
+if (DWRUtil._isHTMLElement(ele, "select")) {
+
+
+var sel = ele.selectedIndex;
+if (sel != -1) {
+var reply = ele.options[sel].value;
+if (reply == null || reply == "") {
+reply = ele.options[sel].text;
+}
+
+return reply;
+}
+else {
+return "";
+}
+}
+
+if (DWRUtil._isHTMLElement(ele, "input")) {
+if (ele.type == "radio") {
+var node;
+for (i = 0; i < nodes.length; i++) {
+node = nodes.item(i);
+if (node.type == "radio") {
+if (node.checked) {
+if (nodes.length > 1) return node.value;
+else return true;
+}
+}
+}
+}
+switch (ele.type) {
+case "checkbox":
+case "check-box":
+case "radio":
+return ele.checked;
+default:
+return ele.value;
+}
+}
+
+if (DWRUtil._isHTMLElement(ele, "textarea")) {
+return ele.value;
+}
+
+if (options.textContent) {
+if (ele.textContent) return ele.textContent;
+else if (ele.innerText) return ele.innerText;
+}
+return ele.innerHTML;
+};
+
+
+
+
+
+DWRUtil.getText = function(ele) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("getText() can't find an element with id: " + orig + ".");
+return "";
+}
+
+if (!DWRUtil._isHTMLElement(ele, "select")) {
+DWRUtil.debug("getText() can only be used with select elements. Attempt to use: " + DWRUtil._detailedTypeOf(ele) + " from  id: " + orig + ".");
+return "";
+}
+
+
+
+var sel = ele.selectedIndex;
+if (sel != -1) {
+return ele.options[sel].text;
+}
+else {
+return "";
+}
+};
+
+
+
+
+
+DWRUtil.setValues = function(map) {
+for (var property in map) {
+
+if ($(property) != null || document.getElementsByName(property).length >= 1) {
+DWRUtil.setValue(property, map[property]);
+}
+}
+};
+
+
+
+
+
+
+DWRUtil.getValues = function(data) {
+var ele;
+if (typeof data == "string") ele = $(data);
+if (DWRUtil._isHTMLElement(data)) ele = data;
+if (ele != null) {
+if (ele.elements == null) {
+alert("getValues() requires an object or reference to a form element.");
+return null;
+}
+var reply = {};
+var value;
+for (var i = 0; i < ele.elements.length; i++) {
+if (ele[i].id != null) value = ele[i].id;
+else if (ele[i].value != null) value = ele[i].value;
+else value = "element" + i;
+reply[value] = DWRUtil.getValue(ele[i]);
+}
+return reply;
+}
+else {
+for (var property in data) {
+
+if ($(property) != null || document.getElementsByName(property).length >= 1) {
+data[property] = DWRUtil.getValue(property);
+}
+}
+return data;
+}
+};
+
+
+
+
+
+DWRUtil.addOptions = function(ele, data) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("addOptions() can't find an element with id: " + orig + ".");
+return;
+}
+var useOptions = DWRUtil._isHTMLElement(ele, "select");
+var useLi = DWRUtil._isHTMLElement(ele, ["ul", "ol"]);
+if (!useOptions && !useLi) {
+DWRUtil.debug("addOptions() can only be used with select/ul/ol elements. Attempt to use: " + DWRUtil._detailedTypeOf(ele));
+return;
+}
+if (data == null) return;
+
+var text;
+var value;
+var opt;
+var li;
+if (DWRUtil._isArray(data)) {
+
+for (var i = 0; i < data.length; i++) {
+if (useOptions) {
+if (arguments[2] != null) {
+if (arguments[3] != null) {
+text = DWRUtil._getValueFrom(data[i], arguments[3]);
+value = DWRUtil._getValueFrom(data[i], arguments[2]);
+}
+else {
+value = DWRUtil._getValueFrom(data[i], arguments[2]);
+text = value;
+}
+}
+else
+{
+text = DWRUtil._getValueFrom(data[i], arguments[3]);
+value = text;
+}
+if (text || value) {
+opt = new Option(text, value);
+ele.options[ele.options.length] = opt;
+}
+}
+else {
+li = document.createElement("li");
+value = DWRUtil._getValueFrom(data[i], arguments[2]);
+if (value != null) {
+li.innerHTML = value;
+ele.appendChild(li);
+}
+}
+}
+}
+else if (arguments[3] != null) {
+for (var prop in data) {
+if (!useOptions) {
+alert("DWRUtil.addOptions can only create select lists from objects.");
+return;
+}
+value = DWRUtil._getValueFrom(data[prop], arguments[2]);
+text = DWRUtil._getValueFrom(data[prop], arguments[3]);
+if (text || value) {
+opt = new Option(text, value);
+ele.options[ele.options.length] = opt;
+}
+}
+}
+else {
+for (var prop in data) {
+if (!useOptions) {
+DWRUtil.debug("DWRUtil.addOptions can only create select lists from objects.");
+return;
+}
+if (typeof data[prop] == "function") {
+
+text = null;
+value = null;
+}
+else if (arguments[2]) {
+text = prop;
+value = data[prop];
+}
+else {
+text = data[prop];
+value = prop;
+}
+if (text || value) {
+opt = new Option(text, value);
+ele.options[ele.options.length] = opt;
+}
+}
+}
+};
+
+
+
+
+DWRUtil._getValueFrom = function(data, method) {
+if (method == null) return data;
+else if (typeof method == 'function') return method(data);
+else return data[method];
+}
+
+
+
+
+
+DWRUtil.removeAllOptions = function(ele) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("removeAllOptions() can't find an element with id: " + orig + ".");
+return;
+}
+var useOptions = DWRUtil._isHTMLElement(ele, "select");
+var useLi = DWRUtil._isHTMLElement(ele, ["ul", "ol"]);
+if (!useOptions && !useLi) {
+DWRUtil.debug("removeAllOptions() can only be used with select, ol and ul elements. Attempt to use: " + DWRUtil._detailedTypeOf(ele));
+return;
+}
+if (useOptions) {
+ele.options.length = 0;
+}
+else {
+while (ele.childNodes.length > 0) {
+ele.removeChild(ele.firstChild);
+}
+}
+};
+
+
+
+
+
+DWRUtil.addRows = function(ele, data, cellFuncs, options) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("addRows() can't find an element with id: " + orig + ".");
+return;
+}
+if (!DWRUtil._isHTMLElement(ele, ["table", "tbody", "thead", "tfoot"])) {
+DWRUtil.debug("addRows() can only be used with table, tbody, thead and tfoot elements. Attempt to use: " + DWRUtil._detailedTypeOf(ele));
+return;
+}
+if (!options) options = {};
+if (!options.rowCreator) options.rowCreator = DWRUtil._defaultRowCreator;
+if (!options.cellCreator) options.cellCreator = DWRUtil._defaultCellCreator;
+var tr, rowNum;
+if (DWRUtil._isArray(data)) {
+for (rowNum = 0; rowNum < data.length; rowNum++) {
+options.rowData = data[rowNum];
+options.rowIndex = rowNum;
+options.rowNum = rowNum;
+options.data = null;
+options.cellNum = -1;
+tr = DWRUtil._addRowInner(cellFuncs, options);
+if (tr != null) ele.appendChild(tr);
+}
+}
+else if (typeof data == "object") {
+rowNum = 0;
+for (var rowIndex in data) {
+options.rowData = data[rowIndex];
+options.rowIndex = rowIndex;
+options.rowNum = rowNum;
+options.data = null;
+options.cellNum = -1;
+tr = DWRUtil._addRowInner(cellFuncs, options);
+if (tr != null) ele.appendChild(tr);
+rowNum++;
+}
+}
+};
+
+
+
+
+DWRUtil._addRowInner = function(cellFuncs, options) {
+var tr = options.rowCreator(options);
+if (tr == null) return null;
+for (var cellNum = 0; cellNum < cellFuncs.length; cellNum++) {
+var func = cellFuncs[cellNum];
+var reply = func(options.rowData, options);
+options.data = reply;
+options.cellNum = cellNum;
+var td = options.cellCreator(options);
+if (td != null) {
+if (reply != null) {
+if (DWRUtil._isHTMLElement(reply)) td.appendChild(reply);
+else td.innerHTML = reply;
+}
+tr.appendChild(td);
+}
+}
+return tr;
+};
+
+
+
+
+DWRUtil._defaultRowCreator = function(options) {
+return document.createElement("tr");
+};
+
+
+
+
+DWRUtil._defaultCellCreator = function(options) {
+return document.createElement("td");
+};
+
+
+
+
+
+DWRUtil.removeAllRows = function(ele) {
+var orig = ele;
+ele = $(ele);
+if (ele == null) {
+DWRUtil.debug("removeAllRows() can't find an element with id: " + orig + ".");
+return;
+}
+if (!DWRUtil._isHTMLElement(ele, ["table", "tbody", "thead", "tfoot"])) {
+DWRUtil.debug("removeAllRows() can only be used with table, tbody, thead and tfoot elements. Attempt to use: " + DWRUtil._detailedTypeOf(ele));
+return;
+}
+while (ele.childNodes.length > 0) {
+ele.removeChild(ele.firstChild);
+}
+};
+
+
+
+
+
+
+
+DWRUtil._isHTMLElement = function(ele, nodeName) {
+if (ele == null || typeof ele != "object" || ele.nodeName == null) {
+return false;
+}
+
+if (nodeName != null) {
+var test = ele.nodeName.toLowerCase();
+
+if (typeof nodeName == "string") {
+return test == nodeName.toLowerCase();
+}
+
+if (DWRUtil._isArray(nodeName)) {
+var match = false;
+for (var i = 0; i < nodeName.length && !match; i++) {
+if (test == nodeName[i].toLowerCase()) {
+match =  true;
+}
+}
+return match;
+}
+
+DWRUtil.debug("DWRUtil._isHTMLElement was passed test node name that is neither a string or array of strings");
+return false;
+}
+
+return true;
+};
+
+
+
+
+DWRUtil._detailedTypeOf = function(x) {
+var reply = typeof x;
+if (reply == "object") {
+reply = Object.prototype.toString.apply(x);
+reply = reply.substring(8, reply.length-1);
+}
+return reply;
+};
+
+
+
+
+DWRUtil._isArray = function(data) {
+return (data && data.join) ? true : false;
+};
+
+
+
+
+DWRUtil._isDate = function(data) {
+return (data && data.toUTCString) ? true : false;
+};
+
+
+
+
+DWRUtil._importNode = function(doc, importedNode, deep) {
+var newNode;
+
+if (importedNode.nodeType == 1  ) {
+newNode = doc.createElement(importedNode.nodeName);
+
+for (var i = 0; i < importedNode.attributes.length; i++) {
+var attr = importedNode.attributes[i];
+if (attr.nodeValue != null && attr.nodeValue != '') {
+newNode.setAttribute(attr.name, attr.nodeValue);
+}
+}
+
+if (typeof importedNode.style != "undefined") {
+newNode.style.cssText = importedNode.style.cssText;
+}
+}
+else if (importedNode.nodeType == 3  ) {
+newNode = doc.createTextNode(importedNode.nodeValue);
+}
+
+if (deep && importedNode.hasChildNodes()) {
+for (i = 0; i < importedNode.childNodes.length; i++) {
+newNode.appendChild(DWRUtil._importNode(doc, importedNode.childNodes[i], true));
+}
+}
+
+return newNode;
+}
+
+
+
+
+DWRUtil.debug = function(message) {
+alert(message);
+}
+
+/*  Prototype JavaScript framework, version 1.4.0_pre11
+ *  (c) 2005 Sam Stephenson <sam@conio.net>
+ *
+ *  THIS FILE IS AUTOMATICALLY GENERATED. When sending patches, please diff
+ *  against the source tree, available from the Prototype darcs repository.
+ *
+ *  Prototype is freely distributable under the terms of an MIT-style license.
+ *
+ *  For details, see the Prototype web site: http://prototype.conio.net/
+ *
+/*--------------------------------------------------------------------------*/
+
+var Prototype = {
+  Version: '1.4.0_pre11',
+
+  emptyFunction: function() {},
+  K: function(x) {return x}
+}
+
+var Class = {
+  create: function() {
+    return function() { 
+      this.initialize.apply(this, arguments);
+    }
+  }
+}
+
+var Abstract = new Object();
+
+Object.extend = function(destination, source) {
+  for (property in source) {
+    destination[property] = source[property];
+  }
+  return destination;
+}
+
+Object.inspect = function(object) {
+  try {
+    if (object == undefined) return 'undefined';
+    if (object == null) return 'null';
+    return object.inspect ? object.inspect() : object.toString();
+  } catch (e) {
+    if (e instanceof RangeError) return '...';
+    throw e;
+  }
+}
+
+Function.prototype.bind = function(object) {
+  var __method = this;
+  return function() {
+    return __method.apply(object, arguments);
+  }
+}
+
+Function.prototype.bindAsEventListener = function(object) {
+  var __method = this;
+  return function(event) {
+    return __method.call(object, event || window.event);
+  }
+}
+
+Object.extend(Number.prototype, {
+  toColorPart: function() {
+    var digits = this.toString(16);
+    if (this < 16) return '0' + digits;
+    return digits;
+  },
+
+  succ: function() {
+    return this + 1;
+  },
+
+  times: function(iterator) {
+    $R(0, this, true).each(iterator);
+    return this;
+  }
+});
+
+var Try = {
+  these: function() {
+    var returnValue;
+
+    for (var i = 0; i < arguments.length; i++) {
+      var lambda = arguments[i];
+      try {
+        returnValue = lambda();
+        break;
+      } catch (e) {}
+    }
+
+    return returnValue;
+  }
+}
+
+/*--------------------------------------------------------------------------*/
+
+var PeriodicalExecuter = Class.create();
+PeriodicalExecuter.prototype = {
+  initialize: function(callback, frequency) {
+    this.callback = callback;
+    this.frequency = frequency;
+    this.currentlyExecuting = false;
+
+    this.registerCallback();
+  },
+
+  registerCallback: function() {
+    setInterval(this.onTimerEvent.bind(this), this.frequency * 1000);
+  },
+
+  onTimerEvent: function() {
+    if (!this.currentlyExecuting) {
+      try {
+        this.currentlyExecuting = true;
+        this.callback();
+      } finally {
+        this.currentlyExecuting = false;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------------------*/
+
+function $() {
+  var elements = new Array();
+
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+
+    if (arguments.length == 1)
+      return element;
+
+    elements.push(element);
+  }
+
+  return elements;
+}
+
+Object.extend(String.prototype, {
+  stripTags: function() {
+    return this.replace(/<\/?[^>]+>/gi, '');
+  },
+
+  escapeHTML: function() {
+    var div = document.createElement('div');
+    var text = document.createTextNode(this);
+    div.appendChild(text);
+    return div.innerHTML;
+  },
+
+  unescapeHTML: function() {
+    var div = document.createElement('div');
+    div.innerHTML = this.stripTags();
+    return div.childNodes[0] ? div.childNodes[0].nodeValue : '';
+  },
+
+  toQueryParams: function() {
+    var pairs = this.match(/^\??(.*)$/)[1].split('&');
+    return pairs.inject({}, function(params, pairString) {
+      var pair = pairString.split('=');
+      params[pair[0]] = pair[1];
+      return params;
+    });
+  },
+
+  inspect: function() {
+    return "'" + this.replace('\\', '\\\\').replace("'", '\\\'') + "'";
+  }
+});
+
+String.prototype.parseQuery = String.prototype.toQueryParams;
+
+
+var $break    = new Object();
+var $continue = new Object();
+
+var Enumerable = {
+  each: function(iterator) {
+    var index = 0;
+    try {
+      this._each(function(value) {
+        try {
+          iterator(value, index++);
+        } catch (e) {
+          if (e != $continue) throw e;
+        }
+      });
+    } catch (e) {
+      if (e != $break) throw e;
+    }
+  },
+
+  all: function(iterator) {
+    var result = true;
+    this.each(function(value, index) {
+      if (!(result &= (iterator || Prototype.K)(value, index)))
+        throw $break;
+    });
+    return result;
+  },
+
+  any: function(iterator) {
+    var result = true;
+    this.each(function(value, index) {
+      if (result &= (iterator || Prototype.K)(value, index))
+        throw $break;
+    });
+    return result;
+  },
+
+  collect: function(iterator) {
+    var results = [];
+    this.each(function(value, index) {
+      results.push(iterator(value, index));
+    });
+    return results;
+  },
+
+  detect: function (iterator) {
+    var result;
+    this.each(function(value, index) {
+      if (iterator(value, index)) {
+        result = value;
+        throw $break;
+      }
+    });
+    return result;
+  },
+
+  findAll: function(iterator) {
+    var results = [];
+    this.each(function(value, index) {
+      if (iterator(value, index))
+        results.push(value);
+    });
+    return results;
+  },
+
+  grep: function(pattern, iterator) {
+    var results = [];
+    this.each(function(value, index) {
+      var stringValue = value.toString();
+      if (stringValue.match(pattern))
+        results.push((iterator || Prototype.K)(value, index));
+    })
+    return results;
+  },
+
+  include: function(object) {
+    var found = false;
+    this.each(function(value) {
+      if (value == object) {
+        found = true;
+        throw $break;
+      }
+    });
+    return found;
+  },
+
+  inject: function(memo, iterator) {
+    this.each(function(value, index) {
+      memo = iterator(memo, value, index);
+    });
+    return memo;
+  },
+
+  invoke: function(method) {
+    var args = $A(arguments).slice(1);
+    return this.collect(function(value) {
+      return value[method].apply(value, args);
+    });
+  },
+
+  max: function(iterator) {
+    var result;
+    this.each(function(value, index) {
+      value = (iterator || Prototype.K)(value, index);
+      if (value >= (result || value))
+        result = value;
+    });
+    return result;
+  },
+
+  min: function(iterator) {
+    var result;
+    this.each(function(value, index) {
+      value = (iterator || Prototype.K)(value, index);
+      if (value <= (result || value))
+        result = value;
+    });
+    return result;
+  },
+
+  partition: function(iterator) {
+    var trues = [], falses = [];
+    this.each(function(value, index) {
+      ((iterator || Prototype.K)(value, index) ?
+        trues : falses).push(value);
+    });
+    return [trues, falses];
+  },
+
+  pluck: function(property) {
+    var results = [];
+    this.each(function(value, index) {
+      results.push(value[property]);
+    });
+    return results;
+  },
+
+  reject: function(iterator) {
+    var results = [];
+    this.each(function(value, index) {
+      if (!iterator(value, index))
+        results.push(value);
+    });
+    return results;
+  },
+
+  sortBy: function(iterator) {
+    return this.collect(function(value, index) {
+      return {value: value, criteria: iterator(value, index)};
+    }).sort(function(left, right) {
+      var a = left.criteria, b = right.criteria;
+      return a < b ? -1 : a > b ? 1 : 0;
+    }).pluck('value');
+  },
+
+  toArray: function() {
+    return this.collect(Prototype.K);
+  },
+
+  zip: function() {
+    var iterator = Prototype.K, args = $A(arguments);
+    if (typeof args.last() == 'function')
+      iterator = args.pop();
+
+    var collections = [this].concat(args).map($A);
+    return this.map(function(value, index) {
+      iterator(value = collections.pluck(index));
+      return value;
+    });
+  },
+
+  inspect: function() {
+    return '#<Enumerable:' + this.toArray().inspect() + '>';
+  }
+}
+
+Object.extend(Enumerable, {
+  map:     Enumerable.collect,
+  find:    Enumerable.detect,
+  select:  Enumerable.findAll,
+  member:  Enumerable.include,
+  entries: Enumerable.toArray
+});
+
+var $A = Array.from = function(iterable) {
+  if (iterable.toArray) {
+    return iterable.toArray();
+  } else {
+    var results = [];
+    for (var i = 0; i < iterable.length; i++)
+      results.push(iterable[i]);
+    return results;
+  }
+}
+
+Object.extend(Array.prototype, Enumerable);
+
+Object.extend(Array.prototype, {
+  _each: function(iterator) {
+    for (var i = 0; i < this.length; i++)
+      iterator(this[i]);
+  },
+
+  first: function() {
+    return this[0];
+  },
+
+  last: function() {
+    return this[this.length - 1];
+  },
+
+  compact: function() {
+    return this.select(function(value) {
+      return value != undefined || value != null;
+    });
+  },
+
+  flatten: function() {
+    return this.inject([], function(array, value) {
+      return array.concat(value.constructor == Array ?
+        value.flatten() : [value]);
+    });
+  },
+
+  without: function() {
+    var values = $A(arguments);
+    return this.select(function(value) {
+      return !values.include(value);
+    });
+  },
+
+  inspect: function() {
+    return '[' + this.map(Object.inspect).join(', ') + ']';
+  }
+});
+
+var Hash = {
+  _each: function(iterator) {
+    for (key in this) {
+      var value = this[key];
+      if (typeof value == 'function') continue;
+
+      var pair = [key, value];
+      pair.key = key;
+      pair.value = value;
+      iterator(pair);
+    }
+  },
+
+  keys: function() {
+    return this.pluck('key');
+  },
+
+  values: function() {
+    return this.pluck('value');
+  },
+
+  merge: function(hash) {
+    return $H(hash).inject($H(this), function(mergedHash, pair) {
+      mergedHash[pair.key] = pair.value;
+      return mergedHash;
+    });
+  },
+
+  toQueryString: function() {
+    return this.map(function(pair) {
+      return pair.map(encodeURIComponent).join('=');
+    }).join('&');
+  },
+
+  inspect: function() {
+    return '#<Hash:{' + this.map(function(pair) {
+      return pair.map(Object.inspect).join(': ');
+    }).join(', ') + '}>';
+  }
+}
+
+function $H(object) {
+  var hash = Object.extend({}, object || {});
+  Object.extend(hash, Enumerable);
+  Object.extend(hash, Hash);
+  return hash;
+}
+
+var Range = Class.create();
+Object.extend(Range.prototype, Enumerable);
+Object.extend(Range.prototype, {
+  initialize: function(start, end, exclusive) {
+    this.start = start;
+    this.end = end;
+    this.exclusive = exclusive;
+  },
+
+  _each: function(iterator) {
+    var value = this.start;
+    do {
+      iterator(value);
+      value = value.succ();
+    } while (this.include(value));
+  },
+
+  include: function(value) {
+    if (value < this.start)
+      return false;
+    if (this.exclusive)
+      return value < this.end;
+    return value <= this.end;
+  }
+});
+
+var $R = function(start, end, exclusive) {
+  return new Range(start, end, exclusive);
+}
+
+var Ajax = {
+  getTransport: function() {
+    return Try.these(
+      function() {return new ActiveXObject('Msxml2.XMLHTTP')},
+      function() {return new ActiveXObject('Microsoft.XMLHTTP')},
+      function() {return new XMLHttpRequest()}
+    ) || false;
+  },
+
+  activeRequestCount: 0
+}
+
+Ajax.Responders = {
+  responders: [],
+
+  _each: function(iterator) {
+    this.responders._each(iterator);
+  },
+
+  register: function(responderToAdd) {
+    if (!this.include(responderToAdd))
+      this.responders.push(responderToAdd);
+  },
+
+  unregister: function(responderToRemove) {
+    this.responders = this.responders.without(responderToRemove);
+  },
+
+  dispatch: function(callback, request, transport, json) {
+    this.each(function(responder) {
+      if (responder[callback] && typeof responder[callback] == 'function') {
+        try {
+          responder[callback].apply(responder, [request, transport, json]);
+        } catch (e) {
+        }
+      }
+    });
+  }
+};
+
+Object.extend(Ajax.Responders, Enumerable);
+
+Ajax.Responders.register({
+  onCreate: function() {
+    Ajax.activeRequestCount++;
+  },
+
+  onComplete: function() {
+    Ajax.activeRequestCount--;
+  }
+});
+
+Ajax.Base = function() {};
+Ajax.Base.prototype = {
+  setOptions: function(options) {
+    this.options = {
+      method:       'post',
+      asynchronous: true,
+      parameters:   ''
+    }
+    Object.extend(this.options, options || {});
+  },
+
+  responseIsSuccess: function() {
+    return this.transport.status == undefined
+        || this.transport.status == 0
+        || (this.transport.status >= 200 && this.transport.status < 300);
+  },
+
+  responseIsFailure: function() {
+    return !this.responseIsSuccess();
+  }
+}
+
+Ajax.Request = Class.create();
+Ajax.Request.Events =
+  ['Uninitialized', 'Loading', 'Loaded', 'Interactive', 'Complete'];
+
+Ajax.Request.prototype = Object.extend(new Ajax.Base(), {
+  initialize: function(url, options) {
+    this.transport = Ajax.getTransport();
+    this.setOptions(options);
+    this.request(url);
+  },
+
+  request: function(url) {
+    var parameters = this.options.parameters || '';
+    if (parameters.length > 0) parameters += '&_=';
+
+    try {
+      this.url = url;
+      if (this.options.method == 'get')
+        this.url += '?' + parameters;
+
+      Ajax.Responders.dispatch('onCreate', this, this.transport);
+
+      this.transport.open(this.options.method, this.url,
+        this.options.asynchronous);
+
+      if (this.options.asynchronous) {
+        this.transport.onreadystatechange = this.onStateChange.bind(this);
+        setTimeout((function() {this.respondToReadyState(1)}).bind(this), 10);
+      }
+
+      this.setRequestHeaders();
+
+      var body = this.options.postBody ? this.options.postBody : parameters;
+      this.transport.send(this.options.method == 'post' ? body : null);
+
+    } catch (e) {
+    }
+  },
+
+  setRequestHeaders: function() {
+    var requestHeaders =
+      ['X-Requested-With', 'XMLHttpRequest',
+       'X-Prototype-Version', Prototype.Version];
+
+    if (this.options.method == 'post') {
+      requestHeaders.push('Content-type',
+        'application/x-www-form-urlencoded');
+
+      /* Force "Connection: close" for Mozilla browsers to work around
+       * a bug where XMLHttpReqeuest sends an incorrect Content-length
+       * header. See Mozilla Bugzilla #246651.
+       */
+      if (this.transport.overrideMimeType)
+        requestHeaders.push('Connection', 'close');
+    }
+
+    if (this.options.requestHeaders)
+      requestHeaders.push.apply(requestHeaders, this.options.requestHeaders);
+
+    for (var i = 0; i < requestHeaders.length; i += 2)
+      this.transport.setRequestHeader(requestHeaders[i], requestHeaders[i+1]);
+  },
+
+  onStateChange: function() {
+    var readyState = this.transport.readyState;
+    if (readyState != 1)
+      this.respondToReadyState(this.transport.readyState);
+  },
+
+  evalJSON: function() {
+    try {
+      var json = this.transport.getResponseHeader('X-JSON'), object;
+      object = eval(json);
+      return object;
+    } catch (e) {
+    }
+  },
+
+  respondToReadyState: function(readyState) {
+    var event = Ajax.Request.Events[readyState];
+    var transport = this.transport, json = this.evalJSON();
+
+    if (event == 'Complete')
+      (this.options['on' + this.transport.status]
+       || this.options['on' + (this.responseIsSuccess() ? 'Success' : 'Failure')]
+       || Prototype.emptyFunction)(transport, json);
+
+    (this.options['on' + event] || Prototype.emptyFunction)(transport, json);
+    Ajax.Responders.dispatch('on' + event, this, transport, json);
+
+    /* Avoid memory leak in MSIE: clean up the oncomplete event handler */
+    if (event == 'Complete')
+      this.transport.onreadystatechange = Prototype.emptyFunction;
+  }
+});
+
+Ajax.Updater = Class.create();
+Ajax.Updater.ScriptFragment = '(?:<script.*?>)((\n|.)*?)(?:<\/script>)';
+
+Object.extend(Object.extend(Ajax.Updater.prototype, Ajax.Request.prototype), {
+  initialize: function(container, url, options) {
+    this.containers = {
+      success: container.success ? $(container.success) : $(container),
+      failure: container.failure ? $(container.failure) :
+        (container.success ? null : $(container))
+    }
+
+    this.transport = Ajax.getTransport();
+    this.setOptions(options);
+
+    var onComplete = this.options.onComplete || Prototype.emptyFunction;
+    this.options.onComplete = (function(transport, object) {
+      this.updateContent();
+      onComplete(transport, object);
+    }).bind(this);
+
+    this.request(url);
+  },
+
+  updateContent: function() {
+    var receiver = this.responseIsSuccess() ?
+      this.containers.success : this.containers.failure;
+
+    var match    = new RegExp(Ajax.Updater.ScriptFragment, 'img');
+    var response = this.transport.responseText.replace(match, '');
+    var scripts  = this.transport.responseText.match(match);
+
+    if (receiver) {
+      if (this.options.insertion) {
+        new this.options.insertion(receiver, response);
+      } else {
+        receiver.innerHTML = response;
+      }
+    }
+
+    if (this.responseIsSuccess()) {
+      if (this.onComplete)
+        setTimeout(this.onComplete.bind(this), 10);
+    }
+
+    if (this.options.evalScripts && scripts) {
+      match = new RegExp(Ajax.Updater.ScriptFragment, 'im');
+      setTimeout((function() {
+        for (var i = 0; i < scripts.length; i++)
+          eval(scripts[i].match(match)[1]);
+      }).bind(this), 10);
+    }
+  }
+});
+
+Ajax.PeriodicalUpdater = Class.create();
+Ajax.PeriodicalUpdater.prototype = Object.extend(new Ajax.Base(), {
+  initialize: function(container, url, options) {
+    this.setOptions(options);
+    this.onComplete = this.options.onComplete;
+
+    this.frequency = (this.options.frequency || 2);
+    this.decay = 1;
+
+    this.updater = {};
+    this.container = container;
+    this.url = url;
+
+    this.start();
+  },
+
+  start: function() {
+    this.options.onComplete = this.updateComplete.bind(this);
+    this.onTimerEvent();
+  },
+
+  stop: function() {
+    this.updater.onComplete = undefined;
+    clearTimeout(this.timer);
+    (this.onComplete || Ajax.emptyFunction).apply(this, arguments);
+  },
+
+  updateComplete: function(request) {
+    if (this.options.decay) {
+      this.decay = (request.responseText == this.lastText ?
+        this.decay * this.options.decay : 1);
+
+      this.lastText = request.responseText;
+    }
+    this.timer = setTimeout(this.onTimerEvent.bind(this),
+      this.decay * this.frequency * 1000);
+  },
+
+  onTimerEvent: function() {
+    this.updater = new Ajax.Updater(this.container, this.url, this.options);
+  }
+});
+
+document.getElementsByClassName = function(className, parentElement) {
+  var children = (document.body || $(parentElement)).getElementsByTagName('*');
+  return $A(children).inject([], function(elements, child) {
+    if (Element.hasClassName(child, className))
+      elements.push(child);
+    return elements;
+  });
+}
+
+/*--------------------------------------------------------------------------*/
+
+if (!window.Element) {
+  var Element = new Object();
+}
+
+Object.extend(Element, {
+  visible: function(element) {
+    return $(element).style.display != 'none';
+  },
+
+  toggle: function() {
+    for (var i = 0; i < arguments.length; i++) {
+      var element = $(arguments[i]);
+      Element[Element.visible(element) ? 'show' : 'hide'](element);
+    }
+  },
+
+  hide: function() {
+    for (var i = 0; i < arguments.length; i++) {
+      var element = $(arguments[i]);
+      element.style.display = 'none';
+    }
+  },
+
+  show: function() {
+    for (var i = 0; i < arguments.length; i++) {
+      var element = $(arguments[i]);
+      element.style.display = '';
+    }
+  },
+
+  remove: function(element) {
+    element = $(element);
+    element.parentNode.removeChild(element);
+  },
+
+  getHeight: function(element) {
+    element = $(element);
+    return element.offsetHeight;
+  },
+
+  classNames: function(element) {
+    return new Element.ClassNames(element);
+  },
+
+  hasClassName: function(element, className) {
+    if (!(element = $(element))) return;
+    return Element.classNames(element).include(className);
+  },
+
+  addClassName: function(element, className) {
+    if (!(element = $(element))) return;
+    return Element.classNames(element).add(className);
+  },
+
+  removeClassName: function(element, className) {
+    if (!(element = $(element))) return;
+    return Element.classNames(element).remove(className);
+  },
+
+  // removes whitespace-only text node children
+  cleanWhitespace: function(element) {
+    element = $(element);
+    for (var i = 0; i < element.childNodes.length; i++) {
+      var node = element.childNodes[i];
+      if (node.nodeType == 3 && !/\S/.test(node.nodeValue))
+        Element.remove(node);
+    }
+  },
+
+  empty: function(element) {
+    return $(element).innerHTML.match(/^\s*$/);
+  },
+
+  scrollTo: function(element) {
+    element = $(element);
+    var x = element.x ? element.x : element.offsetLeft,
+        y = element.y ? element.y : element.offsetTop;
+    window.scrollTo(x, y);
+  }
+});
+
+var Toggle = new Object();
+Toggle.display = Element.toggle;
+
+/*--------------------------------------------------------------------------*/
+
+Abstract.Insertion = function(adjacency) {
+  this.adjacency = adjacency;
+}
+
+Abstract.Insertion.prototype = {
+  initialize: function(element, content) {
+    this.element = $(element);
+    this.content = content;
+
+    if (this.adjacency && this.element.insertAdjacentHTML) {
+      try {
+        this.element.insertAdjacentHTML(this.adjacency, this.content);
+      } catch (e) {
+        if (this.element.tagName.toLowerCase() == 'tbody') {
+          this.fragment = this.contentFromAnonymousTable();
+          this.insertContent();
+        } else {
+          throw e;
+        }
+      }
+    } else {
+      this.range = this.element.ownerDocument.createRange();
+      if (this.initializeRange) this.initializeRange();
+      this.fragment = this.range.createContextualFragment(this.content);
+      this.insertContent();
+    }
+  },
+
+  contentFromAnonymousTable: function() {
+    var div = document.createElement('div');
+    div.innerHTML = '<table><tbody>' + this.content + '</tbody></table>';
+    return div.childNodes[0].childNodes[0].childNodes[0];
+  }
+}
+
+var Insertion = new Object();
+
+Insertion.Before = Class.create();
+Insertion.Before.prototype = Object.extend(new Abstract.Insertion('beforeBegin'), {
+  initializeRange: function() {
+    this.range.setStartBefore(this.element);
+  },
+
+  insertContent: function() {
+    this.element.parentNode.insertBefore(this.fragment, this.element);
+  }
+});
+
+Insertion.Top = Class.create();
+Insertion.Top.prototype = Object.extend(new Abstract.Insertion('afterBegin'), {
+  initializeRange: function() {
+    this.range.selectNodeContents(this.element);
+    this.range.collapse(true);
+  },
+
+  insertContent: function() {
+    this.element.insertBefore(this.fragment, this.element.firstChild);
+  }
+});
+
+Insertion.Bottom = Class.create();
+Insertion.Bottom.prototype = Object.extend(new Abstract.Insertion('beforeEnd'), {
+  initializeRange: function() {
+    this.range.selectNodeContents(this.element);
+    this.range.collapse(this.element);
+  },
+
+  insertContent: function() {
+    this.element.appendChild(this.fragment);
+  }
+});
+
+Insertion.After = Class.create();
+Insertion.After.prototype = Object.extend(new Abstract.Insertion('afterEnd'), {
+  initializeRange: function() {
+    this.range.setStartAfter(this.element);
+  },
+
+  insertContent: function() {
+    this.element.parentNode.insertBefore(this.fragment,
+      this.element.nextSibling);
+  }
+});
+
+/*--------------------------------------------------------------------------*/
+
+Element.ClassNames = Class.create();
+Element.ClassNames.prototype = {
+  initialize: function(element) {
+    this.element = $(element);
+  },
+
+  _each: function(iterator) {
+    this.element.className.split(/\s+/).select(function(name) {
+      return name.length > 0;
+    })._each(iterator);
+  },
+
+  set: function(className) {
+    this.element.className = className;
+  },
+
+  add: function(classNameToAdd) {
+    if (this.include(classNameToAdd)) return;
+    this.set(this.toArray().concat(classNameToAdd).join(' '));
+  },
+
+  remove: function(classNameToRemove) {
+    if (!this.include(classNameToRemove)) return;
+    this.set(this.select(function(className) {
+      return className != classNameToRemove;
+    }));
+  },
+
+  toString: function() {
+    return this.toArray().join(' ');
+  }
+}
+
+Object.extend(Element.ClassNames.prototype, Enumerable);
+
+var Field = {
+  clear: function() {
+    for (var i = 0; i < arguments.length; i++)
+      $(arguments[i]).value = '';
+  },
+
+  focus: function(element) {
+    $(element).focus();
+  },
+
+  present: function() {
+    for (var i = 0; i < arguments.length; i++)
+      if ($(arguments[i]).value == '') return false;
+    return true;
+  },
+
+  select: function(element) {
+    $(element).select();
+  },
+
+  activate: function(element) {
+    $(element).focus();
+    $(element).select();
+  }
+}
+
+/*--------------------------------------------------------------------------*/
+
+var Form = {
+  serialize: function(form) {
+    var elements = Form.getElements($(form));
+    var queryComponents = new Array();
+
+    for (var i = 0; i < elements.length; i++) {
+      var queryComponent = Form.Element.serialize(elements[i]);
+      if (queryComponent)
+        queryComponents.push(queryComponent);
+    }
+
+    return queryComponents.join('&');
+  },
+
+  getElements: function(form) {
+    var form = $(form);
+    var elements = new Array();
+
+    for (tagName in Form.Element.Serializers) {
+      var tagElements = form.getElementsByTagName(tagName);
+      for (var j = 0; j < tagElements.length; j++)
+        elements.push(tagElements[j]);
+    }
+    return elements;
+  },
+
+  getInputs: function(form, typeName, name) {
+    var form = $(form);
+    var inputs = form.getElementsByTagName('input');
+
+    if (!typeName && !name)
+      return inputs;
+
+    var matchingInputs = new Array();
+    for (var i = 0; i < inputs.length; i++) {
+      var input = inputs[i];
+      if ((typeName && input.type != typeName) ||
+          (name && input.name != name))
+        continue;
+      matchingInputs.push(input);
+    }
+
+    return matchingInputs;
+  },
+
+  disable: function(form) {
+    var elements = Form.getElements(form);
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.blur();
+      element.disabled = 'true';
+    }
+  },
+
+  enable: function(form) {
+    var elements = Form.getElements(form);
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.disabled = '';
+    }
+  },
+
+  focusFirstElement: function(form) {
+    var form = $(form);
+    var elements = Form.getElements(form);
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      if (element.type != 'hidden' && !element.disabled) {
+        Field.activate(element);
+        break;
+      }
+    }
+  },
+
+  reset: function(form) {
+    $(form).reset();
+  }
+}
+
+Form.Element = {
+  serialize: function(element) {
+    var element = $(element);
+    var method = element.tagName.toLowerCase();
+    var parameter = Form.Element.Serializers[method](element);
+
+    if (parameter)
+      return encodeURIComponent(parameter[0]) + '=' +
+        encodeURIComponent(parameter[1]);
+  },
+
+  getValue: function(element) {
+    var element = $(element);
+    var method = element.tagName.toLowerCase();
+    var parameter = Form.Element.Serializers[method](element);
+
+    if (parameter)
+      return parameter[1];
+  }
+}
+
+Form.Element.Serializers = {
+  input: function(element) {
+    switch (element.type.toLowerCase()) {
+      case 'submit':
+      case 'hidden':
+      case 'password':
+      case 'text':
+        return Form.Element.Serializers.textarea(element);
+      case 'checkbox':
+      case 'radio':
+        return Form.Element.Serializers.inputSelector(element);
+    }
+    return false;
+  },
+
+  inputSelector: function(element) {
+    if (element.checked)
+      return [element.name, element.value];
+  },
+
+  textarea: function(element) {
+    return [element.name, element.value];
+  },
+
+  select: function(element) {
+    return Form.Element.Serializers[element.type == 'select-one' ?
+      'selectOne' : 'selectMany'](element);
+  },
+
+  selectOne: function(element) {
+    var value = '', opt, index = element.selectedIndex;
+    if (index >= 0) {
+      opt = element.options[index];
+      value = opt.value;
+      if (!value && !('value' in opt))
+        value = opt.text;
+    }
+    return [element.name, value];
+  },
+
+  selectMany: function(element) {
+    var value = new Array();
+    for (var i = 0; i < element.length; i++) {
+      var opt = element.options[i];
+      if (opt.selected) {
+        var optValue = opt.value;
+        if (!optValue && !('value' in opt))
+          optValue = opt.text;
+        value.push(optValue);
+      }
+    }
+    return [element.name, value];
+  }
+}
+
+/*--------------------------------------------------------------------------*/
+
+var $F = Form.Element.getValue;
+
+/*--------------------------------------------------------------------------*/
+
+Abstract.TimedObserver = function() {}
+Abstract.TimedObserver.prototype = {
+  initialize: function(element, frequency, callback) {
+    this.frequency = frequency;
+    this.element   = $(element);
+    this.callback  = callback;
+
+    this.lastValue = this.getValue();
+    this.registerCallback();
+  },
+
+  registerCallback: function() {
+    setInterval(this.onTimerEvent.bind(this), this.frequency * 1000);
+  },
+
+  onTimerEvent: function() {
+    var value = this.getValue();
+    if (this.lastValue != value) {
+      this.callback(this.element, value);
+      this.lastValue = value;
+    }
+  }
+}
+
+Form.Element.Observer = Class.create();
+Form.Element.Observer.prototype = Object.extend(new Abstract.TimedObserver(), {
+  getValue: function() {
+    return Form.Element.getValue(this.element);
+  }
+});
+
+Form.Observer = Class.create();
+Form.Observer.prototype = Object.extend(new Abstract.TimedObserver(), {
+  getValue: function() {
+    return Form.serialize(this.element);
+  }
+});
+
+/*--------------------------------------------------------------------------*/
+
+Abstract.EventObserver = function() {}
+Abstract.EventObserver.prototype = {
+  initialize: function(element, callback) {
+    this.element  = $(element);
+    this.callback = callback;
+
+    this.lastValue = this.getValue();
+    if (this.element.tagName.toLowerCase() == 'form')
+      this.registerFormCallbacks();
+    else
+      this.registerCallback(this.element);
+  },
+
+  onElementEvent: function() {
+    var value = this.getValue();
+    if (this.lastValue != value) {
+      this.callback(this.element, value);
+      this.lastValue = value;
+    }
+  },
+
+  registerFormCallbacks: function() {
+    var elements = Form.getElements(this.element);
+    for (var i = 0; i < elements.length; i++)
+      this.registerCallback(elements[i]);
+  },
+
+  registerCallback: function(element) {
+    if (element.type) {
+      switch (element.type.toLowerCase()) {
+        case 'checkbox':
+        case 'radio':
+          element.target = this;
+          element.prev_onclick = element.onclick || Prototype.emptyFunction;
+          element.onclick = function() {
+            this.prev_onclick();
+            this.target.onElementEvent();
+          }
+          break;
+        case 'password':
+        case 'text':
+        case 'textarea':
+        case 'select-one':
+        case 'select-multiple':
+          element.target = this;
+          element.prev_onchange = element.onchange || Prototype.emptyFunction;
+          element.onchange = function() {
+            this.prev_onchange();
+            this.target.onElementEvent();
+          }
+          break;
+      }
+    }
+  }
+}
+
+Form.Element.EventObserver = Class.create();
+Form.Element.EventObserver.prototype = Object.extend(new Abstract.EventObserver(), {
+  getValue: function() {
+    return Form.Element.getValue(this.element);
+  }
+});
+
+Form.EventObserver = Class.create();
+Form.EventObserver.prototype = Object.extend(new Abstract.EventObserver(), {
+  getValue: function() {
+    return Form.serialize(this.element);
+  }
+});
+
+
+if (!window.Event) {
+  var Event = new Object();
+}
+
+Object.extend(Event, {
+  KEY_BACKSPACE: 8,
+  KEY_TAB:       9,
+  KEY_RETURN:   13,
+  KEY_ESC:      27,
+  KEY_LEFT:     37,
+  KEY_UP:       38,
+  KEY_RIGHT:    39,
+  KEY_DOWN:     40,
+  KEY_DELETE:   46,
+
+  element: function(event) {
+    return event.target || event.srcElement;
+  },
+
+  isLeftClick: function(event) {
+    return (((event.which) && (event.which == 1)) ||
+            ((event.button) && (event.button == 1)));
+  },
+
+  pointerX: function(event) {
+    return event.pageX || (event.clientX +
+      (document.documentElement.scrollLeft || document.body.scrollLeft));
+  },
+
+  pointerY: function(event) {
+    return event.pageY || (event.clientY +
+      (document.documentElement.scrollTop || document.body.scrollTop));
+  },
+
+  stop: function(event) {
+    if (event.preventDefault) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      event.returnValue = false;
+      event.cancelBubble = true;
+    }
+  },
+
+  // find the first node with the given tagName, starting from the
+  // node the event was triggered on; traverses the DOM upwards
+  findElement: function(event, tagName) {
+    var element = Event.element(event);
+    while (element.parentNode && (!element.tagName ||
+        (element.tagName.toUpperCase() != tagName.toUpperCase())))
+      element = element.parentNode;
+    return element;
+  },
+
+  observers: false,
+
+  _observeAndCache: function(element, name, observer, useCapture) {
+    if (!this.observers) this.observers = [];
+    if (element.addEventListener) {
+      this.observers.push([element, name, observer, useCapture]);
+      element.addEventListener(name, observer, useCapture);
+    } else if (element.attachEvent) {
+      this.observers.push([element, name, observer, useCapture]);
+      element.attachEvent('on' + name, observer);
+    }
+  },
+
+  unloadCache: function() {
+    if (!Event.observers) return;
+    for (var i = 0; i < Event.observers.length; i++) {
+      Event.stopObserving.apply(this, Event.observers[i]);
+      Event.observers[i][0] = null;
+    }
+    Event.observers = false;
+  },
+
+  observe: function(element, name, observer, useCapture) {
+    var element = $(element);
+    useCapture = useCapture || false;
+
+    if (name == 'keypress' &&
+        (navigator.appVersion.match(/Konqueror|Safari|KHTML/)
+        || element.attachEvent))
+      name = 'keydown';
+
+    this._observeAndCache(element, name, observer, useCapture);
+  },
+
+  stopObserving: function(element, name, observer, useCapture) {
+    var element = $(element);
+    useCapture = useCapture || false;
+
+    if (name == 'keypress' &&
+        (navigator.appVersion.match(/Konqueror|Safari|KHTML/)
+        || element.detachEvent))
+      name = 'keydown';
+
+    if (element.removeEventListener) {
+      element.removeEventListener(name, observer, useCapture);
+    } else if (element.detachEvent) {
+      element.detachEvent('on' + name, observer);
+    }
+  }
+});
+
+/* prevent memory leaks in IE */
+Event.observe(window, 'unload', Event.unloadCache, false);
+
+var Position = {
+
+  // set to true if needed, warning: firefox performance problems
+  // NOT neeeded for page scrolling, only if draggable contained in
+  // scrollable elements
+  includeScrollOffsets: false,
+
+  // must be called before calling withinIncludingScrolloffset, every time the
+  // page is scrolled
+  prepare: function() {
+    this.deltaX =  window.pageXOffset
+                || document.documentElement.scrollLeft
+                || document.body.scrollLeft
+                || 0;
+    this.deltaY =  window.pageYOffset
+                || document.documentElement.scrollTop
+                || document.body.scrollTop
+                || 0;
+  },
+
+  realOffset: function(element) {
+    var valueT = 0, valueL = 0;
+    do {
+      valueT += element.scrollTop  || 0;
+      valueL += element.scrollLeft || 0;
+      element = element.parentNode;
+    } while (element);
+    return [valueL, valueT];
+  },
+
+  cumulativeOffset: function(element) {
+    var valueT = 0, valueL = 0;
+    do {
+      valueT += element.offsetTop  || 0;
+      valueL += element.offsetLeft || 0;
+      element = element.offsetParent;
+    } while (element);
+    return [valueL, valueT];
+  },
+
+  // caches x/y coordinate pair to use with overlap
+  within: function(element, x, y) {
+    if (this.includeScrollOffsets)
+      return this.withinIncludingScrolloffsets(element, x, y);
+    this.xcomp = x;
+    this.ycomp = y;
+    this.offset = this.cumulativeOffset(element);
+
+    return (y >= this.offset[1] &&
+            y <  this.offset[1] + element.offsetHeight &&
+            x >= this.offset[0] &&
+            x <  this.offset[0] + element.offsetWidth);
+  },
+
+  withinIncludingScrolloffsets: function(element, x, y) {
+    var offsetcache = this.realOffset(element);
+
+    this.xcomp = x + offsetcache[0] - this.deltaX;
+    this.ycomp = y + offsetcache[1] - this.deltaY;
+    this.offset = this.cumulativeOffset(element);
+
+    return (this.ycomp >= this.offset[1] &&
+            this.ycomp <  this.offset[1] + element.offsetHeight &&
+            this.xcomp >= this.offset[0] &&
+            this.xcomp <  this.offset[0] + element.offsetWidth);
+  },
+
+  // within must be called directly before
+  overlap: function(mode, element) {
+    if (!mode) return 0;
+    if (mode == 'vertical')
+      return ((this.offset[1] + element.offsetHeight) - this.ycomp) /
+        element.offsetHeight;
+    if (mode == 'horizontal')
+      return ((this.offset[0] + element.offsetWidth) - this.xcomp) /
+        element.offsetWidth;
+  },
+
+  clone: function(source, target) {
+    source = $(source);
+    target = $(target);
+    target.style.position = 'absolute';
+    var offsets = this.cumulativeOffset(source);
+    target.style.top    = offsets[1] + 'px';
+    target.style.left   = offsets[0] + 'px';
+    target.style.width  = source.offsetWidth + 'px';
+    target.style.height = source.offsetHeight + 'px';
+  }
+}
+// Copyright (c) 2005 Thomas Fuchs (http://script.aculo.us, http://mir.aculo.us)
+//
+// See scriptaculous.js for full license.
+
+
+Object.debug = function(obj) {
+  var info = [];
+  
+  if(typeof obj in ["string","number"]) {
+    return obj;
+  } else {
+    for(property in obj)
+      if(typeof obj[property]!="function")
+        info.push(property + ' => ' + 
+          (typeof obj[property] == "string" ?
+            '"' + obj[property] + '"' :
+            obj[property]));
+  }
+  
+  return ("'" + obj + "' #" + typeof obj + 
+    ": {" + info.join(", ") + "}");
+}
+
+
+String.prototype.toArray = function() {
+  var results = [];
+  for (var i = 0; i < this.length; i++)
+    results.push(this.charAt(i));
+  return results;
+}
+
+/*--------------------------------------------------------------------------*/
+
+var Builder = {
+  NODEMAP: {
+    AREA: 'map',
+    CAPTION: 'table',
+    COL: 'table',
+    COLGROUP: 'table',
+    LEGEND: 'fieldset',
+    OPTGROUP: 'select',
+    OPTION: 'select',
+    PARAM: 'object',
+    TBODY: 'table',
+    TD: 'table',
+    TFOOT: 'table',
+    TH: 'table',
+    THEAD: 'table',
+    TR: 'table'
+  },
+  // note: For Firefox < 1.5, OPTION and OPTGROUP tags are currently broken,
+  //       due to a Firefox bug
+  node: function(elementName) {
+    elementName = elementName.toUpperCase();
+    
+    // try innerHTML approach
+    var parentTag = this.NODEMAP[elementName] || 'div';
+    var parentElement = document.createElement(parentTag);
+    parentElement.innerHTML = "<" + elementName + "></" + elementName + ">";
+    var element = parentElement.firstChild || null;
+      
+    // see if browser added wrapping tags
+    if(element && (element.tagName != elementName))
+      element = element.getElementsByTagName(elementName)[0];
+    
+    // fallback to createElement approach
+    if(!element) element = document.createElement(elementName);
+    
+    // abort if nothing could be created
+    if(!element) return;
+
+    // attributes (or text)
+    if(arguments[1])
+      if(this._isStringOrNumber(arguments[1]) ||
+        (arguments[1] instanceof Array)) {
+          this._children(element, arguments[1]);
+        } else {
+          var attrs = this._attributes(arguments[1]);
+          if(attrs.length) {
+            parentElement.innerHTML = "<" +elementName + " " +
+              attrs + "></" + elementName + ">";
+            element = parentElement.firstChild || null;
+            // workaround firefox 1.0.X bug
+            if(!element) {
+              element = document.createElement(elementName);
+              for(attr in arguments[1]) 
+                element[attr == 'class' ? 'className' : attr] = arguments[1][attr];
+            }
+            if(element.tagName != elementName)
+              element = parentElement.getElementsByTagName(elementName)[0];
+            }
+        } 
+
+    // text, or array of children
+    if(arguments[2])
+      this._children(element, arguments[2]);
+
+     return element;
+  },
+  _text: function(text) {
+     return document.createTextNode(text);
+  },
+  _attributes: function(attributes) {
+    var attrs = [];
+    for(attribute in attributes)
+      attrs.push((attribute=='className' ? 'class' : attribute) +
+          '="' + attributes[attribute].toString().escapeHTML() + '"');
+    return attrs.join(" ");
+  },
+  _children: function(element, children) {
+    if(typeof children=='object') { // array can hold nodes and text
+      children.flatten().each( function(e) {
+        if(typeof e=='object')
+          element.appendChild(e)
+        else
+          if(Builder._isStringOrNumber(e))
+            element.appendChild(Builder._text(e));
+      });
+    } else
+      if(Builder._isStringOrNumber(children)) 
+         element.appendChild(Builder._text(children));
+  },
+  _isStringOrNumber: function(param) {
+    return(typeof param=='string' || typeof param=='number');
+  }
+}
+
+/* ------------- element ext -------------- */
+
+// adapted from http://dhtmlkitchen.com/learn/js/setstyle/index4.jsp
+// note: Safari return null on elements with display:none; see http://bugzilla.opendarwin.org/show_bug.cgi?id=4125
+// instead of "auto" values returns null so it's easier to use with || constructs
+
+String.prototype.camelize = function() {
+  var oStringList = this.split('-');
+  if(oStringList.length == 1)    
+    return oStringList[0];
+  var ret = this.indexOf("-") == 0 ? 
+    oStringList[0].charAt(0).toUpperCase() + oStringList[0].substring(1) : oStringList[0];
+  for(var i = 1, len = oStringList.length; i < len; i++){
+    var s = oStringList[i];
+    ret += s.charAt(0).toUpperCase() + s.substring(1)
+  }
+  return ret;
+}
+
+Element.getStyle = function(element, style) {
+  element = $(element);
+  var value = element.style[style.camelize()];
+  if(!value)
+    if(document.defaultView && document.defaultView.getComputedStyle) {
+      var css = document.defaultView.getComputedStyle(element, null);
+      value = (css!=null) ? css.getPropertyValue(style) : null;
+    } else if(element.currentStyle) {
+      value = element.currentStyle[style.camelize()];
+    }
+  
+  // If top, left, bottom, or right values have been queried, return "auto" for consistency resaons 
+  // if position is "static", as Opera (and others?) returns the pixel values relative to root element 
+  // (or positioning context?)
+  if (window.opera && (style == "left" || style == "top" || style == "right" || style == "bottom"))
+    if (Element.getStyle(element, "position") == "static") value = "auto";
+    
+  if(value=='auto') value = null;
+  return value;
+}
+
+// converts rgb() and #xxx to #xxxxxx format,
+// returns self (or first argument) if not convertable
+String.prototype.parseColor = function() {
+  color = "#";
+  if(this.slice(0,4) == "rgb(") {
+    var cols = this.slice(4,this.length-1).split(',');
+    var i=0; do { color += parseInt(cols[i]).toColorPart() } while (++i<3);
+  } else {
+    if(this.slice(0,1) == '#') {
+      if(this.length==4) for(var i=1;i<4;i++) color += (this.charAt(i) + this.charAt(i)).toLowerCase();
+      if(this.length==7) color = this.toLowerCase();
+    }
+  }
+  return(color.length==7 ? color : (arguments[0] || this));
+}
+
+Element.makePositioned = function(element) {
+  element = $(element);
+  var pos = Element.getStyle(element, 'position');
+  if(pos =='static' || !pos) {
+    element._madePositioned = true;
+    element.style.position = "relative";
+    // Opera returns the offset relative to the positioning context, when an element is position relative 
+    // but top and left have not been defined
+    if (window.opera){
+      element.style.top = 0;
+      element.style.left = 0;
+    }  
+  }
+}
+  
+Element.undoPositioned = function(element) {
+  element = $(element);
+  if(typeof element._madePositioned != "undefined"){
+    element._madePositioned = undefined;
+    element.style.position = "";
+    element.style.top = "";
+    element.style.left = "";
+    element.style.bottom = "";
+    element.style.right = "";	  
+  }
+}
+
+Element.makeClipping = function(element) {
+  element = $(element);
+  if (typeof element._overflow != 'undefined') return;
+  element._overflow = element.style.overflow;
+  if((Element.getStyle(element, 'overflow') || 'visible') != 'hidden') element.style.overflow = 'hidden';
+}
+
+Element.undoClipping = function(element) {
+  element = $(element);
+  if (typeof element._overflow == 'undefined') return;
+  element.style.overflow = element._overflow;
+  element._overflow = undefined;
+}
+
+Element.collectTextNodesIgnoreClass = function(element, ignoreclass) {
+  var children = $(element).childNodes;
+  var text     = "";
+  var classtest = new RegExp("^([^ ]+ )*" + ignoreclass+ "( [^ ]+)*$","i");
+
+  for (var i = 0; i < children.length; i++) {
+    if(children[i].nodeType==3) {
+      text+=children[i].nodeValue;
+    } else {
+      if((!children[i].className.match(classtest)) && children[i].hasChildNodes())
+        text += Element.collectTextNodesIgnoreClass(children[i], ignoreclass);
+    }
+  }
+
+  return text;
+}
+
+Element.setContentZoom = function(element, percent) {
+  element = $(element);
+  element.style.fontSize = (percent/100) + "em";  
+  if(navigator.appVersion.indexOf('AppleWebKit')>0) window.scrollBy(0,0);
+}
+
+Element.getOpacity = function(element){
+  var opacity;
+  if (opacity = Element.getStyle(element, "opacity"))
+    return parseFloat(opacity);
+  if (opacity = (Element.getStyle(element, "filter") || '').match(/alpha\(opacity=(.*)\)/))
+    if(opacity[1]) return parseFloat(opacity[1]) / 100;
+  return 1.0;
+}
+
+Element.setOpacity = function(element, value){
+  element= $(element);
+  var els = element.style;
+  if (value == 1){
+    els.opacity = '0.999999';
+    if(/MSIE/.test(navigator.userAgent))
+      els.filter = Element.getStyle(element,'filter').replace(/alpha\([^\)]*\)/gi,'');
+  } else {
+    if(value < 0.00001) value = 0;
+    els.opacity = value;
+    if(/MSIE/.test(navigator.userAgent))
+      els.filter = Element.getStyle(element,'filter').replace(/alpha\([^\)]*\)/gi,'') + 
+        "alpha(opacity="+value*100+")";
+  }  
+}
+
+Element.getInlineOpacity = function(element){
+  element= $(element);
+  var op;
+  op = element.style.opacity;
+  if (typeof op != "undefined" && op != "") return op;
+  return "";
+}
+
+Element.setInlineOpacity = function(element, value){
+  element= $(element);
+  var els = element.style;
+  els.opacity = value;
+}
+
+Element.getDimensions = function(element){
+  element = $(element);
+  // All *Width and *Height properties give 0 on elements with display "none",
+  // so enable the element temporarily
+  if (Element.getStyle(element,'display') == "none"){
+    var els = element.style;
+    var originalVisibility = els.visibility;
+    var originalPosition = els.position;
+    els.visibility = "hidden";
+    els.position = "absolute";
+    els.display = "";
+    var originalWidth = element.clientWidth;
+    var originalHeight = element.clientHeight;
+    els.display = "none";
+    els.position = originalPosition;
+    els.visibility = originalVisibility;
+    return {width: originalWidth, height: originalHeight};    
+  }
+  
+  return {width: element.offsetWidth, height: element.offsetHeight};
+} 
+
+/*--------------------------------------------------------------------------*/
+
+Position.positionedOffset = function(element) {
+  var valueT = 0, valueL = 0;
+  do {
+    valueT += element.offsetTop  || 0;
+    valueL += element.offsetLeft || 0;
+    element = element.offsetParent;
+    if (element) {
+      p = Element.getStyle(element,'position');
+      if(p == 'relative' || p == 'absolute') break;
+    }
+  } while (element);
+  return [valueL, valueT];
+}
+
+// Safari returns margins on body which is incorrect if the child is absolutely positioned.
+// for performance reasons, we create a specialized version of Position.cumulativeOffset for
+// KHTML/WebKit only
+
+if(/Konqueror|Safari|KHTML/.test(navigator.userAgent)) {
+  Position.cumulativeOffset = function(element) {
+    var valueT = 0, valueL = 0;
+    do {
+      valueT += element.offsetTop  || 0;
+      valueL += element.offsetLeft || 0;
+      
+      if (element.offsetParent==document.body) 
+        if (Element.getStyle(element,'position')=='absolute') break;
+        
+      element = element.offsetParent;
+    } while (element);
+    return [valueL, valueT];
+  }
+}
+
+Position.page = function(forElement) {
+  var valueT = 0, valueL = 0;
+
+  var element = forElement;
+  do {
+    valueT += element.offsetTop  || 0;
+    valueL += element.offsetLeft || 0;
+
+    // Safari fix
+    if (element.offsetParent==document.body)
+      if (Element.getStyle(element,'position')=='absolute') break;
+      
+  } while (element = element.offsetParent);
+
+  element = forElement;
+  do {
+    valueT -= element.scrollTop  || 0;
+    valueL -= element.scrollLeft || 0;    
+  } while (element = element.parentNode);
+
+  return [valueL, valueT];
+}
+
+// elements with display:none don't return an offsetParent, 
+// fall back to  manual calculation
+Position.offsetParent = function(element) {
+  if(element.offsetParent) return element.offsetParent;
+  if(element == document.body) return element;
+  
+  while ((element = element.parentNode) && element != document.body)
+    if (Element.getStyle(element,'position')!='static')
+      return element;
+  
+  return document.body;
+}
+
+Position.clone = function(source, target) {
+  var options = Object.extend({
+    setLeft:    true,
+    setTop:     true,
+    setWidth:   true,
+    setHeight:  true,
+    offsetTop:  0,
+    offsetLeft: 0
+  }, arguments[2] || {})
+  
+  // find page position of source
+  source = $(source);
+  var p = Position.page(source);
+
+  // find coordinate system to use
+  target = $(target);
+  var delta = [0, 0];
+  var parent = null;
+  // delta [0,0] will do fine with position: fixed elements, 
+  // position:absolute needs offsetParent deltas
+  if (Element.getStyle(target,'position') == 'absolute') {
+    parent = Position.offsetParent(target);
+    delta = Position.page(parent);
+  }
+  
+  // correct by body offsets (fixes Safari)
+  if (parent==document.body) {
+    delta[0] -= document.body.offsetLeft;
+    delta[1] -= document.body.offsetTop; 
+  }
+
+  // set position
+  if(options.setLeft)   target.style.left  = (p[0] - delta[0] + options.offsetLeft) + "px";
+  if(options.setTop)    target.style.top   = (p[1] - delta[1] + options.offsetTop) + "px";
+  if(options.setWidth)  target.style.width = source.offsetWidth + "px";
+  if(options.setHeight) target.style.height = source.offsetHeight + "px";
+}
+
+Position.absolutize = function(element) {
+  element = $(element);
+  if(element.style.position=='absolute') return;
+  Position.prepare();
+
+  var offsets = Position.positionedOffset(element);
+  var top     = offsets[1];
+  var left    = offsets[0];
+  var width   = element.clientWidth;
+  var height  = element.clientHeight;
+
+  element._originalLeft   = left - parseFloat(element.style.left  || 0);
+  element._originalTop    = top  - parseFloat(element.style.top || 0);
+  element._originalWidth  = element.style.width;
+  element._originalHeight = element.style.height;
+
+  element.style.position = 'absolute';
+  element.style.top    = top + 'px';;
+  element.style.left   = left + 'px';;
+  element.style.width  = width + 'px';;
+  element.style.height = height + 'px';;
+}
+
+Position.relativize = function(element) {
+  element = $(element);
+  if(element.style.position=='relative') return;
+  Position.prepare();
+
+  element.style.position = 'relative';
+  var top  = parseFloat(element.style.top  || 0) - (element._originalTop || 0);
+  var left = parseFloat(element.style.left || 0) - (element._originalLeft || 0);
+
+  element.style.top    = top + 'px';
+  element.style.left   = left + 'px';
+  element.style.height = element._originalHeight;
+  element.style.width  = element._originalWidth;
+}
+
+/*--------------------------------------------------------------------------*/
+
+Element.Class = {
+    // Element.toggleClass(element, className) toggles the class being on/off
+    // Element.toggleClass(element, className1, className2) toggles between both classes,
+    //   defaulting to className1 if neither exist
+    toggle: function(element, className) {
+      if(Element.Class.has(element, className)) {
+        Element.Class.remove(element, className);
+        if(arguments.length == 3) Element.Class.add(element, arguments[2]);
+      } else {
+        Element.Class.add(element, className);
+        if(arguments.length == 3) Element.Class.remove(element, arguments[2]);
+      }
+    },
+
+    // gets space-delimited classnames of an element as an array
+    get: function(element) {
+      return $(element).className.split(' ');
+    },
+
+    // functions adapted from original functions by Gavin Kistner
+    remove: function(element) {
+      element = $(element);
+      var removeClasses = arguments;
+      $R(1,arguments.length-1).each( function(index) {
+        element.className = 
+          element.className.split(' ').reject( 
+            function(klass) { return (klass == removeClasses[index]) } ).join(' ');
+      });
+    },
+
+    add: function(element) {
+      element = $(element);
+      for(var i = 1; i < arguments.length; i++) {
+        Element.Class.remove(element, arguments[i]);
+        element.className += (element.className.length > 0 ? ' ' : '') + arguments[i];
+      }
+    },
+
+    // returns true if all given classes exist in said element
+    has: function(element) {
+      element = $(element);
+      if(!element || !element.className) return false;
+      var regEx;
+      for(var i = 1; i < arguments.length; i++) {
+        if((typeof arguments[i] == 'object') && 
+          (arguments[i].constructor == Array)) {
+          for(var j = 0; j < arguments[i].length; j++) {
+            regEx = new RegExp("(^|\\s)" + arguments[i][j] + "(\\s|$)");
+            if(!regEx.test(element.className)) return false;
+          }
+        } else {
+          regEx = new RegExp("(^|\\s)" + arguments[i] + "(\\s|$)");
+          if(!regEx.test(element.className)) return false;
+        }
+      }
+      return true;
+    },
+
+    // expects arrays of strings and/or strings as optional paramters
+    // Element.Class.has_any(element, ['classA','classB','classC'], 'classD')
+    has_any: function(element) {
+      element = $(element);
+      if(!element || !element.className) return false;
+      var regEx;
+      for(var i = 1; i < arguments.length; i++) {
+        if((typeof arguments[i] == 'object') && 
+          (arguments[i].constructor == Array)) {
+          for(var j = 0; j < arguments[i].length; j++) {
+            regEx = new RegExp("(^|\\s)" + arguments[i][j] + "(\\s|$)");
+            if(regEx.test(element.className)) return true;
+          }
+        } else {
+          regEx = new RegExp("(^|\\s)" + arguments[i] + "(\\s|$)");
+          if(regEx.test(element.className)) return true;
+        }
+      }
+      return false;
+    },
+
+    childrenWith: function(element, className) {
+      var children = $(element).getElementsByTagName('*');
+      var elements = new Array();
+
+      for (var i = 0; i < children.length; i++)
+        if (Element.Class.has(children[i], className))
+          elements.push(children[i]);
+
+      return elements;
+    }
+}// Copyright (c) 2005 Thomas Fuchs (http://script.aculo.us, http://mir.aculo.us)
+// Contributors:
+//  Justin Palmer (http://encytemedia.com/)
+//  Mark Pilgrim (http://diveintomark.org/)
+//  Martin Bialasinki
+// 
+// See scriptaculous.js for full license.
+
+var Effect = {
+  tagifyText: function(element) {
+    var tagifyStyle = "position:relative";
+    if(/MSIE/.test(navigator.userAgent)) tagifyStyle += ";zoom:1";
+    element = $(element);
+    $A(element.childNodes).each( function(child) {
+      if(child.nodeType==3) {
+        child.nodeValue.toArray().each( function(character) {
+          element.insertBefore(
+            Builder.node('span',{style: tagifyStyle},
+              character == " " ? String.fromCharCode(160) : character), 
+              child);
+        });
+        Element.remove(child);
+      }
+    });
+  },
+  multiple: function(element, effect) {
+    var elements;
+    if(((typeof element == 'object') || 
+        (typeof element == 'function')) && 
+       (element.length))
+      elements = element;
+    else
+      elements = $(element).childNodes;
+      
+    var options = Object.extend({
+      speed: 0.1,
+      delay: 0.0
+    }, arguments[2] || {});
+    var speed = options.speed;
+    var delay = options.delay;
+
+    $A(elements).each( function(element, index) {
+      new effect(element, Object.extend(options, { delay: delay + index * speed }));
+    });
+  }
+};
+
+var Effect2 = Effect; // deprecated
+
+/* ------------- transitions ------------- */
+
+Effect.Transitions = {}
+
+Effect.Transitions.linear = function(pos) {
+  return pos;
+}
+Effect.Transitions.sinoidal = function(pos) {
+  return (-Math.cos(pos*Math.PI)/2) + 0.5;
+}
+Effect.Transitions.reverse  = function(pos) {
+  return 1-pos;
+}
+Effect.Transitions.flicker = function(pos) {
+  return ((-Math.cos(pos*Math.PI)/4) + 0.75) + Math.random()/4;
+}
+Effect.Transitions.wobble = function(pos) {
+  return (-Math.cos(pos*Math.PI*(9*pos))/2) + 0.5;
+}
+Effect.Transitions.pulse = function(pos) {
+  return (Math.floor(pos*10) % 2 == 0 ? 
+    (pos*10-Math.floor(pos*10)) : 1-(pos*10-Math.floor(pos*10)));
+}
+Effect.Transitions.none = function(pos) {
+  return 0;
+}
+Effect.Transitions.full = function(pos) {
+  return 1;
+}
+
+/* ------------- core effects ------------- */
+
+Effect.Queue = {
+  effects:  [],
+  interval: null,
+  add: function(effect) {
+    var timestamp = new Date().getTime();
+    
+    switch(effect.options.queue) {
+      case 'front':
+        // move unstarted effects after this effect  
+        this.effects.findAll(function(e){ return e.state=='idle' }).each( function(e) {
+            e.startOn  += effect.finishOn;
+            e.finishOn += effect.finishOn;
+          });
+        break;
+      case 'end':
+        // start effect after last queued effect has finished
+        timestamp = this.effects.pluck('finishOn').max() || timestamp;
+        break;
+    }
+    
+    effect.startOn  += timestamp;
+    effect.finishOn += timestamp;
+    this.effects.push(effect);
+    if(!this.interval) 
+      this.interval = setInterval(this.loop.bind(this), 40);
+  },
+  remove: function(effect) {
+    this.effects = this.effects.reject(function(e) { return e==effect });
+    if(this.effects.length == 0) {
+      clearInterval(this.interval);
+      this.interval = null;
+    }
+  },
+  loop: function() {
+    var timePos = new Date().getTime();
+    this.effects.invoke('loop', timePos);
+  }
+}
+
+Effect.Base = function() {};
+Effect.Base.prototype = {
+  position: null,
+  setOptions: function(options) {
+    this.options = Object.extend({
+      transition: Effect.Transitions.sinoidal,
+      duration:   1.0,   // seconds
+      fps:        25.0,  // max. 25fps due to Effect.Queue implementation
+      sync:       false, // true for combining
+      from:       0.0,
+      to:         1.0,
+      delay:      0.0,
+      queue:      'parallel'
+    }, options || {});
+  },
+  start: function(options) {
+    this.setOptions(options || {});
+    this.currentFrame = 0;
+    this.state        = 'idle';
+    this.startOn      = this.options.delay*1000;
+    this.finishOn     = this.startOn + (this.options.duration*1000);
+    this.event('beforeStart');
+    if(!this.options.sync) Effect.Queue.add(this);
+  },
+  loop: function(timePos) {
+    if(timePos >= this.startOn) {
+      if(timePos >= this.finishOn) {
+        this.render(1.0);
+        this.cancel();
+        this.event('beforeFinish');
+        if(this.finish) this.finish(); 
+        this.event('afterFinish');
+        return;  
+      }
+      var pos   = (timePos - this.startOn) / (this.finishOn - this.startOn);
+      var frame = Math.round(pos * this.options.fps * this.options.duration);
+      if(frame > this.currentFrame) {
+        this.render(pos);
+        this.currentFrame = frame;
+      }
+    }
+  },
+  render: function(pos) {
+    if(this.state == 'idle') {
+      this.state = 'running';
+      this.event('beforeSetup');
+      if(this.setup) this.setup();
+      this.event('afterSetup');
+    }
+    if(this.options.transition) pos = this.options.transition(pos);
+    pos *= (this.options.to-this.options.from);
+    pos += this.options.from;
+    this.position = pos;
+    this.event('beforeUpdate');
+    if(this.update) this.update(pos);
+    this.event('afterUpdate');
+  },
+  cancel: function() {
+    if(!this.options.sync) Effect.Queue.remove(this);
+    this.state = 'finished';
+  },
+  event: function(eventName) {
+    if(this.options[eventName + 'Internal']) this.options[eventName + 'Internal'](this);
+    if(this.options[eventName]) this.options[eventName](this);
+  }
+}
+
+Effect.Parallel = Class.create();
+Object.extend(Object.extend(Effect.Parallel.prototype, Effect.Base.prototype), {
+  initialize: function(effects) {
+    this.effects = effects || [];
+    this.start(arguments[1]);
+  },
+  update: function(position) {
+    this.effects.invoke('render', position);
+  },
+  finish: function(position) {
+    this.effects.each( function(effect) {
+      effect.render(1.0);
+      effect.cancel();
+      effect.event('beforeFinish');
+      if(effect.finish) effect.finish(position);
+      effect.event('afterFinish');
+    });
+  }
+});
+
+Effect.Opacity = Class.create();
+Object.extend(Object.extend(Effect.Opacity.prototype, Effect.Base.prototype), {
+  initialize: function(element) {
+    this.element = $(element);
+    // make this work on IE on elements without 'layout'
+    if(/MSIE/.test(navigator.userAgent) && (!this.element.hasLayout))
+      this.element.style.zoom = 1;
+    var options = Object.extend({
+      from: Element.getOpacity(this.element) || 0.0,
+      to:   1.0
+    }, arguments[1] || {});
+    this.start(options);
+  },
+  update: function(position) {
+    Element.setOpacity(this.element, position);
+  }
+});
+
+Effect.MoveBy = Class.create();
+Object.extend(Object.extend(Effect.MoveBy.prototype, Effect.Base.prototype), {
+  initialize: function(element, toTop, toLeft) {
+    this.element      = $(element);
+    this.toTop        = toTop;
+    this.toLeft       = toLeft;
+    this.start(arguments[3]);
+  },
+  setup: function() {
+    // Bug in Opera: Opera returns the "real" position of a static element or
+    // relative element that does not have top/left explicitly set.
+    // ==> Always set top and left for position relative elements in your stylesheets 
+    // (to 0 if you do not need them)
+    
+    Element.makePositioned(this.element);
+    this.originalTop  = parseFloat(Element.getStyle(this.element,'top')  || '0');
+    this.originalLeft = parseFloat(Element.getStyle(this.element,'left') || '0');
+  },
+  update: function(position) {
+    var topd  = this.toTop  * position + this.originalTop;
+    var leftd = this.toLeft * position + this.originalLeft;
+    this.setPosition(topd, leftd);
+  },
+  setPosition: function(topd, leftd) {
+    this.element.style.top  = topd  + "px";
+    this.element.style.left = leftd + "px";
+  }
+});
+
+Effect.Scale = Class.create();
+Object.extend(Object.extend(Effect.Scale.prototype, Effect.Base.prototype), {
+  initialize: function(element, percent) {
+    this.element = $(element)
+    var options = Object.extend({
+      scaleX: true,
+      scaleY: true,
+      scaleContent: true,
+      scaleFromCenter: false,
+      scaleMode: 'box',        // 'box' or 'contents' or {} with provided values
+      scaleFrom: 100.0,
+      scaleTo:   percent
+    }, arguments[2] || {});
+    this.start(options);
+  },
+  setup: function() {
+    var effect = this;
+    
+    this.restoreAfterFinish = this.options.restoreAfterFinish || false;
+    this.elementPositioning = Element.getStyle(this.element,'position');
+    
+    effect.originalStyle = {};
+    ['top','left','width','height','fontSize'].each( function(k) {
+      effect.originalStyle[k] = effect.element.style[k];
+    });
+      
+    this.originalTop  = this.element.offsetTop;
+    this.originalLeft = this.element.offsetLeft;
+    
+    var fontSize = Element.getStyle(this.element,'font-size') || "100%";
+    ['em','px','%'].each( function(fontSizeType) {
+      if(fontSize.indexOf(fontSizeType)>0) {
+        effect.fontSize     = parseFloat(fontSize);
+        effect.fontSizeType = fontSizeType;
+      }
+    });
+    
+    this.factor = (this.options.scaleTo - this.options.scaleFrom)/100;
+    
+    this.dims = null;
+    if(this.options.scaleMode=='box')
+      this.dims = [this.element.clientHeight, this.element.clientWidth];
+    if(this.options.scaleMode=='content')
+      this.dims = [this.element.scrollHeight, this.element.scrollWidth];
+    if(!this.dims)
+      this.dims = [this.options.scaleMode.originalHeight,
+                   this.options.scaleMode.originalWidth];
+  },
+  update: function(position) {
+    var currentScale = (this.options.scaleFrom/100.0) + (this.factor * position);
+    if(this.options.scaleContent && this.fontSize)
+      this.element.style.fontSize = this.fontSize*currentScale + this.fontSizeType;
+    this.setDimensions(this.dims[0] * currentScale, this.dims[1] * currentScale);
+  },
+  finish: function(position) {
+    if (this.restoreAfterFinish) {
+      var effect = this;
+      ['top','left','width','height','fontSize'].each( function(k) {
+        effect.element.style[k] = effect.originalStyle[k];
+      });
+    }
+  },
+  setDimensions: function(height, width) {
+    var els = this.element.style;
+    if(this.options.scaleX) els.width = width + 'px';
+    if(this.options.scaleY) els.height = height + 'px';
+    if(this.options.scaleFromCenter) {
+      var topd  = (height - this.dims[0])/2;
+      var leftd = (width  - this.dims[1])/2;
+      if(this.elementPositioning == 'absolute') {
+        if(this.options.scaleY) els.top = this.originalTop-topd + "px";
+        if(this.options.scaleX) els.left = this.originalLeft-leftd + "px";
+      } else {
+        if(this.options.scaleY) els.top = -topd + "px";
+        if(this.options.scaleX) els.left = -leftd + "px";
+      }
+    }
+  }
+});
+
+Effect.Highlight = Class.create();
+Object.extend(Object.extend(Effect.Highlight.prototype, Effect.Base.prototype), {
+  initialize: function(element) {
+    this.element = $(element);
+    var options = Object.extend({
+      startcolor:   "#ffff99"
+    }, arguments[1] || {});
+    this.start(options);
+  },
+  setup: function() {
+    // Disable background image during the effect
+    this.oldBgImage = this.element.style.backgroundImage;
+    this.element.style.backgroundImage = "none";
+    if(!this.options.endcolor)
+      this.options.endcolor = Element.getStyle(this.element, 'background-color').parseColor('#ffffff');
+    if (typeof this.options.restorecolor == "undefined")
+      this.options.restorecolor = this.element.style.backgroundColor;
+    // init color calculations
+    this.colors_base = [
+      parseInt(this.options.startcolor.slice(1,3),16),
+      parseInt(this.options.startcolor.slice(3,5),16),
+      parseInt(this.options.startcolor.slice(5),16) ];
+    this.colors_delta = [
+      parseInt(this.options.endcolor.slice(1,3),16)-this.colors_base[0],
+      parseInt(this.options.endcolor.slice(3,5),16)-this.colors_base[1],
+      parseInt(this.options.endcolor.slice(5),16)-this.colors_base[2]];
+  },
+  update: function(position) {
+    var effect = this; var colors = $R(0,2).map( function(i){ 
+      return Math.round(effect.colors_base[i]+(effect.colors_delta[i]*position))
+    });
+    this.element.style.backgroundColor = "#" +
+      colors[0].toColorPart() + colors[1].toColorPart() + colors[2].toColorPart();
+  },
+  finish: function() {
+    this.element.style.backgroundColor = this.options.restorecolor;
+    this.element.style.backgroundImage = this.oldBgImage;
+  }
+});
+
+Effect.ScrollTo = Class.create();
+Object.extend(Object.extend(Effect.ScrollTo.prototype, Effect.Base.prototype), {
+  initialize: function(element) {
+    this.element = $(element);
+    this.start(arguments[1] || {});
+  },
+  setup: function() {
+    Position.prepare();
+    var offsets = Position.cumulativeOffset(this.element);
+    var max = window.innerHeight ? 
+      window.height - window.innerHeight :
+      document.body.scrollHeight - 
+        (document.documentElement.clientHeight ? 
+          document.documentElement.clientHeight : document.body.clientHeight);
+    this.scrollStart = Position.deltaY;
+    this.delta = (offsets[1] > max ? max : offsets[1]) - this.scrollStart;
+  },
+  update: function(position) {
+    Position.prepare();
+    window.scrollTo(Position.deltaX, 
+      this.scrollStart + (position*this.delta));
+  }
+});
+
+/* ------------- combination effects ------------- */
+
+Effect.Fade = function(element) {
+  var oldOpacity = Element.getInlineOpacity(element);
+  var options = Object.extend({
+  from: Element.getOpacity(element) || 1.0,
+  to:   0.0,
+  afterFinishInternal: function(effect) 
+    { if (effect.options.to == 0) {
+        Element.hide(effect.element);
+        Element.setInlineOpacity(effect.element, oldOpacity);
+      }  
+    }
+  }, arguments[1] || {});
+  return new Effect.Opacity(element,options);
+}
+
+Effect.Appear = function(element) {
+  var options = Object.extend({
+  from: (Element.getStyle(element, "display") == "none" ? 0.0 : Element.getOpacity(element) || 0.0),
+  to:   1.0,
+  beforeSetup: function(effect)  
+    { Element.setOpacity(effect.element, effect.options.from);
+      Element.show(effect.element); }
+  }, arguments[1] || {});
+  return new Effect.Opacity(element,options);
+}
+
+Effect.Puff = function(element) {
+  element = $(element);
+  var oldOpacity = Element.getInlineOpacity(element);
+  var oldPosition = element.style.position;
+  return new Effect.Parallel(
+   [ new Effect.Scale(element, 200, 
+      { sync: true, scaleFromCenter: true, scaleContent: true, restoreAfterFinish: true }), 
+     new Effect.Opacity(element, { sync: true, to: 0.0 } ) ], 
+     Object.extend({ duration: 1.0, 
+      beforeSetupInternal: function(effect) 
+       { effect.effects[0].element.style.position = 'absolute'; },
+      afterFinishInternal: function(effect)
+       { Element.hide(effect.effects[0].element);
+         effect.effects[0].element.style.position = oldPosition;
+         Element.setInlineOpacity(effect.effects[0].element, oldOpacity); }
+     }, arguments[1] || {})
+   );
+}
+
+Effect.BlindUp = function(element) {
+  element = $(element);
+  Element.makeClipping(element);
+  return new Effect.Scale(element, 0, 
+    Object.extend({ scaleContent: false, 
+      scaleX: false, 
+      restoreAfterFinish: true,
+      afterFinishInternal: function(effect)
+        { 
+          Element.hide(effect.element);
+          Element.undoClipping(effect.element);
+        } 
+    }, arguments[1] || {})
+  );
+}
+
+Effect.BlindDown = function(element) {
+  element = $(element);
+  var oldHeight = element.style.height;
+  var elementDimensions = Element.getDimensions(element);
+  return new Effect.Scale(element, 100, 
+    Object.extend({ scaleContent: false, 
+      scaleX: false,
+      scaleFrom: 0,
+      scaleMode: {originalHeight: elementDimensions.height, originalWidth: elementDimensions.width},
+      restoreAfterFinish: true,
+      afterSetup: function(effect) {
+        Element.makeClipping(effect.element);
+        effect.element.style.height = "0px";
+        Element.show(effect.element); 
+      },  
+      afterFinishInternal: function(effect) {
+        Element.undoClipping(effect.element);
+        effect.element.style.height = oldHeight;
+      }
+    }, arguments[1] || {})
+  );
+}
+
+Effect.SwitchOff = function(element) {
+  element = $(element);
+  var oldOpacity = Element.getInlineOpacity(element);
+  return new Effect.Appear(element, { 
+    duration: 0.4,
+    from: 0,
+    transition: Effect.Transitions.flicker,
+    afterFinishInternal: function(effect) {
+      new Effect.Scale(effect.element, 1, { 
+        duration: 0.3, scaleFromCenter: true,
+        scaleX: false, scaleContent: false, restoreAfterFinish: true,
+        beforeSetup: function(effect) { 
+          Element.makePositioned(effect.element); 
+          Element.makeClipping(effect.element);
+        },
+        afterFinishInternal: function(effect) { 
+          Element.hide(effect.element); 
+          Element.undoClipping(effect.element);
+          Element.undoPositioned(effect.element);
+          Element.setInlineOpacity(effect.element, oldOpacity);
+        }
+      })
+    }
+  });
+}
+
+Effect.DropOut = function(element) {
+  element = $(element);
+  var oldTop = element.style.top;
+  var oldLeft = element.style.left;
+  var oldOpacity = Element.getInlineOpacity(element);
+  return new Effect.Parallel(
+    [ new Effect.MoveBy(element, 100, 0, { sync: true }), 
+      new Effect.Opacity(element, { sync: true, to: 0.0 }) ],
+    Object.extend(
+      { duration: 0.5,
+        beforeSetup: function(effect) { 
+          Element.makePositioned(effect.effects[0].element); },
+        afterFinishInternal: function(effect) { 
+          Element.hide(effect.effects[0].element); 
+          Element.undoPositioned(effect.effects[0].element);
+          effect.effects[0].element.style.left = oldLeft;
+          effect.effects[0].element.style.top = oldTop;
+          Element.setInlineOpacity(effect.effects[0].element, oldOpacity); } 
+      }, arguments[1] || {}));
+}
+
+Effect.Shake = function(element) {
+  element = $(element);
+  var oldTop = element.style.top;
+  var oldLeft = element.style.left;
+  return new Effect.MoveBy(element, 0, 20, 
+    { duration: 0.05, afterFinishInternal: function(effect) {
+  new Effect.MoveBy(effect.element, 0, -40, 
+    { duration: 0.1, afterFinishInternal: function(effect) {
+  new Effect.MoveBy(effect.element, 0, 40, 
+    { duration: 0.1, afterFinishInternal: function(effect) {
+  new Effect.MoveBy(effect.element, 0, -40, 
+    { duration: 0.1, afterFinishInternal: function(effect) {
+  new Effect.MoveBy(effect.element, 0, 40, 
+    { duration: 0.1, afterFinishInternal: function(effect) {
+  new Effect.MoveBy(effect.element, 0, -20, 
+    { duration: 0.05, afterFinishInternal: function(effect) {
+        Element.undoPositioned(effect.element);
+        effect.element.style.left = oldLeft;
+        effect.element.style.top = oldTop;
+  }}) }}) }}) }}) }}) }});
+}
+
+Effect.SlideDown = function(element) {
+  element = $(element);
+  Element.cleanWhitespace(element);
+  // SlideDown need to have the content of the element wrapped in a container element with fixed height!
+  var oldInnerBottom = element.firstChild.style.bottom;
+  var elementDimensions = Element.getDimensions(element);
+  return new Effect.Scale(element, 100, 
+   Object.extend({ scaleContent: false, 
+    scaleX: false, 
+    scaleFrom: 0,
+    scaleMode: {originalHeight: elementDimensions.height, originalWidth: elementDimensions.width},    
+    restoreAfterFinish: true,
+    afterSetup: function(effect) {
+      Element.makePositioned(effect.element.firstChild);
+      if (window.opera) effect.element.firstChild.style.top = "";
+      Element.makeClipping(effect.element);
+      element.style.height = '0';
+      Element.show(element); 
+    },  
+    afterUpdateInternal: function(effect) { 
+      effect.element.firstChild.style.bottom = 
+        (effect.originalHeight - effect.element.clientHeight) + 'px'; },
+    afterFinishInternal: function(effect) { 
+      Element.undoClipping(effect.element); 
+      Element.undoPositioned(effect.element.firstChild);
+      effect.element.firstChild.style.bottom = oldInnerBottom; }
+    }, arguments[1] || {})
+  );
+}
+  
+Effect.SlideUp = function(element) {
+  element = $(element);
+  Element.cleanWhitespace(element);
+  var oldInnerBottom = element.firstChild.style.bottom;
+  return new Effect.Scale(element, 0, 
+   Object.extend({ scaleContent: false, 
+    scaleX: false, 
+    scaleMode: 'box',
+    scaleFrom: 100,
+    restoreAfterFinish: true,
+    beforeStartInternal: function(effect) { 
+      Element.makePositioned(effect.element.firstChild);
+      if (window.opera) effect.element.firstChild.style.top = "";
+      Element.makeClipping(effect.element);
+      Element.show(element); 
+    },  
+    afterUpdateInternal: function(effect) { 
+     effect.element.firstChild.style.bottom = 
+       (effect.originalHeight - effect.element.clientHeight) + 'px'; },
+    afterFinishInternal: function(effect) { 
+        Element.hide(effect.element);
+        Element.undoClipping(effect.element); 
+        Element.undoPositioned(effect.element.firstChild);
+        effect.element.firstChild.style.bottom = oldInnerBottom; }
+   }, arguments[1] || {})
+  );
+}
+
+Effect.Squish = function(element) {
+  // Bug in opera makes the TD containing this element expand for a instance after finish 
+  return new Effect.Scale(element, window.opera ? 1 : 0, 
+    { restoreAfterFinish: true,
+      beforeSetup: function(effect) { 
+        Element.makeClipping(effect.element); },  
+      afterFinishInternal: function(effect) { 
+        Element.hide(effect.element); 
+        Element.undoClipping(effect.element); } 
+  });
+}
+
+Effect.Grow = function(element) {
+  element = $(element);
+  var options = arguments[1] || {};
+  
+  var elementDimensions = Element.getDimensions(element);
+  var originalWidth = elementDimensions.width;
+  var originalHeight = elementDimensions.height;
+  var oldTop = element.style.top;
+  var oldLeft = element.style.left;
+  var oldHeight = element.style.height;
+  var oldWidth = element.style.width;
+  var oldOpacity = Element.getInlineOpacity(element);
+  
+  var direction = options.direction || 'center';
+  var moveTransition = options.moveTransition || Effect.Transitions.sinoidal;
+  var scaleTransition = options.scaleTransition || Effect.Transitions.sinoidal;
+  var opacityTransition = options.opacityTransition || Effect.Transitions.full;
+  
+  var initialMoveX, initialMoveY;
+  var moveX, moveY;
+  
+  switch (direction) {
+    case 'top-left':
+      initialMoveX = initialMoveY = moveX = moveY = 0; 
+      break;
+    case 'top-right':
+      initialMoveX = originalWidth;
+      initialMoveY = moveY = 0;
+      moveX = -originalWidth;
+      break;
+    case 'bottom-left':
+      initialMoveX = moveX = 0;
+      initialMoveY = originalHeight;
+      moveY = -originalHeight;
+      break;
+    case 'bottom-right':
+      initialMoveX = originalWidth;
+      initialMoveY = originalHeight;
+      moveX = -originalWidth;
+      moveY = -originalHeight;
+      break;
+    case 'center':
+      initialMoveX = originalWidth / 2;
+      initialMoveY = originalHeight / 2;
+      moveX = -originalWidth / 2;
+      moveY = -originalHeight / 2;
+      break;
+  }
+  
+  return new Effect.MoveBy(element, initialMoveY, initialMoveX, { 
+    duration: 0.01, 
+    beforeSetup: function(effect) { 
+      Element.hide(effect.element);
+      Element.makeClipping(effect.element);
+      Element.makePositioned(effect.element);
+    },
+    afterFinishInternal: function(effect) {
+      new Effect.Parallel(
+        [ new Effect.Opacity(effect.element, { sync: true, to: 1.0, from: 0.0, transition: opacityTransition }),
+          new Effect.MoveBy(effect.element, moveY, moveX, { sync: true, transition: moveTransition }),
+          new Effect.Scale(effect.element, 100, {
+            scaleMode: { originalHeight: originalHeight, originalWidth: originalWidth }, 
+            sync: true, scaleFrom: window.opera ? 1 : 0, transition: scaleTransition, restoreAfterFinish: true})
+        ], Object.extend({
+             beforeSetup: function(effect) {
+              effect.effects[0].element.style.height = 0;
+              Element.show(effect.effects[0].element);
+             },              
+             afterFinishInternal: function(effect) {
+               var el = effect.effects[0].element;
+               var els = el.style;
+               Element.undoClipping(el); 
+               Element.undoPositioned(el);
+               els.top = oldTop;
+               els.left = oldLeft;
+               els.height = oldHeight;
+               els.width = originalWidth;
+               Element.setInlineOpacity(el, oldOpacity);
+             }
+           }, options)
+      )
+    }
+  });
+}
+
+Effect.Shrink = function(element) {
+  element = $(element);
+  var options = arguments[1] || {};
+  
+  var originalWidth = element.clientWidth;
+  var originalHeight = element.clientHeight;
+  var oldTop = element.style.top;
+  var oldLeft = element.style.left;
+  var oldHeight = element.style.height;
+  var oldWidth = element.style.width;
+  var oldOpacity = Element.getInlineOpacity(element);
+
+  var direction = options.direction || 'center';
+  var moveTransition = options.moveTransition || Effect.Transitions.sinoidal;
+  var scaleTransition = options.scaleTransition || Effect.Transitions.sinoidal;
+  var opacityTransition = options.opacityTransition || Effect.Transitions.none;
+  
+  var moveX, moveY;
+  
+  switch (direction) {
+    case 'top-left':
+      moveX = moveY = 0;
+      break;
+    case 'top-right':
+      moveX = originalWidth;
+      moveY = 0;
+      break;
+    case 'bottom-left':
+      moveX = 0;
+      moveY = originalHeight;
+      break;
+    case 'bottom-right':
+      moveX = originalWidth;
+      moveY = originalHeight;
+      break;
+    case 'center':  
+      moveX = originalWidth / 2;
+      moveY = originalHeight / 2;
+      break;
+  }
+  
+  return new Effect.Parallel(
+    [ new Effect.Opacity(element, { sync: true, to: 0.0, from: 1.0, transition: opacityTransition }),
+      new Effect.Scale(element, window.opera ? 1 : 0, { sync: true, transition: scaleTransition, restoreAfterFinish: true}),
+      new Effect.MoveBy(element, moveY, moveX, { sync: true, transition: moveTransition })
+    ], Object.extend({            
+         beforeStartInternal: function(effect) { 
+           Element.makePositioned(effect.effects[0].element);
+           Element.makeClipping(effect.effects[0].element);
+         },
+         afterFinishInternal: function(effect) {
+           var el = effect.effects[0].element;
+           var els = el.style;
+           Element.hide(el);
+           Element.undoClipping(el); 
+           Element.undoPositioned(el);
+           els.top = oldTop;
+           els.left = oldLeft;
+           els.height = oldHeight;
+           els.width = oldWidth;
+           Element.setInlineOpacity(el, oldOpacity);
+         }
+       }, options)
+  );
+}
+
+Effect.Pulsate = function(element) {
+  element = $(element);
+  var options    = arguments[1] || {};
+  var oldOpacity = Element.getInlineOpacity(element);
+  var transition = options.transition || Effect.Transitions.sinoidal;
+  var reverser   = function(pos){ return transition(1-Effect.Transitions.pulse(pos)) };
+  reverser.bind(transition);
+  return new Effect.Opacity(element, 
+    Object.extend(Object.extend({  duration: 3.0, from: 0,
+      afterFinishInternal: function(effect) { Element.setInlineOpacity(effect.element, oldOpacity); }
+    }, options), {transition: reverser}));
+}
+
+Effect.Fold = function(element) {
+  element = $(element);
+  var originalTop = element.style.top;
+  var originalLeft = element.style.left;
+  var originalWidth = element.style.width;
+  var originalHeight = element.style.height;
+  Element.makeClipping(element);
+  return new Effect.Scale(element, 5, Object.extend({   
+    scaleContent: false,
+    scaleX: false,
+    afterFinishInternal: function(effect) {
+    new Effect.Scale(element, 1, { 
+      scaleContent: false, 
+      scaleY: false,
+      afterFinishInternal: function(effect) { 
+        Element.hide(effect.element);  
+        Element.undoClipping(effect.element); 
+        effect.element.style.top = originalTop;
+        effect.element.style.left = originalLeft;
+        effect.element.style.width = originalWidth;
+        effect.element.style.height = originalHeight;
+      } });
+  }}, arguments[1] || {}));
+}
+
+// Autocompleter.Base handles all the autocompletion functionality
+// that's independent of the data source for autocompletion. This
+// includes drawing the autocompletion menu, observing keyboard
+// and mouse events, and similar.
+//
+// Specific autocompleters need to provide, at the very least,
+// a getUpdatedChoices function that will be invoked every time
+// the text inside the monitored textbox changes. This method
+// should get the text for which to provide autocompletion by
+// invoking this.getEntry(), NOT by directly accessing
+// this.element.value. This is to allow incremental tokenized
+// autocompletion. Specific auto-completion logic (AJAX, etc)
+// belongs in getUpdatedChoices.
+//
+// Tokenized incremental autocompletion is enabled automatically
+// when an autocompleter is instantiated with the 'tokens' option
+// in the options parameter, e.g.:
+// new Ajax.Autocompleter('id','upd', '/url/', { tokens: ',' });
+// will incrementally autocomplete with a comma as the token.
+// Additionally, ',' in the above example can be replaced with
+// a token array, e.g. { tokens: new Array (',', '\n') } which
+// enables autocompletion on multiple tokens. This is most
+// useful when one of the tokens is \n (a newline), as it
+// allows smart autocompletion after linebreaks.
+var Autocompleter = {}
+Autocompleter.Base = function()
+{
+};
+Autocompleter.Base.prototype = {
+    base_initialize: function(element, update, options)
+    {
+        this.element = $(element);
+        this.update = $(update);
+        this.has_focus = false;
+        this.changed = false;
+        this.active = false;
+        this.index = 0;
+        this.entry_count = 0;
+        if (this.setOptions)
+            this.setOptions(options);
+        else
+            this.options = options || {};
+        this.options.tokens = this.options.tokens || new Array();
+        this.options.frequency = this.options.frequency || 0.4;
+        this.options.min_chars = this.options.min_chars || 1;
+        this.options.onShow = this.options.onShow ||
+                              function(element, update)
+                              {
+                                  if (!update.style.position || update.style.position == 'absolute')
+                                  {
+                                      update.style.position = 'absolute';
+                                      var offsets = Position.cumulativeOffset(element);
+                                      update.style.left = offsets[0] + 'px';
+                                      update.style.top = (offsets[1] + element.offsetHeight) + 'px';
+                                      update.style.width = element.offsetWidth + 'px';
+                                  }
+                                  new Effect.Appear(update, {duration:0.15});
+                              };
+        this.options.onHide = this.options.onHide ||
+                              function(element, update)
+                              {
+                                  new Effect.Fade(update, {duration:0.15})
+                              };
+        if (this.options.indicator)
+            this.indicator = $(this.options.indicator);
+        if (typeof(this.options.tokens) == 'string')
+            this.options.tokens = new Array(this.options.tokens);
+        this.observer = null;
+        Element.hide(this.update);
+        Event.observe(this.element, "blur", this.onBlur.bindAsEventListener(this));
+        Event.observe(this.element, "keypress", this.onKeyPress.bindAsEventListener(this));
+    },
+    show: function()
+    {
+        if (this.update.style.display == 'none') this.options.onShow(this.element, this.update);
+        if (!this.iefix && (navigator.appVersion.indexOf('MSIE') > 0) && this.update.style.position == 'absolute')
+        {
+            new Insertion.After(this.update,
+                    '<iframe id="' + this.update.id + '_iefix" ' +
+                    'style="display:none;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" ' +
+                    'src="javascript:false;" frameborder="0" scrolling="no"></iframe>');
+            this.iefix = $(this.update.id + '_iefix');
+        }
+        if (this.iefix)
+        {
+            Position.clone(this.update, this.iefix);
+            this.iefix.style.zIndex = 1;
+            this.update.style.zIndex = 2;
+            Element.show(this.iefix);
+        }
+    },
+    hide: function()
+    {
+        if (this.update.style.display == '') this.options.onHide(this.element, this.update);
+        if (this.iefix) Element.hide(this.iefix);
+    },
+    startIndicator: function()
+    {
+        if (this.indicator) Element.show(this.indicator);
+    },
+    stopIndicator: function()
+    {
+        if (this.indicator) Element.hide(this.indicator);
+    },
+    onKeyPress: function(event)
+    {
+        if (this.active)
+            switch (event.keyCode)
+                    {
+                case Event.KEY_TAB:
+                case Event.KEY_RETURN:
+                    this.select_entry();
+                    Event.stop(event);
+                case Event.KEY_ESC:
+                    this.hide();
+                    this.active = false;
+                    return;
+                case Event.KEY_LEFT:
+                case Event.KEY_RIGHT:
+                    return;
+                case Event.KEY_UP:
+                    this.mark_previous();
+                    this.render();
+                    if (navigator.appVersion.indexOf('AppleWebKit') > 0) Event.stop(event);
+                    return;
+                case Event.KEY_DOWN:
+                    this.mark_next();
+                    this.render();
+                    if (navigator.appVersion.indexOf('AppleWebKit') > 0) Event.stop(event);
+                    return;
+            }
+        else
+            if (event.keyCode == Event.KEY_TAB || event.keyCode == Event.KEY_RETURN)
+                return;
+        this.changed = true;
+        this.has_focus = true;
+        if (this.observer) clearTimeout(this.observer);
+        this.observer =
+        setTimeout(this.onObserverEvent.bind(this), this.options.frequency * 1000);
+    },
+    onHover: function(event)
+    {
+        var element = Event.findElement(event, 'LI');
+        if (this.index != element.autocompleteIndex)
+        {
+            this.index = element.autocompleteIndex;
+            this.render();
+        }
+        Event.stop(event);
+    },
+    onClick: function(event)
+    {
+        var element = Event.findElement(event, 'LI');
+        this.index = element.autocompleteIndex;
+        this.select_entry();
+        Event.stop(event);
+    },
+    onBlur: function(event)
+    {
+        // needed to make click events working
+        setTimeout(this.hide.bind(this), 250);
+        this.has_focus = false;
+        this.active = false;
+    },
+    render: function()
+    {
+        if (this.entry_count > 0)
+        {
+            for (var i = 0; i < this.entry_count; i++)
+            {
+                this.index == i ?
+                Element.addClassName(this.get_entry(i), "selected") :
+                Element.removeClassName(this.get_entry(i), "selected");
+            }
+            if (this.has_focus)
+            {
+                if (this.get_current_entry().scrollIntoView)
+                    this.get_current_entry().scrollIntoView(false);
+                this.show();
+                this.active = true;
+            }
+        }
+        else this.hide();
+    },
+    mark_previous: function()
+    {
+        if (this.index > 0) this.index--
+        else this.index = this.entry_count - 1;
+    },
+    mark_next: function()
+    {
+        if (this.index < this.entry_count - 1) this.index++
+        else this.index = 0;
+    },
+    get_entry: function(index)
+    {
+        return this.update.firstChild.childNodes[index];
+    },
+    get_current_entry: function()
+    {
+        return this.get_entry(this.index);
+    },
+    select_entry: function()
+    {
+        this.active = false;
+        value = Element.collectTextNodesIgnoreClass(this.get_current_entry(), 'informal').unescapeHTML();
+        this.updateElement(value);
+        this.element.focus();
+    },
+    updateElement: function(value)
+    {
+        var last_token_pos = this.findLastToken();
+        if (last_token_pos != -1)
+        {
+            var new_value = this.element.value.substr(0, last_token_pos + 1);
+            var whitespace = this.element.value.substr(last_token_pos + 1).match(/^\s+/);
+            if (whitespace)
+                new_value += whitespace[0];
+            this.element.value = new_value + value;
+        }
+        else
+        {
+            this.element.value = value;
+        }
+    },
+    updateChoices: function(choices)
+    {
+        if (!this.changed && this.has_focus)
+        {
+            this.update.innerHTML = choices;
+            Element.cleanWhitespace(this.update);
+            Element.cleanWhitespace(this.update.firstChild);
+            if (this.update.firstChild && this.update.firstChild.childNodes)
+            {
+                this.entry_count =
+                this.update.firstChild.childNodes.length;
+                for (var i = 0; i < this.entry_count; i++)
+                {
+                    entry = this.get_entry(i);
+                    entry.autocompleteIndex = i;
+                    this.addObservers(entry);
+                }
+            }
+            else
+            {
+                this.entry_count = 0;
+            }
+            this.stopIndicator();
+            this.index = 0;
+            this.render();
+        }
+    },
+    addObservers: function(element)
+    {
+        Event.observe(element, "mouseover", this.onHover.bindAsEventListener(this));
+        Event.observe(element, "click", this.onClick.bindAsEventListener(this));
+    },
+    onObserverEvent: function()
+    {
+        this.changed = false;
+        if (this.getEntry().length >= this.options.min_chars)
+        {
+            this.startIndicator();
+            this.getUpdatedChoices();
+        }
+        else
+        {
+            this.active = false;
+            this.hide();
+        }
+    },
+    getEntry: function()
+    {
+        var token_pos = this.findLastToken();
+        var ret;
+        if (token_pos != -1)
+            ret = this.element.value.substr(token_pos + 1).replace(/^\s+/, '').replace(/\s+$/, '');
+        else
+            ret = this.element.value;
+        return /\n/.test(ret) ? '' : ret;
+    },
+    findLastToken: function()
+    {
+        var last_token_pos = -1;
+        for (var i = 0; i < this.options.tokens.length; i++)
+        {
+            var this_token_pos = this.element.value.lastIndexOf(this.options.tokens[i]);
+            if (this_token_pos > last_token_pos)
+                last_token_pos = this_token_pos;
+        }
+        return last_token_pos;
+    }
+}
+Ajax.Autocompleter = Class.create();
+Object.extend(Object.extend(Ajax.Autocompleter.prototype, Autocompleter.Base.prototype), {
+    initialize: function(element, update, url, options)
+    {
+        this.base_initialize(element, update, options);
+        this.options.asynchronous = true;
+        this.options.onComplete = this.onComplete.bind(this)
+        this.options.method = 'post';
+        this.options.defaultParams = this.options.parameters || null;
+        this.url = url;
+    },
+    getUpdatedChoices: function()
+    {
+        var entry = encodeURIComponent(this.element.name) + '=' +
+                    encodeURIComponent(this.getEntry());
+        this.options.parameters = this.options.callback ?
+                                  this.options.callback(this.element, entry) : entry;
+        if (this.options.defaultParams)
+            this.options.parameters += '&' + this.options.defaultParams;
+        // (Jeremy Higgs: Instead of using AJAX.Request, let's be consistent and use DWR)
+        this.options.dwrFunction(this.url, this.getEntry(), this.options.onComplete)
+    },
+    onComplete: function(response)
+    {
+        this.updateChoices(response.response);
+    }
+});
+// The local array autocompleter. Used when you'd prefer to
+// inject an array of autocompletion options into the page, rather
+// than sending out Ajax queries, which can be quite slow sometimes.
+//
+// The constructor takes four parameters. The first two are, as usual,
+// the id of the monitored textbox, and id of the autocompletion menu.
+// The third is the array you want to autocomplete from, and the fourth
+// is the options block.
+//
+// Extra local autocompletion options:
+// - choices - How many autocompletion choices to offer
+//
+// - partial_search - If false, the autocompleter will match entered
+//                    text only at the beginning of strings in the
+//                    autocomplete array. Defaults to true, which will
+//                    match text at the beginning of any *word* in the
+//                    strings in the autocomplete array. If you want to
+//                    search anywhere in the string, additionally set
+//                    the option full_search to true (default: off).
+//
+// - full_search - Search anywhere in autocomplete array strings.
+//
+// - partial_chars - How many characters to enter before triggering
+//                   a partial match (unlike min_chars, which defines
+//                   how many characters are required to do any match
+//                   at all). Defaults to 2.
+//
+// - ignore_case - Whether to ignore case when autocompleting.
+//                 Defaults to true.
+//
+// It's possible to pass in a custom function as the 'selector'
+// option, if you prefer to write your own autocompletion logic.
+// In that case, the other options above will not apply unless
+// you support them.
+Autocompleter.Local = Class.create();
+Autocompleter.Local.prototype = Object.extend(new Autocompleter.Base(), {
+    initialize: function(element, update, array, options)
+    {
+        this.base_initialize(element, update, options);
+        this.options.array = array;
+    },
+    getUpdatedChoices: function()
+    {
+        this.updateChoices(this.options.selector(this));
+    },
+    setOptions: function(options)
+    {
+        this.options = Object.extend({
+            choices: 10,
+            partial_search: true,
+            partial_chars: 2,
+            ignore_case: true,
+            full_search: false,
+            selector: function(instance)
+            {
+                var ret = new Array();
+                // Beginning matches
+                var partial = new Array();
+                // Inside matches
+                var entry = instance.getEntry();
+                var count = 0;
+                for (var i = 0; i < instance.options.array.length &&
+                                ret.length < instance.options.choices; i++)
+                {
+                    var elem = instance.options.array[i];
+                    var found_pos = instance.options.ignore_case ?
+                                    elem.toLowerCase().indexOf(entry.toLowerCase()) :
+                                    elem.indexOf(entry);
+                    while (found_pos != -1)
+                    {
+                        if (found_pos == 0 && elem.length != entry.length)
+                        {
+                            ret.push("<li><strong>" + elem.substr(0, entry.length) + "</strong>" +
+                                     elem.substr(entry.length) + "</li>");
+                            break;
+                        }
+                        else if (entry.length >= instance.options.partial_chars &&
+                                 instance.options.partial_search && found_pos != -1)
+                        {
+                            if (instance.options.full_search || /\s/.test(elem.substr(found_pos - 1, 1)))
+                            {
+                                partial.push("<li>" + elem.substr(0, found_pos) + "<strong>" +
+                                             elem.substr(found_pos, entry.length) + "</strong>" + elem.substr(
+                                        found_pos + entry.length) + "</li>");
+                                break;
+                            }
+                        }
+                        found_pos = instance.options.ignore_case ?
+                                    elem.toLowerCase().indexOf(entry.toLowerCase(), found_pos + 1) :
+                                    elem.indexOf(entry, found_pos + 1);
+                    }
+                }
+                if (partial.length)
+                    ret = ret.concat(partial.slice(0, instance.options.choices - ret.length))
+                return "<ul>" + ret.join('') + "</ul>";
+            }
+        }, options || {});
+    }
+});
+
+/*************************************************
+labels.js
+*************************************************/
+// please declare the "domainName" and "entityId" javascript variables before including this script file
+var operationInProgress = false;
+// variable to enforce one label operation at a time
+// populates labelsInfoSpan with the droppable versions of the labels
+// also fires off another request to pull in the suggested labels
+
+/**
+    Adding labels
+**/
+function onAddLabel()
+{
+    enableDeleteLabelLinks();
+    fetchAndWriteSuggestedLabels();
+}
+
+// DWR callback method for when labels are being added
+function add_label_callback(response)
+{
+    if (response.success)
+    {
+        var labelsInfoSpan = document.getElementById('labelsList');
+        var errorSpan = document.getElementById('errorSpan');
+        errorSpan.innerHTML = "";
+        labelsInfoSpan.innerHTML = response.response;
+        // call the fade event on each of the new labels
+        var updatedLabelIds = '';
+        if (document.getElementById("recentlyUpdated"))
+        {
+            updatedLabelIds = document.getElementById("recentlyUpdated").innerHTML;
+        }
+        var labelIdsArray = stringTokenizer(updatedLabelIds, new Array(',', ' '));
+        for (var i = 0; i < labelIdsArray.length; i++)
+        {
+            if (labelIdsArray[i].length > 0) // skip empty strings in the tokenized array (can't figure out how they get in there)
+            {
+                label = document.getElementById('label-' + labelIdsArray[i]);
+                if (label.style.display == 'none')
+                {
+                    new Effect.Appear(document.getElementById('label-' + labelIdsArray[i]));
+                }
+            }
+        }
+        document.addLabelForm.labelsString.value = '';
+    }
+    else
+    {
+        showLabelOperationErrorContainer();
+        document.getElementById("labelOperationErrorMessage").innerHTML = response.response;
+    }
+    // clear the text box and focus on it should the user want to add another label
+    document.addLabelForm.labelsString.focus();
+    fetchAndWriteSuggestedLabels();
+    // once status has been updated we switch off the waiting icon
+    toggleWaitImageAndStatus(false);
+    setLabelOperationStatusMessage('');
+    operationInProgress = false;
+    // hide box after the 'done' button is clicked if label successfully added
+    if (hideTextfieldAfterAdd && response.success)
+        disableDeleteLabelLinks();
+}
+
+// DWR error handler for adding labels
+function add_label_errorhandler()
+{
+    handleError("[41a] Error connecting to the server. The labels have not been updated.");
+}
+
+var hideTextfieldAfterAdd
+// Method to add labels via AJAX
+function doAddLabel(hideTextfieldAfterAddParam)
+{
+    hideTextfieldAfterAdd = hideTextfieldAfterAddParam;
+    if (!operationInProgress)
+    {
+        var newLabelName = document.addLabelForm.labelsString.value.toLowerCase();
+        // if there is no text in the add label textfield and the user clicks 'done', skip xml http request to add/validate label
+        if (hideTextfieldAfterAdd && (newLabelName == null || newLabelName.length == 0))
+        {
+            disableDeleteLabelLinks();
+            return;
+        }
+        operationInProgress = true;
+        // hide any errors from previous attempts at adding a label
+        hideLabelOperationErrorContainer();
+        toggleWaitImageAndStatus(true);
+        setLabelOperationStatusMessage('Adding label ...');
+        AddLabelToEntity.addLabel(entityId, newLabelName, {callback:add_label_callback, errorHandler:add_label_errorhandler});
+    }
+}
+function stringTokenizer(str, delimeters)
+{
+    var result = new Array();
+    var delimeterChar = delimeters.pop();
+    // alert('Delimeter char: ' + delimeterChar);
+    var temp = str.split(delimeterChar);
+    if (delimeters.length == 0)
+    {
+        // alert('Returning ' + temp.valueOf());
+        return temp;
+    }
+    else
+    {
+        for (var j = 0; j < temp.length; j++)
+        {
+            // alert('Recursing on: ' + temp[j] + ' with delimeters: ' + delimeters.valueOf());
+            var copyOfDelimeters = copyArray(delimeters);
+            result = result.concat(stringTokenizer(temp[j], copyOfDelimeters));
+        }
+    }
+    return result;
+}
+function copyArray(a)
+{
+    var result = new Array();
+    for (var i = 0; i < a.length; i++)
+        result.push(a[i]);
+    return result;
+}
+
+/**
+    Removing labels
+**/
+// DWR callback method for removing labels (wraps around another function in order to pass a local context)
+// See https://dwr.dev.java.net/servlets/ReadMsg?list=users&msgNo=1040
+var remove_label_callback_wrapper = function(labelId)
+{
+    return function(response)
+    {
+        if (response.success)
+        {
+            toggleWaitImageAndStatus(false);
+            setLabelOperationStatusMessage('');
+            new Effect.DropOut(document.getElementById('label-' + labelId));
+        }
+        else
+        {
+            showLabelOperationErrorContainer();
+            document.getElementById("labelOperationErrorMessage").innerHTML = response.response;
+        }
+
+        // once status has been updated we switch off the waiting icon
+        toggleWaitImageAndStatus(false);
+        setLabelOperationStatusMessage('');
+        operationInProgress = false;
+    }
+}
+
+// DWR error handler for removing labels
+function remove_label_errorhandler()
+{
+    handleError("[42b] Error connecting to the server. The labels have not been updated.");
+}
+
+// Method to remove label via AJAX
+function doRemoveLabel(labelId)
+{
+    if (!operationInProgress)
+    {
+        operationInProgress = true;
+        toggleWaitImageAndStatus(true);
+        // hide any errors from previous attempts at adding a label
+        hideLabelOperationErrorContainer();
+        setLabelOperationStatusMessage('Removing label ...');
+        RemoveLabelFromEntity.removeLabel(entityId, labelId, {callback:remove_label_callback_wrapper(labelId), errorHandler:remove_label_errorhandler});
+        var errorSpan = this.document.getElementById('errorSpan');
+        errorSpan.innerHTML = "";
+    }
+}
+
+/**
+    Viewing labels (with delete label links)
+**/
+// DWR callback method for viewing labels
+function view_labels_callback(response)
+{
+    if (response.success)
+    {
+        var labelsInfoSpan = document.getElementById('labelsList');
+        labelsInfoSpan.innerHTML = response.response;
+        if (document.getElementById('editLabelsLink'))
+        {
+            document.getElementById('editLabelsLink').style.visibility = 'hidden';
+        }
+    }
+    else
+    {
+        handleError("[43a] Error connecting to the server. The labels have not been updated.");
+    }
+}
+
+// DWR error handler for viewing labels
+function view_labels_errorhandler()
+{
+    handleError("[43b] Error connecting to the server. The labels have not been updated.");
+}
+
+// Method for viewing labels with enabled delete label links (initiated after the 'Edit' link is clicked)
+function enableDeleteLabelLinks()
+{
+    var errorSpan = this.document.getElementById('errorSpan');
+    errorSpan.innerHTML = "";
+    ViewLabelsForEntity.viewLabels(entityId, {callback:view_labels_callback, errorHandler:view_labels_errorhandler});
+}
+
+/**
+    Viewing labels (with disabled delete label links)
+**/
+// DWR callback method
+function view_labels_disabled_callback(response)
+{
+    if (response.success)
+    {
+        var labelsInfoSpan = document.getElementById('labelsList');
+        labelsInfoSpan.innerHTML = response.response;
+        hideLabelsInput();
+    }
+    else
+    {
+        handleError("[44a] Error connecting to the server. The labels have not been updated.");
+    }
+}
+
+// DWR error handler
+function view_labels_disabled_errorhandler()
+{
+    handleError("[44b]Error connecting to the server. The labels have not been updated.");
+}
+
+// Method to retreive a list of labels with no delete links (called after pressing the 'Done' button)
+function disableDeleteLabelLinks()
+{
+    if (!operationInProgress)
+    {
+        var errorSpan = this.document.getElementById('errorSpan');
+        errorSpan.innerHTML = "";
+        ViewLabelsForEntityWithoutDeleteLinks.viewLabels(entityId, spaceKey, {callback:view_labels_disabled_callback, errorHandler:view_labels_disabled_errorhandler});
+    }
+}
+
+/**
+    Suggested labels
+**/
+// DWR callback method
+function view_suggested_labels_callback(response)
+{
+    if (response.success)
+    {
+        var suggestedLabelsSpan = document.getElementById('suggestedLabelsSpan');
+        suggestedLabelsSpan.innerHTML = response.response;
+    }
+    else
+    {
+        handleError("[45a] Error connecting to the server. The suggested labels have not been loaded.");
+    }
+}
+
+// DWR error handler
+function view_suggested_labels_errorhandler(x)
+{
+    handleError("[45b] Error connecting to the server. The suggested labels have not been loaded. (" + x + ")");
+}
+
+// Method to retrieve a list of suggested labels for the given entity
+function fetchAndWriteSuggestedLabels()
+{
+    var errorSpan = document.getElementById('errorSpan');
+    errorSpan.innerHTML = "";
+    SuggestedLabelsForEntity.viewLabels(entityId, 'labels/suggestedlabels.vm', {callback:view_suggested_labels_callback, errorHandler:view_suggested_labels_errorhandler});
+}
+
+function hideLabelsInput()
+{
+    hideLabelOperationErrorContainer();
+    this.document.getElementById('labelInputSpan').style.display = 'none';
+    if (document.getElementById('editLabelsLink'))
+    {
+        document.getElementById('editLabelsLink').style.visibility = 'visible';
+    }
+}
+function showLabelsInput()
+{
+    document.getElementById('labelInputSpan').style.display = 'block';
+    // reset the value of this field, just in case the browser wants to become helpful and insert the old value
+    document.forms.addLabelForm.labelsString.value = '';
+    document.forms.addLabelForm.labelsString.focus();
+    if (document.getElementById('editLabelsLink'))
+    {
+        document.getElementById('editLabelsLink').style.visibility = 'hidden';
+    }
+}
+function hideLabelOperationErrorContainer()
+{
+    if (document.getElementById("labelOperationErrorContainer").style.display != 'none')
+    {
+        // clean up error message before hiding error box
+        document.getElementById("labelOperationErrorMessage").innerHTML = '';
+        document.getElementById("labelOperationErrorContainer").style.display = 'none';
+    }
+}
+function showLabelOperationErrorContainer()
+{
+    document.getElementById("labelOperationErrorContainer").style.display = 'block';
+}
+function toggleWaitImageAndStatus(isOn)
+{
+    if (isOn)
+        document.getElementById("waitImageAndStatus").style.display = 'inline';
+    else
+        document.getElementById("waitImageAndStatus").style.display = 'none';
+}
+function setLabelOperationStatusMessage(htmlMessage)
+{
+    document.getElementById("labelOperationStatus").innerHTML = htmlMessage;
+}
+function handleException(exception, htmlMessage)
+{
+    alert(exception);
+    handleActionError(htmlMessage);
+}
+function handleError(htmlMessage)
+{
+    handleActionError(htmlMessage);
+}
+function handleActionError(htmlMessage)
+{
+    operationInProgress = false;
+    toggleWaitImageAndStatus(false);
+    setLabelOperationStatusMessage('');
+    document.getElementById("errorSpan").innerHTML = htmlMessage;
+}

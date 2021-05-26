@@ -1,0 +1,27 @@
+"./test/c.ncce.wiki.EXP.c", line 283: warning: a value of type "int **" cannot be assigned to an entity of type "volatile int **"
+    ipp = &ip; /* produces warnings in modern compilers */
+        ^
+
+"./test/c.ncce.wiki.EXP.c", line 285: warning: a value of type "int **" cannot be assigned to an entity of type "volatile int **"
+    ipp = (int**) &ip; /* constraint violation */
+        ^
+
+"./test/c.ncce.wiki.EXP.c", line 347: warning: return value type does not match the function type
+    return v_pointer;
+           ^
+
+c.ncce.wiki.EXP.c:81: warning: EXP01-C: Do not take the sizeof a pointer to determine the sizeof a type
+c.ncce.wiki.EXP.c:121: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.wiki.EXP.c:156: warning: EXP04-C: Do not perform byte-by-byte comparisons between structures
+c.ncce.wiki.EXP.c:170: warning: EXP05-C: Do not cast away a const qualification
+c.ncce.wiki.EXP.c:187: warning: EXP06-C: Operands to the sizeof operator should not contain side effects
+c.ncce.wiki.EXP.c:205: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.wiki.EXP.c:211: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.wiki.EXP.c:242: warning: EXP11-C: Do not apply operators expecting one type to data of an incompatible type
+c.ncce.wiki.EXP.c:243: warning: EXP11-C: Do not apply operators expecting one type to data of an incompatible type
+c.ncce.wiki.EXP.c:254: warning: EXP12-C: Do not ignore values returned by functions: puts
+c.ncce.wiki.EXP.c:261: error: EXP30-C: Do not depend on order of evaluation between sequence points
+c.ncce.wiki.EXP.c:320: error: EXP34-C: Ensure pointer is valid before dereferencing it
+c.ncce.wiki.EXP.c:322: error: EXP34-C: Ensure pointer is valid before dereferencing it
+c.ncce.wiki.EXP.c:347: error: EXP36-C: Do not convert pointers into more strictly aligned pointer types
+c.ncce.wiki.EXP.c:364: warning: EXP11-C: Do not apply operators expecting one type to data of an incompatible type

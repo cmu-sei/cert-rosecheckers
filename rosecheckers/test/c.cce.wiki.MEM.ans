@@ -1,0 +1,4 @@
+"./test/c.cce.wiki.MEM.c", line 348: warning: variable "b" was declared but never referenced
+    char *b;
+          ^
+c.cce.wiki.MEM.c:254: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer

@@ -1,0 +1,20 @@
+c.ncce.wiki.FIO.c:109: warning: FIO01-C: Be careful using functions that use file names for identification
+c.ncce.wiki.FIO.c:156: warning: EXP12-C: Do not ignore values returned by functions: fseek
+c.ncce.wiki.FIO.c:236: error: EXP37-C: Call functions with the arguments intended by the API
+c.ncce.wiki.FIO.c:265: warning: FIO07-C: Prefer fseek() to rewind()
+c.ncce.wiki.FIO.c:286: warning: FIO08-C: Take care when calling remove() on an open file
+c.ncce.wiki.FIO.c:333: warning: FIO12-C: Prefer setvbuf() to setbuf()
+c.ncce.wiki.FIO.c:352: warning: FIO13-C: Never push back anything other than one read character
+c.ncce.wiki.FIO.c:423: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+c.ncce.wiki.FIO.c:432: error: FIO30-C: Exclude user input from format strings
+c.ncce.wiki.FIO.c:495: warning: EXP12-C: Do not ignore values returned by functions: fgets
+c.ncce.wiki.FIO.c:506: warning: INT07-C: Use only explicitly signed or unsigned char type for numeric values
+c.ncce.wiki.FIO.c:506: error: FIO34-C: Use int to capture the return value of character I/O functions
+c.ncce.wiki.FIO.c:556: error: FIO38-C: Do not use a copy of a FILE object for input and output
+c.ncce.wiki.FIO.c:577: error: FIO39-C: Do not alternately input and output from a stream without an intervening flush or positioning call
+c.ncce.wiki.FIO.c:625: error: FIO42-C: Ensure files are properly closed when they are no longer needed
+c.ncce.wiki.FIO.c:634: warning: ENV04-C: Do not use system() or popen() unless you need a command interpreter
+c.ncce.wiki.FIO.c:654: error: FIO43-C: Do not use fopen() on the results of tmpnam()
+c.ncce.wiki.FIO.c:680: error: FIO43-C: Do not use open() on the results of mktemp()
+c.ncce.wiki.FIO.c:692: error: FIO43-C: Do not use tmpfile()
+c.ncce.wiki.FIO.c:712: error: FIO44-C: Only use values for fsetpos() that are returned from fgetpos()

@@ -1,0 +1,17 @@
+"./test/c.ncce.wiki.INT.c", line 132: warning: integer conversion resulted in a change of sign
+    const char c = 200;
+                   ^
+
+c.ncce.wiki.INT.c:91: error: INT33-C: Ensure that division and modulo operations do not result in divide-by-zero errors
+c.ncce.wiki.INT.c:115: warning: INT05-C: Do not use input functions to convert character data if they cannot handle all possible inputs
+c.ncce.wiki.INT.c:123: warning: INT01-C: Use strtol() or a related function to convert a string token to an integer
+c.ncce.wiki.INT.c:132: warning: INT07-C: Use only explicitly signed or unsigned char type for numeric values
+c.ncce.wiki.INT.c:149: warning: INT09-C: Ensure enumeration constants map to unique values
+c.ncce.wiki.INT.c:181: warning: EXP11-C: Do not apply operators expecting one type to data of an incompatible type
+c.ncce.wiki.INT.c:181: warning: INT11-C: Take care when converting from pointer to integer or integer to pointer
+c.ncce.wiki.INT.c:188: warning: INT12-C: Do not make assumptions about the type of a plain int bit-field when used in an expression
+c.ncce.wiki.INT.c:213: warning: INT14-C: Avoid performing bitwise and arithmetic operations on the same data
+c.ncce.wiki.INT.c:246: error: INT32-C: Ensure that operations on signed integers do not result in overflow
+c.ncce.wiki.INT.c:259: error: INT33-C: Ensure that division and modulo operations do not result in divide-by-zero errors
+c.ncce.wiki.INT.c:269: warning: INT13-C: Use bitwise operators only on unsigned operands
+c.ncce.wiki.INT.c:269: error: INT34-C: Do not shift a negative number of bits or more bits than exist in the operand

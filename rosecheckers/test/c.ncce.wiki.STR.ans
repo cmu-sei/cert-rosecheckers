@@ -1,0 +1,21 @@
+"./test/c.ncce.wiki.STR.c", line 67: warning: argument of type "signed char *" is incompatible with parameter of type "const char *"
+    len = strlen(scstr);  /* warns when char is unsigned */
+                 ^
+
+"./test/c.ncce.wiki.STR.c", line 69: warning: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+    len = strlen(ucstr);  /* warns when char is signed */
+                 ^
+
+c.ncce.wiki.STR.c:62: warning: ARR02-C: Explicitly specify array dimensions, even if implicitly defined by an initializer
+c.ncce.wiki.STR.c:62: warning: STR04-C: Use plain char for characters in the basic character set
+c.ncce.wiki.STR.c:63: warning: ARR02-C: Explicitly specify array dimensions, even if implicitly defined by an initializer
+c.ncce.wiki.STR.c:63: warning: STR04-C: Use plain char for characters in the basic character set
+c.ncce.wiki.STR.c:77: warning: STR05-C: Use pointers to const when referring to string literals
+c.ncce.wiki.STR.c:86: error: ENV30-C: Do not modify the string returned by getenv()
+c.ncce.wiki.STR.c:94: warning: STR06-C: Do not assume that strtok() leaves the parse string unchanged
+c.ncce.wiki.STR.c:102: warning: STR05-C: Use pointers to const when referring to string literals
+c.ncce.wiki.STR.c:103: error: STR30-C: Do not attempt to modify string literals
+c.ncce.wiki.STR.c:131: error: STR32-C: Null-terminate byte strings as required
+c.ncce.wiki.STR.c:170: error: STR35-C: Do not copy data from an unbounded source to a fixed-length array
+c.ncce.wiki.STR.c:179: error: STR36-C: Do not specify the dimension of a character array initialized with a string literal
+c.ncce.wiki.STR.c:190: warning: INT01-C: Use rsize_t or size_t for all integer values representing the size of an object

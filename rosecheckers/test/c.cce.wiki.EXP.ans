@@ -1,0 +1,2 @@
+c.cce.wiki.EXP.c:204: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+c.cce.wiki.EXP.c:269: warning: EXP12-C: Do not ignore values returned by functions: rename

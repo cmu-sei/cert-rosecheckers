@@ -1,0 +1,4 @@
+c.cce.wiki.FIO.c:494: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+c.cce.wiki.FIO.c:571: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+c.cce.wiki.FIO.c:689: warning: MSC03-C: Avoid errors of addition
+c.cce.wiki.FIO.c:865: warning: ENV04-C: Do not use system() or popen() unless you need a command interpreter

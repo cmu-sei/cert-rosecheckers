@@ -1,0 +1,3 @@
+c.ncce.xtra.POS.c:22: error: POS34-C: Do not call putenv() with an automatic variable
+c.ncce.xtra.POS.c:22: warning: EXP05-C: Do not cast away a const qualification
+c.ncce.xtra.POS.c:33: error: POS34-C: Do not call putenv() with an automatic variable

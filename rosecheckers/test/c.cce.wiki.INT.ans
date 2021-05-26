@@ -1,0 +1,2 @@
+c.cce.wiki.INT.c:346: error: INT32-C: Ensure that operations on signed integers do not result in overflow
+c.cce.wiki.INT.c:372: error: INT34-C: Do not shift a negative number of bits or more bits than exist in the operand

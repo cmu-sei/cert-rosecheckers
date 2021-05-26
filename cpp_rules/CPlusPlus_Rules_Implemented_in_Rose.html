@@ -1,0 +1,1386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>C++ Rules Implemented with ROSE - CERT Secure Coding Standards</title>
+
+
+    
+                
+    <script language="javascript">
+        var contextPath = '/confluence';
+        var i18n = [];
+    </script>
+
+                            <link rel="stylesheet" href="CPlusPlus_Rules_Implemented_in_Rose_files/main-action.css" type="text/css">
+            
+                <meta name="confluence-request-time" content="1198262161572">
+        <link rel="shortcut icon" href="https://www.securecoding.cert.org/confluence/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="https://www.securecoding.cert.org/confluence/images/icons/favicon.png">
+        
+            <script type="text/javascript" src="CPlusPlus_Rules_Implemented_in_Rose_files/effects.js"></script>
+    
+
+            
+
+    <script type="text/javascript">
+
+    function toggleMenu(menuId)
+    {
+        var visible = toggleVisibility(menuId);
+        if (visible)
+            setCookie("confluence.leftnav." + menuId, true);
+        else
+            setCookie("confluence.leftnav.", false);
+    }
+
+    function isMenuExpanded(menuId)
+    {
+        return getCookie("confluence.leftnav." + menuId);
+    }
+
+    function initMenuItem(menuId)
+    {
+        if (document.getElementById(menuId))
+        {
+            if (isMenuExpanded(menuId) == 'true')
+            {
+                document.getElementById(menuId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(menuId).style.display = "none";
+            }
+        }
+    }
+</script>
+
+<style>
+    .imageLink{
+        margin:2px;
+        vertical-align: bottom;
+        float:left;
+    }
+
+        /*Overwritten styles in the main.css*/
+        .greybox {
+            border: 0px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            background-color: #F0F0F0;
+	        padding: 3px;
+	        margin: 0;
+        }
+</style><style type="text/css">
+div.auto_complete {
+    width: 350px;
+    background: #fff;
+}
+
+div.auto_complete ul {
+    border: 1px solid #888;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+div.auto_complete ul li {
+    margin: 0;
+    padding: 3px;
+}
+
+div.auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div.auto_complete ul strong.highlight {
+    color: #800;
+    margin: 0;
+    padding: 0;
+}
+</style></head><body onload="placeFocus()">
+    <!--BEGIN HEADER -->
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr>
+<td valign="middle"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="94" width="5"></td><td valign="middle"><a href="http://www.cert.org/"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/cert_logo.gif" alt="CERT" border="0"></a></td><td align="right" valign="bottom" width="100%">
+
+<!--NAVIGATION TABLE-->
+<a href="http://www.cert.org/work/software_assurance.html"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1off.jpg" alt="Software Assurance" border="0" height="21" width="132"></a><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="21" width="1"><a href="http://www.cert.org/work/secure_systems.html"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/2off.jpg" alt="Secure Systems" border="0" height="21" width="109"></a><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="21" width="1"><a href="http://www.cert.org/work/organizational_security.html"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/3off.jpg" alt="Organizational Security" border="0" height="21" width="140"></a><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="21" width="1"><a href="http://www.cert.org/work/coordinating_response.html"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/4off.jpg" alt="Coordinating Response" border="0" height="21" width="140"></a><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="21" width="1"><a href="http://www.cert.org/work/training.html"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/5off.jpg" alt="Training" border="0" height="21" width="75"></a><table border="0" cellpadding="0" cellspacing="0" width="600"></table>
+
+<!--END NAVIGATION TABLE -->
+
+</td></tr></tbody></table>
+
+<table bgcolor="#666666" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="3" width="1"></td></tr></tbody></table>
+
+<!--END HEADER -->
+
+
+    <script type="text/javascript">
+        function hideMessage(messageId)
+        {
+            var message = document.getElementById(messageId)
+            message.style.display = "none";
+            setCookie(messageId, true);
+        }
+    </script>
+
+        
+
+<div id="PageContent">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr class="topBar">
+            <td align="left">
+                &nbsp;
+                <span class="topBarDiv fontSizeSmaller">             
+    <script language="JavaScript">
+        function showBreadcrumbsEllipsis()
+        {
+            document.getElementById('breadcrumbsEllipsis').style.display = 'none';
+            document.getElementById('breadcrumbsExpansion').style.display = 'inline';
+        }
+    </script>
+                                                    <a href="https://www.securecoding.cert.org/confluence/dashboard.action">Dashboard</a>
+                                     &gt;                         <a href="https://www.securecoding.cert.org/confluence/display/seccode">Secure Coding</a>
+                                                    <span id="breadcrumbs">
+                    &gt;
+                    <span id="breadcrumbsEllipsis">
+                        <a href="#" onclick="showBreadcrumbsEllipsis();return false;" title="                    CERT Secure Coding Standards    ">...</a>
+                    </span>
+                    <span id="breadcrumbsExpansion" style="display: none;">
+                                <a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+Secure+Coding+Standards">CERT Secure Coding Standards</a>
+        </span>
+                </span>
+                                                             &gt;                         <a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+C+Secure+Coding+Standard">CERT C Secure Coding Standard</a>
+                                     &gt;                         <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304">C++ Rules Implemented with ROSE</a>
+                
+     </span>
+            </td>
+
+            <td style="white-space: nowrap;" align="right" valign="middle">
+                    <form id="quickSearch" method="post" action="/confluence/dosearchsite.action" name="searchForm">
+        <input name="quickSearch" value="true" type="hidden">
+        
+        <input name="searchQuery.spaceKey" value="conf_global" type="hidden">
+        <input accesskey="s" name="searchQuery.queryString" size="25" type="text">
+        <input value="Search" type="submit">
+    </form>
+            </td>
+        </tr>
+    </tbody></table>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+                    <td class="sidebar" nowrap="nowrap" valign="top" width="150">
+                <div class="leftnav">
+                     <div id="logodiv">
+                        					        					                          </div>
+                      <div id="menu">
+                        <table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+<td class="confluenceTd" valign="top" width="100%">
+<div class="panelMacro"><table class="infoMacro"><tbody><tr><td>
+
+<p><b>Standards</b><br>
+<a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+Secure+Coding+Standards" title="CERT Secure Coding Standards">Overview</a><br>
+<a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+C+Secure+Coding+Standard" title="CERT C Secure Coding Standard">C Language</a><br>
+<a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=637" title="CERT C++ Secure Coding Standard">C++</a></p>
+
+<p><b>CERT Websites</b><br>
+<a href="http://www.cert.org/" rel="nofollow">CERT</a><br>
+<a href="http://www.cert.org/secure-coding" rel="nofollow">Secure Coding</a><br>
+<a href="http://www.cert.org/tech_tips/" rel="nofollow">Tech Tips</a></p>
+
+<p><b>CERT Employment</b> <br>
+<a href="http://www.cert.org/jobs/" rel="nofollow"><b>Opportunities</b></a></p>
+
+<p><a href="http://www.cert.org/books/secure-coding/" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/securec.jpg" align="absmiddle" border="0" width="100"></a></p>
+
+<p><b>Related Sites</b><br>
+<a href="http://www.us-cert.gov/" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/uscert_4g_sm.jpg" align="absmiddle" border="0"></a><br>
+<a href="http://www.cylab.cmu.edu/" title="http://www.cylab.cmu.edu/" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/cylab_alt.jpg" align="absmiddle" border="0"></a></p></td></tr></tbody></table></div></td></tr></tbody></table>
+                        
+<h5><a href="#" onclick="toggleMenu('pagenav'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/docs_16.gif" align="absmiddle" border="0" height="16" width="16"> Page Operations</a></h5>
+<div id="pagenav" class="subnav" style="display: block;">
+   <ul>
+	   		   <li><a id="viewPageLink" href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304" class="current" accesskey="v"><u>V</u>iew</a></li>
+	   		   <li><a id="editPageLink" href="https://www.securecoding.cert.org/confluence/pages/editpage.action?pageId=9863304" accesskey="e"><u>E</u>dit</a></li>
+	   		   <li><a id="viewAttachmentsLink" href="https://www.securecoding.cert.org/confluence/pages/viewpageattachments.action?pageId=9863304" accesskey="a"><u>A</u>ttachments (0)</a></li>
+	   		   <li><a id="viewPageInfoLink" href="https://www.securecoding.cert.org/confluence/pages/viewinfo.action?pageId=9863304" accesskey="i"><u>I</u>nfo</a></li>
+	      </ul>
+</div>
+
+                        
+                        
+<h5><a href="#" onclick="toggleMenu('browsenav'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/browse_space.gif" title="Find Content" align="absmiddle" border="0" height="16" width="16"> Browse Space</a></h5>
+<div id="browsenav" class="subnav" style="display: none;">
+	<ul>
+					<li><a href="https://www.securecoding.cert.org/confluence/pages/listpages.action?key=seccode">Pages</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/labels/listlabels-heatmap.action?key=seccode">Labels</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/spaces/listattachmentsforspace.action?key=seccode">Attachments</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/spaces/viewmailarchive.action?key=seccode">Mail</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/spaces/space-bookmarks.action?spaceKey=seccode">Bookmarks</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/pages/viewrecentblogposts.action?key=seccode">News</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/spaces/usage/report.action?key=seccode">Activity</a></li>
+					<li><a href="https://www.securecoding.cert.org/confluence/spaces/viewspacesummary.action?key=seccode">Advanced</a></li>
+			</ul>
+</div>
+
+<h5><a href="#" onclick="toggleMenu('addcontent'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_16.gif" title="Find Content" align="absmiddle" border="0" height="16" width="16"> Add Content</a></h5>
+<div id="addcontent" class="subnav" style="display: none;">
+    <ul>
+										
+									<li><a href="https://www.securecoding.cert.org/confluence/pages/createpage.action?spaceKey=seccode&amp;fromPageId=9863304"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_page_16.gif" title="Add Page" align="absmiddle" border="0" height="16" width="16">&nbsp;Add Page</a></li>
+						    					
+									<li><a href="https://www.securecoding.cert.org/confluence/pages/createblogpost.action?spaceKey=seccode"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_blogentry_16.gif" title="Add News" align="absmiddle" border="0" height="16" width="16">&nbsp;Add News</a></li>
+						    			</ul>
+</div>
+
+                      </div>
+                    <script type="text/javascript">
+                        initMenuItem("browsenav");
+                        initMenuItem("pagenav");
+                        initMenuItem("addcontent");
+                    </script>
+                </div>
+            </td>
+                    <td valign="top" width="100%">
+                <!-- Inner content table -->
+                <table cellpadding="2" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td colspan="2" style="background-color: rgb(240, 240, 240);" align="right" valign="middle">
+                            <div style="margin-right: 3px;">
+<span class="smalltext" id="userNavBar">
+                    Welcome <a href="https://www.securecoding.cert.org/confluence/display/%7Esvoboda">David Svoboda</a> |
+
+                            <a href="https://www.securecoding.cert.org/confluence/users/viewuserhistory.action" onclick="window.open(this.href,'user_history', 'width=620, height=175, resizable'); return false;" title="View History">History</a> |
+            
+            <a href="https://www.securecoding.cert.org/confluence/users/viewuserprofile.action?username=svoboda">Preferences</a> |
+
+            
+            <a href="https://www.securecoding.cert.org/confluence/logout.action" id="logout">Log Out</a>&nbsp;
+            </span>
+                                            <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;decorator=printable" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/print_16.gif" alt="View a printable version of the current page." title="View a printable version of the current page." align="absmiddle" border="0" height="16" hspace="1" vspace="1" width="16"></a>
+
+                                                                        
+                                                                        
+                                                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mainViewPane">
+                            <div>
+                                <table class="fullWidthBorderless">
+                                    <tbody><tr><td><span id="spaceFullNameLink">            <a href="https://www.securecoding.cert.org/confluence/display/seccode">Secure Coding</a>    </span></td>
+                                    <td align="right">
+    <a id="pageFavourite" href="https://www.securecoding.cert.org/confluence/labels/addfavourite.action?entityId=9863304"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/star_grey.gif" title="Add this page to your favourites list" alt="Add this page to your favourites list" align="absmiddle" border="0" height="16" width="16"></a>
+    <a id="pageWatch" href="https://www.securecoding.cert.org/confluence/pages/addpagenotification.action?pageId=9863304"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/watch_16.gif" title="Watch this page" alt="Watch this page" align="absmiddle" border="0" height="16" width="16"></a>
+</td>
+                                </tr></tbody></table>
+                                <div class="pagetitle" style="padding: 0px; margin-bottom: 5px; margin-top: 2px;">
+                                                                            C++ Rules Implemented with ROSE
+                                    </div>
+                            </div>
+                                                        <div id="content">
+                                <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    <!--[if gte IE 5.5000]>
+<script language="JavaScript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 or higher.
+   {
+   for(var i=0; i<document.images.length; i++)
+      {
+	  var img = document.images[i]
+	  var imgName = img.src.toUpperCase()
+	  if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+	     {
+		 var imgID = (img.id) ? "id='" + img.id + "' " : ""
+		 var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+		 var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+		 var imgStyle = "display:inline-block;" + img.style.cssText
+		 if (img.align == "left") imgStyle = "float:left;" + imgStyle
+		 if (img.align == "right") imgStyle = "float:right;" + imgStyle
+		 if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+		 var strNewHTML = "<span " + imgID + imgClass + imgTitle
+		 + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+	     + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+		 + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+		 img.outerHTML = strNewHTML
+		 i = i-1
+	     }
+      }
+   }
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<div class="smalltext">
+                Added by             <a href="https://www.securecoding.cert.org/confluence/display/%7Escd">Stephen C. Dewhurst</a>    , last edited by             <a href="https://www.securecoding.cert.org/confluence/display/%7Escd">Stephen C. Dewhurst</a>     on Dec 21, 2007
+                      
+    
+ 
+
+
+
+<!-- Delay the loading of the external javascript file needed for labels (as it takes too long to load and visibly holds loading of the page body) -->
+<!-- To do this without javascript errors over undefined functions, we need to declare stubs here (that are overrided later by the proper implementations) -->
+<script language="JavaScript" type="text/javascript">
+    function doAddLabel(hideTextfieldAfterAddParam)
+    {
+        // stub
+    }
+
+    function onAddLabel()
+    {
+        // stub
+    }
+
+    function showLabelsInput()
+    {
+        // stub
+    }
+</script>
+
+<!-- This is a hack to work around an apparent SiteMesh bug - http://jira.opensymphony.com/browse/SIM-198 -->
+
+
+<span class="error"><span class="errorMessage" id="errorSpan"></span></span>
+<form name="addLabelForm" method="" action="" onsubmit="doAddLabel(false); return false;" style="margin: 0px; padding: 0px;">
+    <div style="float: left;">Labels:&nbsp;</div>
+    <div id="labelsInfo" style="float: left; width: 90%;">
+        <span id="labelsList">
+                    (None)
+                </span>
+                    <span id="editLabelsLink" class="inline-control-link fontSizeTiny" style="display: inline;">
+            <a href="" onclick="onAddLabel(); showLabelsInput(); return false;">EDIT</a>
+        </span>
+            </div>
+    <br clear="all"><!-- Do not remove this line-break. You will make Safari cry. -->
+    <div id="labelInputSpan" style="display: none; clear: both;">
+        <div style="border: 1px solid rgb(204, 204, 204); padding: 8px; background-color: rgb(240, 240, 240);">
+
+        <div id="labelOperationErrorContainer" style="display: none;"><span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span></div>
+
+        <table width="100%">
+            <tbody><tr>
+                <td>
+                    <div class="formtitle" style="padding-bottom: 3px; font-size: 13px;">Add Labels</div>
+                </td>
+                <td align="right"><div id="waitImageAndStatus" style="display: none; height: 16px;"><img alt="Wait Image" src="CPlusPlus_Rules_Implemented_in_Rose_files/wait.gif" align="absmiddle" border="0">&nbsp;<span id="labelOperationStatus" class="smalltext" style="vertical-align: middle;"></span></div></td>
+            </tr>
+            <tr><td width="50%">
+                    Enter labels to add to this page:<br>
+        <input autocomplete="off" id="labelName" name="labelsString" value="" class="monospaceInput" size="40" type="text">
+        <input onclick="doAddLabel(false); return false;" value="Add" type="submit"><input onclick="doAddLabel(true); return false;" value="Done" type="button">
+        <div style="display: none;" class="auto_complete" id="labelsAutocompleteList"></div>
+        <div class="smalltext">
+            <em>Tip:</em> Looking for a label? Just start typing.
+        </div>
+        </td>
+            <td valign="top" width="50%">
+                <div id="suggestedLabelsSpan"></div>
+            </td>
+        </tr></tbody></table>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript">
+        // if there is javascript support, enable the [Edit] link that enables AJAX label adding/removing functionality
+        if (document.getElementById('editLabelsLink'))
+        {
+            document.getElementById('editLabelsLink').style.display = 'inline';
+        }
+    </script>
+</div>
+
+
+<div class="wiki-content" style="margin-right: 10px;">
+   <!-- wiki content -->
+            <h1><a name="C++RulesImplementedwithROSE-C\RulesImplementedinROSE"></a>C++ Rules Implemented in ROSE</h1>
+
+
+<h2><a name="C++RulesImplementedwithROSE-Currentprogress:"></a>Current progress:</h2>
+
+<p><font color="red">NO</font> - 80</p>
+
+
+<p><font color="orange">PARTIAL</font> - 6</p>
+
+
+<p><font color="green">DONE</font> - 15</p>
+
+<p>Total: 101</p>
+
+<table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> PRE31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Prefer inline functions to macros </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> PRE32-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use parentheses within macros around variable names </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> PRE33-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Macro expansion must always be parenthesized </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Declare immutable values using const or enum </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL01-A </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not reuse variable names in sub-scopes </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use visually distinct identifiers </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL03-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Place const as the rightmost declaration specifier </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL04-A </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Declare no more than one variable per declaration </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL05-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure derived classes properly conform to an "is-a" relationship with their base classes </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Do not use names reserved for the implementation </td>
+<td class="confluenceTd"> Currently disabled due to difficulty of configuring rule for each platform.&nbsp; Without configuration, many false positives. <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid self initialization </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DCL32-C </td>
+<td class="confluenceTd">&nbsp;</td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Avoid runtime static initialization of objects with external linkage </td>
+<td class="confluenceTd"> Currently disabled due to false positives on extern declarations that are not definitions. <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Do not use C-style casts </td>
+<td class="confluenceTd"> Currently disabled due to false positives. <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> The second operands of the logical AND and OR operators should not contain side effects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Do not overload the logical AND and OR operators </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP03-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Do not overload the &amp; operator </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP04-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Do not overload the comma operator </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP05-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid conversions using void pointers </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP06-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use parentheses for precedence of operation </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP07-A </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Operands to the sizeof operator should not contain side effects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP08-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> A switch statement should have a default clause unless every enumeration value is tested </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP09-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Treat relational and equality operators as if they were nonassociative </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP10-A </td>
+<td class="confluenceTd">&nbsp;</td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Prefer the prefix forms of ++ and -- <br clear="all"> </td>
+<td class="confluenceTd"> Disabled, buggy. <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not cast away const </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not modify constant values </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP32-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not access a volatile object through a non-volatile reference </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP33-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not reference uninitialized variables </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP34-C </td>
+<td class="confluenceTd"> <font color="orange">medium</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not depend on order of evaluation between sequence points </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP35-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure that the right hand operand of a shift operation is within range </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP36-C </td>
+<td class="confluenceTd"> <font color="orange">medium</font> </td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Do not cast or delete pointers to incomplete classes </td>
+<td class="confluenceTd"> Disabled, buggy. <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP37-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid side effects in assertions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP38-C </td>
+<td class="confluenceTd">&nbsp;</td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Avoid calling your own virtual functions in constructor and destructors <br clear="all"> </td>
+<td class="confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class="confluenceTd"> EXP39-C </td>
+<td class="confluenceTd">&nbsp;</td>
+<td class="confluenceTd"> <font color="orange">PARTIAL</font> </td>
+<td class="confluenceTd"> Don't bitwise copy class objects <br clear="all"> </td>
+<td class="confluenceTd"> Disabled, buggy. <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> INT00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not make assumptions about the type of a bit-field when used in an expression </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use size_t for all integer values representing the size of an object </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Understand integer conversion rules </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT03-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use a secure integer library </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT04-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Enforce limits on integer values originating from untrusted sources </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT05-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not input integer values using formatted input </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT06-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use strtol() to convert a string token to an integer </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure that integer conversions do not result in lost or misinterpreted data </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT32-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure that integer operations do not result in an overflow </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT33-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure that division and modulo operations do not result in divide-by-zero errors </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT34-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure integer values are within valid ranges </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> INT35-C </td>
+<td class="confluenceTd"> <font color="orange">medium</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not truncate the return value from a character input function </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> FLP00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Consider avoiding floating point numbers when precise computation is needed </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> FLP30-C </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Take granularity into account when comparing floating point values </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> FLP31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not use floating point variables as loop counters </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> FLP32-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Prevent domain errors in math functions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> ARR00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid using the sizeof operator to determine the size of an array </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ARR30-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Guarantee that array indices are within the valid range </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ARR31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use consistent array notation across all source files </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Create a copy constructor and assignment operator for non copyable objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN30-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not refer to an object outside of its lifetime </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not access deleted objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN32-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not delete this </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN33-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not use invalid iterators </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> DAN34-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not dereference invalid pointers </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> ERR00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use exception handling rather than error codes </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ERR01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Prefer special-purpose types for exceptions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ERR02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Throw anonymous temporaries and catch by reference </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ERR30-C </td>
+<td class="confluenceTd"> <b>RESERVED</b> <br clear="all"> </td>
+<td class="confluenceTd"> <b>RESERVED</b> <br clear="all"> </td>
+<td class="confluenceTd"> <b>RESERVED</b> </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> ERR31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Destructors must be exception-safe </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> RES30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Never allocate more than one resource in a single statement </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Perform every resource allocation in its own statement that immediately assigns the resource to an owning object </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES32-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use new and delete rather than raw memory allocation and deallocation </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES33-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Object and array delete must be properly paired with the corresponding new </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES34-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Encapsulate resources that require paired acquire and release in objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES35-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Declare a copy constructor, a copy assignment operator, and a destructor in a class that manages resources </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES36-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure that copy assignment operators do not damage an object that is copied to itself </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES37-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Release resources that require paired acquire and release in the object's destructor </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES38-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not leak resources when throwing exceptions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> RES39-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not use longjmp </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Declare data members private </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Be careful with the definition of conversion operators </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Do not hide inherited non-virtual member functions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ03-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Prefer not to overload virtual functions </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ04-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Prefer not to give virtual functions default argument initializers </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ30-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not use pointer arithmetic polymorphically </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not treat arrays polymorphically </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ32-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="green">DONE</font> </td>
+<td class="confluenceTd"> Ensure that single-argument constructors are marked "explicit" </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ33-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not slice polymorphic objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> OBJ34-C </td>
+<td class="confluenceTd"> <font color="orange">medium</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Ensure the proper destructor is called for polymorphic objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Prefer basic_string to the use of null-terminated byte strings </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use the c_str() member to retrieve a const pointer to a null-terminated byte string </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC31-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not modify the null-terminated byte string returned by the c_str() member </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC32-C </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not use the pointer value returned by c_str() after any subsequent call to a non-const member function </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC33-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use valid references, pointers, and iterators to reference string objects </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> BSC34-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Range check element access </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<td class="confluenceTd"> Notes </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STR30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not attempt to modify string literals </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STR32-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Allocated adequate space when copying bounded strings </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STR35-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Limit input when reading into a fixed length array </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<td class="confluenceTd"> Notes </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STL30-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use Valid Iterators </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STL31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use Valid Iterator Ranges </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> STL32-C </td>
+<td class="confluenceTd"> <font color="gold">low</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use a Valid Ordering Rule </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> FIO00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Prefer streams to C-style input output </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> FIO01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Do not make assumptions about open() and file creation </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<th class="confluenceTh"> Rule </th>
+<th class="confluenceTh"> Severity </th>
+<th class="confluenceTh"> Progress </th>
+<th class="confluenceTh"> Description </th>
+<th class="confluenceTh"> Notes </th>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC00-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Compile cleanly at high warning levels </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC01-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Strive for Logical Completeness </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC02-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid errors of omission </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC03-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Avoid errors of addition </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC04-A </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Use comments consistently and in a readable fashion </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> MSC31-C </td>
+<td class="confluenceTd"> <font color="red">high</font> </td>
+<td class="confluenceTd"> <font color="red">NO</font> </td>
+<td class="confluenceTd"> Obey the One Definition Rule </td>
+<td class="confluenceTd"> <br clear="all"> </td>
+</tr>
+</tbody></table>
+</div>
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304"
+    dc:identifier="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304"
+    dc:title="C++ Rules Implemented with ROSE"
+    trackback:ping="https://www.securecoding.cert.org/confluence/rpc/trackback/9863304"/>
+</rdf:RDF>
+-->
+        <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+<div class="wiki-content" style="margin-right: 10px;">
+    <p style="clear: both;"><!-- comments should always display underneath the content. we should have a 'clear:both' here just in case there are floats or aligned images in the content -->
+
+    
+    
+    
+    
+                                        </p><div style="margin-top: 30px;">
+                <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;showComments=true&amp;showCommentArea=true#addcomment"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_comment_16.gif" align="absmiddle" border="0" height="16" width="16"></a>
+                <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;showComments=true&amp;showCommentArea=true#addcomment">Add Comment</a>
+                </div>
+                        </div>
+                            </div>
+                        </td>
+                            
+    
+        
+    
+                                                </tr>
+                </tbody></table>
+                <!-- End inner content table -->
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+  	                                                            <div class="bottomshadow"></div>
+<!--   	<div id="poweredby" class="smalltext">
+		Powered by <a href="http://www.atlassian.com/software/confluence" class="smalltext">Atlassian Confluence</a> 2.7, the <a href="http://www.atlassian.com/software/confluence" class="smalltext">Enterprise Wiki</a>.
+		<a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="smalltext">Bug/feature request</a>
+		-
+		<a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="smalltext">Atlassian news</a>
+		-
+		<a href="/confluence/administrators.action">Contact administrators</a>
+        <br/>
+	</div>
+ -->
+
+<!-- delay the loading of large javascript files to the end so that they don't interfere with the loading of page content -->
+<span style="display: none;">
+    <script type="text/javascript" language="JavaScript">var domainName = 'https://www.securecoding.cert.org/confluence'; var entityId = '9863304'; var spaceKey = 'seccode'</script>
+    <script type="text/javascript" language="JavaScript" src="CPlusPlus_Rules_Implemented_in_Rose_files/labels-javascript"></script>
+    <script>new Ajax.Autocompleter('labelName', 'labelsAutocompleteList', '9863304', { tokens: new Array(',', ' '), dwrFunction: GenerateAutocompleteLabelsListForEntity.autocompleteLabels});</script>
+</span>
+
+<!--BEGIN FOOTER -->
+
+
+<table bgcolor="#666666" border="0" cellpadding="8" cellspacing="0" width="100%"><tbody><tr>
+<td width="50%"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/sei_cmu_logo2.gif" alt="Software Engineering Institute | Carnegie Mellon University" usemap="#footermap" border="0">
+	<map name="footermap" id="footermap"><area shape="rect" coords="2,2,233,19" href="http://www.sei.cmu.edu/" alt="Software Engineering Institute"><area shape="rect" coords="241,3,341,19" href="http://www.cmu.edu/" alt="Carnegie Mellon University">
+		
+		
+	</map>
+</td>
+<td align="right" width="50%">
+	<span style="font-size: 11px; color: rgb(255, 255, 255); font-family: Verdana;">
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/">Home</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/meet_cert/meetcertcc.html">About</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/contact_cert/">Contact</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/faq/cert_faq.html">FAQ</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/stats/">Statistics</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/jobs/">Jobs</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/legal_stuff/">Legal</a> | 
+	<a style="color: rgb(255, 255, 255);" href="https://www.securecoding.cert.org/confluence/display/seccode/Terms+and+Conditions">Legal</a>
+	<br>
+	Copyright © 1995-2007 Carnegie Mellon University 
+</span></td>
+</tr>
+</tbody></table>
+
+
+<!--END FOOTER -->
+</body></html>

@@ -1,0 +1,5 @@
+cpp.ncce.wiki.ERR.C:38: warning: ERR08-CPP: Only catch or throw special-purpose exception objects.
+cpp.ncce.wiki.ERR.C:40: warning: ERR08-CPP: Do not catch or throw pointers.
+cpp.ncce.wiki.ERR.C:42: warning: ERR08-CPP: Only catch or throw special-purpose exception objects.
+cpp.ncce.wiki.ERR.C:44: warning: ERR08-CPP: Do not catch or throw pointers.
+cpp.ncce.wiki.ERR.C:46: warning: ERR08-CPP: Do not catch or throw classes (except standard exceptions).

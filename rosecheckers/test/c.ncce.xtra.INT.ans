@@ -1,0 +1,3 @@
+c.ncce.xtra.INT.c:21: warning: INT09-C: Ensure enumeration constants map to unique values
+c.ncce.xtra.INT.c:27: error: INT33-C: Ensure that division and modulo operations do not result in divide-by-zero errors
+c.ncce.xtra.INT.c:28: error: INT33-C: Ensure that division and modulo operations do not result in divide-by-zero errors

@@ -1,0 +1,3 @@
+c.cce.wiki.STR.c:62: error: STR31-C: String copy destination must contain sufficient storage
+c.cce.wiki.STR.c:195: warning: MSC03-C: Avoid errors of addition
+c.cce.wiki.STR.c:222: warning: INT01-C: Use rsize_t or size_t for all integer values representing the size of an object

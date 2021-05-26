@@ -1,0 +1,5 @@
+c.ncce.wiki.POS.c:41: error: POS30-C: Use the readlink() function properly
+c.ncce.wiki.POS.c:51: error: POS33-C: Do not use vfork()
+c.ncce.wiki.POS.c:70: error: POS34-C: Do not call putenv() with an automatic variable
+c.ncce.wiki.POS.c:93: error: POS35-C: Avoid race conditions while checking for the existence of a symbolic link
+c.ncce.wiki.POS.c:113: error: POS36-C: Observe correct revocation order while relinquishing privileges

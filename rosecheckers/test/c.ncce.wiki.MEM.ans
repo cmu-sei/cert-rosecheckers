@@ -1,0 +1,18 @@
+c.ncce.wiki.MEM.c:95: warning: MEM01-C: Store a new value in pointers immediately after free()
+c.ncce.wiki.MEM.c:95: error: MEM30-C: Do not access freed memory
+c.ncce.wiki.MEM.c:95: error: MEM31-C: Free dynamically allocated memory exactly once.
+c.ncce.wiki.MEM.c:101: warning: MEM01-C: Store a new value in pointers immediately after free()
+c.ncce.wiki.MEM.c:148: warning: MEM04-C: Do not perform zero length allocations
+c.ncce.wiki.MEM.c:166: warning: MEM04-C: Do not perform zero length allocations
+c.ncce.wiki.MEM.c:224: warning: MEM07-C: Ensure that the arguments to calloc() when multiplied can be represented as a size_t
+c.ncce.wiki.MEM.c:254: warning: MEM08-C: Use realloc() only to resize dynamically allocated arrays
+c.ncce.wiki.MEM.c:296: error: MEM30-C: Do not access freed memory
+c.ncce.wiki.MEM.c:296: error: MEM34-C: Only free memory allocated dynamically
+c.ncce.wiki.MEM.c:307: warning: MEM01-C: Store a new value in pointers immediately after free()
+c.ncce.wiki.MEM.c:307: error: MEM30-C: Do not access freed memory
+c.ncce.wiki.MEM.c:329: warning: MEM01-C: Store a new value in pointers immediately after free()
+c.ncce.wiki.MEM.c:329: error: MEM30-C: Do not access freed memory
+c.ncce.wiki.MEM.c:329: error: MEM31-C: Free dynamically allocated memory exactly once.
+c.ncce.wiki.MEM.c:344: error: EXP34-C: Ensure pointer is valid before dereferencing it
+c.ncce.wiki.MEM.c:363: error: MEM33-C: Use the correct syntax for flexible array members
+c.ncce.wiki.MEM.c:413: error: MEM34-C: Only free memory allocated dynamically

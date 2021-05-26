@@ -1,0 +1,3 @@
+c.cce.xtra.POS.c:25: warning: MEM07-C: Ensure that the arguments to calloc() when multiplied can be represented as a size_t
+c.cce.xtra.POS.c:50: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+c.cce.xtra.POS.c:70: warning: EXP05-C: Do not cast away a const qualification

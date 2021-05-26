@@ -1,0 +1,5 @@
+c.ncce.xtra.EXP.c:21: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.xtra.EXP.c:23: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.xtra.EXP.c:28: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.xtra.EXP.c:35: warning: EXP09-C: malloc called using something other than sizeof()
+c.ncce.xtra.EXP.c:44: error: EXP30-C: Do not depend on order of evaluation between sequence points

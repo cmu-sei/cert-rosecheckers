@@ -1,0 +1,12 @@
+c.ncce.wiki.ARR.c:146: warning: EXP05-C: Do not cast away a const qualification
+"./test/c.ncce.wiki.ARR.c", line 245: warning: subscript out of range
+   	for (ip = &ar[0]; ip < &ar[21]; ip++) {
+   	                          ^
+
+c.ncce.wiki.ARR.c:83: warning: EXP01-C: Do not take the sizeof a pointer to determine the sizeof a type
+c.ncce.wiki.ARR.c:83: error: EXP34-C: Ensure pointer is valid before dereferencing it
+c.ncce.wiki.ARR.c:96: error: EXP36-C: Do not convert pointers into more strictly aligned pointer types
+c.ncce.wiki.ARR.c:96: warning: EXP01-C: Do not take the sizeof a pointer to determine the sizeof a type
+c.ncce.wiki.ARR.c:96: warning: MEM07-C: Ensure that the arguments to calloc() when multiplied can be represented as a size_t
+c.ncce.wiki.ARR.c:117: warning: INT01-C: Use rsize_t or size_t for all integer values representing the size of an object
+c.ncce.wiki.ARR.c:208: warning: EXP05-C: Do not cast away a const qualification

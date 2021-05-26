@@ -1,0 +1,10 @@
+c.ncce.wiki.SIG.c:74: error: SIG34-C: Do not call signal() from within interruptible signal handlers
+c.ncce.wiki.SIG.c:96: error: SIG30-C: Call only asynchronous-safe functions within signal handlers: free
+c.ncce.wiki.SIG.c:96: error: SIG31-C: Do not access or modify shared objects in a signal handler
+c.ncce.wiki.SIG.c:123: error: SIG30-C: Call only asynchronous-safe functions within signal handlers: strcpy
+c.ncce.wiki.SIG.c:123: error: SIG31-C: Do not access or modify shared objects in a signal handler
+c.ncce.wiki.SIG.c:147: error: SIG30-C: Call only asynchronous-safe functions within signal handlers: longjmp
+c.ncce.wiki.SIG.c:144: error: SIG31-C: Do not access or modify shared objects in a signal handler
+c.ncce.wiki.SIG.c:147: error: SIG32-C: Do not call longjmp() from within a signal handler
+c.ncce.wiki.SIG.c:211: error: SIG33-C: Do not recursively invoke the raise() function
+c.ncce.wiki.SIG.c:221: error: SIG34-C: Do not call signal() from within interruptible signal handlers

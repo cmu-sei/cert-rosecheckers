@@ -1,0 +1,10 @@
+"./test/c.ncce.xtra.DCL.c", line 21: warning: variable "tmp" was declared but never referenced
+    int tmp=1;
+        ^
+
+c.ncce.xtra.DCL.c:31: warning: DCL02-C: Use visually distinct identifiers: note1
+c.ncce.xtra.DCL.c:39: warning: DCL02-C: Use visually distinct identifiers: nome
+c.ncce.xtra.DCL.c:21: warning: DCL00-C: Const-qualify immutable objects: tmp
+c.ncce.xtra.DCL.c:23: warning: DCL02-C: Use visually distinct identifiers: tmp
+c.ncce.xtra.DCL.c:23: warning: DCL00-C: Const-qualify immutable objects: tmp
+c.ncce.xtra.DCL.c:23: warning: DCL01-C: Do not reuse variable names in subscopes: tmp

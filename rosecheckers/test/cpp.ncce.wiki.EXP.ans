@@ -1,0 +1,2 @@
+cpp.ncce.wiki.EXP.C:74: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
+cpp.ncce.wiki.EXP.C:77: warning: ARR001_C: Do not apply the sizeof operator to an object of pointer
