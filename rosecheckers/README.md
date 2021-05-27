@@ -36,12 +36,18 @@ DM21-0505
 
 # Rosecheckers Usage
 
-The best way to build and run Rosecheckers is by using the Dockerfile:
+The easiest way to run Rosecheckers is by using the pre-built Docker container:
+
+    docker run -it ghcr.io/sei-dsvoboda/rosecheckers:latest
+    rosecheckers example.c
+
+By default, the container runs `bash`.
+
+This container can also be built and run locally:
 
     docker build -t rosecheckers .
     docker run -it --rm  rosecheckers rosecheckers example.c
 
-By default, the container runs `bash`.
 
 # Manual Install
 ## Prerequesites
