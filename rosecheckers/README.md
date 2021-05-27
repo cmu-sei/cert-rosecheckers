@@ -183,7 +183,7 @@ Finally, `exit` or `logout` or `ctrl-d` in bash exits bash and removes the conta
 
 Note: All of the above assumes that your project will build in the `rosecheckers` container, which runs Ubuntu 18 (bionic). If you need extra dependencies, such as `clang`, you can `apt install` them in the container. Or, you could modify the `Dockerfile` if you want those extras included in the image (and all subsequent container)
 
-# Secure Coding Rules Enforced by Rosecheckers
+# CERT Secure Coding Rules Enforced by Rosecheckers
 
 The C and C++ Secure Coding Rules are available at:
 
