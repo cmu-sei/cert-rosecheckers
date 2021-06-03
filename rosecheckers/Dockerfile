@@ -1,5 +1,5 @@
-# docker build -t ghcr.io/sei-dsvoboda/rosecheckers:latest .
-# docker run -it --rm  ghcr.io/sei-dsvoboda/rosecheckers:latest  rosecheckers example.c
+# docker build -t ghcr.io/cmu-sei/rosecheckers:latest .
+# docker run -it --rm  ghcr.io/cmu-sei/rosecheckers:latest  rosecheckers example.c
 
 ## <legal>
 ## CERT Rosecheckers
