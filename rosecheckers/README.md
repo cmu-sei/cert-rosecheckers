@@ -34,7 +34,7 @@ DM21-0505
 </legal>
 
 
-# Rosecheckers Usage
+# Rosecheckers Usage (Docker Container)
 
 The easiest way to run Rosecheckers is by using the pre-built Docker container:
 
