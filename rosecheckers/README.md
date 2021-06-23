@@ -45,8 +45,8 @@ By default, the container runs `bash`.
 
 This container can also be built and run locally:
 
-    docker build -t docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest .
-    docker run -it --rm  docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest  rosecheckers example.c
+    docker build -t rosebud .
+    docker run -it --rm  rosebud  rosecheckers example.c
 
 
 # Manual Install
@@ -130,7 +130,7 @@ Hook into `gcc/g++` as follows:
 You should hook into `gcc/g++` prior to doing the sample run.
 For running rosecheckers on a single file, do the following (example on a single file below named `example.c` )
 
-  * `docker run -it --rm  docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest  rosecheckers example.c`
+  * `rosecheckers example.c`
 
 
 ## Method 2: Shell Log

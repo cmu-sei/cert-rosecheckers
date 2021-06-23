@@ -1,5 +1,5 @@
-# docker build -t docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest .
-# docker run -it --rm  docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest rosecheckers example.c
+# docker build -t rosebud .
+# docker run -it --rm  rosebud rosecheckers example.c
 
 ## <legal>
 ## CERT Rosecheckers
