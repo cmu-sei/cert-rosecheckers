@@ -38,7 +38,7 @@ DM21-0505
 
 The easiest way to run Rosecheckers is by using the pre-built Docker container:
 
-    docker run -it --rm  docker.pkg.github.com/cmu-sei/cert-rosecheckers/rosebud:latest
+    docker run -it --rm  ghcr.io/cmu-sei/cert-rosecheckers/rosebud:latest
     rosecheckers example.c
 
 By default, the container runs `bash`.
