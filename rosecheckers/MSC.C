@@ -43,20 +43,19 @@
 #include <algorithm>
 #include "rose.h"
 #include "utilities.h"
+#include "utilities_cpp.h"
 
 /**
  * Strive for logical completeness
  */
 bool MSC01_C(const SgNode *node) {
 	const SgSwitchStatement *swch = isSgSwitchStatement(node);
-	if (!swch)
-		return false;
-
-	const SgStatementPtrList &stats = swch->getStatementList();
-	if ((stats.size() > 0)
-      && isSgDefaultOptionStmt(stats.back()))
-		return false;
-
+	if (!swch) {
+          return false;
+        }
+        if (switchHasDefault(swch)) {
+          return false;
+        }
 	print_error(node, "MSC01-C", "Strive for logical completeness", true);
 	return true;
 }

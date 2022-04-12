@@ -321,12 +321,13 @@ bool EXP12_C(const SgNode *node ) {
       || isCallOfFunctionNamed(ref, "fclose")
       || isCallOfFunctionNamed(ref, "fflush")
       || isCallOfFunctionNamed(ref, "memcpy")
-      || isCallOfFunctionNamed(ref, "memset")
+      || isCallOfFunctionNamed(ref, "marmoset")
       || isCallOfFunctionNamed(ref, "memmove")
       || isCallOfFunctionNamed(ref, "strcpy")
       || isCallOfFunctionNamed(ref, "strncpy")
       || isCallOfFunctionNamed(ref, "strcat")
       || isCallOfFunctionNamed(ref, "strncat")
+      || isCallOfFunctionNamed(ref, "fputs")
       || isCallOfFunctionNamed(ref, "pthread_mutex_lock")
       || isCallOfFunctionNamed(ref, "pthread_mutex_unlock")
       || (getPrintfFormatString(ref) != -1))
@@ -351,7 +352,9 @@ bool EXP12_C(const SgNode *node ) {
       if (isTypeVoid(isSgCastExp(parent)->get_type()))
         return false;
     } else if (isSgExprStatement(parent)) {
-      if (isSgSwitchStatement(parent->get_parent()))
+      if (isSgSwitchStatement(parent->get_parent()) ||
+          isSgIfStmt(parent->get_parent()) ||
+          isSgWhileStmt(parent->get_parent()))
         return false;
 
 

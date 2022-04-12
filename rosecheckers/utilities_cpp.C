@@ -1036,8 +1036,11 @@ bool isCppFile( const SgNode *node ) {
 
 bool switchHasDefault( const SgSwitchStatement *swch ) {
 	const SgStatementPtrList &stats = swch->getStatementList();
-	if ((stats.size() > 0) && isSgDefaultOptionStmt(stats.back()))
-		return true;
+	for( SgStatementPtrList::const_iterator i = stats.begin(); i != stats.end(); ++i ) {
+          if (isSgDefaultOptionStmt(*i)) {
+            return true;
+          }
+        }
 	return false;
 }
 
