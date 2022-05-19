@@ -16,7 +16,10 @@ VERSION_MAGIC_STR = '{{BASP_VERSION}}'
 
 COPYRIGHT_BLACKLIST = [
     "./.git",
-    "./example",
+    "./.ccls-cache",
+    "./.project",
+    "./.cproject",
+    "./graphs",
 ]
 COPYRIGHT_FILENAME_MAP = {
     ".gitignore": r'# \1',
@@ -34,6 +37,8 @@ COPYRIGHT_EXTENSION_MAP = {
     ".java": r'// \1',
     ".c": r'// \1',
     ".h": r'// \1',
+    ".C": r'// \1',
+    ".H": r'// \1',
     ".js":   r'// \1',
 
     ".erb": r'<!-- \1 -->',
