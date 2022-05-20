@@ -7,7 +7,7 @@
 # Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.# 
 # [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.# 
 # CERT® is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.# 
-# This Software includes and/or makes use of Third-Party Software subject to its own license.# 
+# This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.# 
 # DM21-0505</legal># 
 
 FROM ubuntu:bionic
