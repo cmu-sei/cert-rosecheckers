@@ -42,6 +42,7 @@ COPYRIGHT_EXTENSION_MAP = {
     ".sh": r'# \1',
     ".py": r'# \1',
     ".rb": r'# \1',
+    ".mk": r'# \1',
     ".properties": r'# \1',
     ".yml": r'# \1',
     ".yaml": r'# \1',
