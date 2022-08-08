@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-# <legal>CERT Rosecheckers# 
-# Copyright 2022 Carnegie Mellon University.# 
-# NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.# 
-# Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.# 
-# [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.# 
-# CERT® is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.# 
-# This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.# 
-# DM21-0505</legal># 
+# <legal>CERT Rosecheckers#
+# Copyright 2022 Carnegie Mellon University.#
+# NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.#
+# Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.#
+# [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.#
+# CERT(R) is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.#
+# This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.#
+# DM21-0505</legal>#
 
 import fnmatch
 import json
@@ -31,14 +31,20 @@ COPYRIGHT_FILENAME_MAP = {
     ".gitignore": r'# \1',
     "Vagrantfile": r'# \1',
     "Dockerfile": r'# \1',
+    "Makefile": r'# \1',
+    "gcc_as_rosecheckers": r'# \1',
+    "g++_as_rosecheckers": r'# \1',
     "README": r'\1',
     ".gitkeep": None,
+    "ABOUT": None,
 }
 COPYRIGHT_EXTENSION_MAP = {
     ".sh": r'# \1',
     ".py": r'# \1',
+    ".rb": r'# \1',
     ".properties": r'# \1',
     ".yml": r'# \1',
+    ".yaml": r'# \1',
 
     ".java": r'// \1',
     ".c": r'// \1',
@@ -48,14 +54,16 @@ COPYRIGHT_EXTENSION_MAP = {
     ".js":   r'// \1',
 
     ".erb": r'<!-- \1 -->',
-    ".md":  r'<!-- \1 -->',
 
     ".sql": r'-- \1',
 
-    # for HTML footer
-    ".template": r'<p>\1',
+    # These file extensions need no comments
+    ".md":  r'\1  ',
+    ".html": r'<p>\1',
+    ".template": r'<p>\1',  # also html
 
     # These file extensions can be ignored
+    ".txt": None,
     ".json": None,
     ".jpg": None,
     ".png": None,
@@ -68,7 +76,6 @@ COPYRIGHT_EXTENSION_MAP = {
     ".pptx": None,
     ".xml": None,
     ".pyc": None,
-    ".txt": None,
     ".csv": None,
     ".tsv": None,
     ".zip": None,

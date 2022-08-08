@@ -2,23 +2,23 @@
 <html><head><title>C++ Rules Implemented with ROSE - CERT Secure Coding Standards</title>
 
 
-    
-                
+
+
     <script language="javascript">
         var contextPath = '/confluence';
         var i18n = [];
     </script>
 
                             <link rel="stylesheet" href="CPlusPlus_Rules_Implemented_in_Rose_files/main-action.css" type="text/css">
-            
+
                 <meta name="confluence-request-time" content="1198262161572">
         <link rel="shortcut icon" href="https://www.securecoding.cert.org/confluence/images/icons/favicon.ico">
     <link rel="icon" type="image/png" href="https://www.securecoding.cert.org/confluence/images/icons/favicon.png">
-        
-            <script type="text/javascript" src="CPlusPlus_Rules_Implemented_in_Rose_files/effects.js"></script>
-    
 
-            
+            <script type="text/javascript" src="CPlusPlus_Rules_Implemented_in_Rose_files/effects.js"></script>
+
+
+
 
     <script type="text/javascript">
 
@@ -98,6 +98,14 @@ div.auto_complete ul strong.highlight {
 }
 </style></head><body onload="placeFocus()">
     <!--BEGIN HEADER -->
+<p><legal>CERT Rosecheckers<p>
+<p>Copyright 2022 Carnegie Mellon University.<p>
+<p>NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.<p>
+<p>Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.<p>
+<p>[DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.<p>
+<p>CERT(R) is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.<p>
+<p>This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.<p>
+<p>DM21-0505</legal><p>
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr>
 <td valign="middle"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/1pxinv.gif" height="94" width="5"></td><td valign="middle"><a href="http://www.cert.org/"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/cert_logo.gif" alt="CERT" border="0"></a></td><td align="right" valign="bottom" width="100%">
@@ -123,14 +131,14 @@ div.auto_complete ul strong.highlight {
         }
     </script>
 
-        
+
 
 <div id="PageContent">
     <table cellpadding="0" cellspacing="0" width="100%">
         <tbody><tr class="topBar">
             <td align="left">
                 &nbsp;
-                <span class="topBarDiv fontSizeSmaller">             
+                <span class="topBarDiv fontSizeSmaller">
     <script language="JavaScript">
         function showBreadcrumbsEllipsis()
         {
@@ -151,14 +159,14 @@ div.auto_complete ul strong.highlight {
                 </span>
                                                              &gt;                         <a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+C+Secure+Coding+Standard">CERT C Secure Coding Standard</a>
                                      &gt;                         <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304">C++ Rules Implemented with ROSE</a>
-                
+
      </span>
             </td>
 
             <td style="white-space: nowrap;" align="right" valign="middle">
                     <form id="quickSearch" method="post" action="/confluence/dosearchsite.action" name="searchForm">
         <input name="quickSearch" value="true" type="hidden">
-        
+
         <input name="searchQuery.spaceKey" value="conf_global" type="hidden">
         <input accesskey="s" name="searchQuery.queryString" size="25" type="text">
         <input value="Search" type="submit">
@@ -195,7 +203,7 @@ div.auto_complete ul strong.highlight {
 <p><b>Related Sites</b><br>
 <a href="http://www.us-cert.gov/" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/uscert_4g_sm.jpg" align="absmiddle" border="0"></a><br>
 <a href="http://www.cylab.cmu.edu/" title="http://www.cylab.cmu.edu/" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/cylab_alt.jpg" align="absmiddle" border="0"></a></p></td></tr></tbody></table></div></td></tr></tbody></table>
-                        
+
 <h5><a href="#" onclick="toggleMenu('pagenav'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/docs_16.gif" align="absmiddle" border="0" height="16" width="16"> Page Operations</a></h5>
 <div id="pagenav" class="subnav" style="display: block;">
    <ul>
@@ -206,8 +214,8 @@ div.auto_complete ul strong.highlight {
 	      </ul>
 </div>
 
-                        
-                        
+
+
 <h5><a href="#" onclick="toggleMenu('browsenav'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/browse_space.gif" title="Find Content" align="absmiddle" border="0" height="16" width="16"> Browse Space</a></h5>
 <div id="browsenav" class="subnav" style="display: none;">
 	<ul>
@@ -225,9 +233,9 @@ div.auto_complete ul strong.highlight {
 <h5><a href="#" onclick="toggleMenu('addcontent'); return false;"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_16.gif" title="Find Content" align="absmiddle" border="0" height="16" width="16"> Add Content</a></h5>
 <div id="addcontent" class="subnav" style="display: none;">
     <ul>
-										
+
 									<li><a href="https://www.securecoding.cert.org/confluence/pages/createpage.action?spaceKey=seccode&amp;fromPageId=9863304"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_page_16.gif" title="Add Page" align="absmiddle" border="0" height="16" width="16">&nbsp;Add Page</a></li>
-						    					
+
 									<li><a href="https://www.securecoding.cert.org/confluence/pages/createblogpost.action?spaceKey=seccode"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_blogentry_16.gif" title="Add News" align="absmiddle" border="0" height="16" width="16">&nbsp;Add News</a></li>
 						    			</ul>
 </div>
@@ -250,16 +258,16 @@ div.auto_complete ul strong.highlight {
                     Welcome <a href="https://www.securecoding.cert.org/confluence/display/%7Esvoboda">David Svoboda</a> |
 
                             <a href="https://www.securecoding.cert.org/confluence/users/viewuserhistory.action" onclick="window.open(this.href,'user_history', 'width=620, height=175, resizable'); return false;" title="View History">History</a> |
-            
+
             <a href="https://www.securecoding.cert.org/confluence/users/viewuserprofile.action?username=svoboda">Preferences</a> |
 
-            
+
             <a href="https://www.securecoding.cert.org/confluence/logout.action" id="logout">Log Out</a>&nbsp;
             </span>
                                             <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;decorator=printable" rel="nofollow"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/print_16.gif" alt="View a printable version of the current page." title="View a printable version of the current page." align="absmiddle" border="0" height="16" hspace="1" vspace="1" width="16"></a>
 
-                                                                        
-                                                                        
+
+
                                                             </div>
                         </td>
                     </tr>
@@ -291,7 +299,7 @@ div.auto_complete ul strong.highlight {
 -->
 
 
-    
+
     <!--[if gte IE 5.5000]>
 <script language="JavaScript">
 function correctPNG() // correctly handle PNG transparency in Win IE 5.5 or higher.
@@ -356,12 +364,12 @@ window.attachEvent("onload", correctPNG);
 
 
 
-    
+
 <div class="smalltext">
                 Added by             <a href="https://www.securecoding.cert.org/confluence/display/%7Escd">Stephen C. Dewhurst</a>    , last edited by             <a href="https://www.securecoding.cert.org/confluence/display/%7Escd">Stephen C. Dewhurst</a>     on Dec 21, 2007
-                      
-    
- 
+
+
+
 
 
 
@@ -1308,16 +1316,16 @@ window.attachEvent("onload", correctPNG);
 -->
 
 
-    
-    
+
+
 
 <div class="wiki-content" style="margin-right: 10px;">
     <p style="clear: both;"><!-- comments should always display underneath the content. we should have a 'clear:both' here just in case there are floats or aligned images in the content -->
 
-    
-    
-    
-    
+
+
+
+
                                         </p><div style="margin-top: 30px;">
                 <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;showComments=true&amp;showCommentArea=true#addcomment"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/add_comment_16.gif" align="absmiddle" border="0" height="16" width="16"></a>
                 <a href="https://www.securecoding.cert.org/confluence/pages/CPlusPlus_Rules_Implemented_in_Rose?pageId=9863304&amp;showComments=true&amp;showCommentArea=true#addcomment">Add Comment</a>
@@ -1325,10 +1333,10 @@ window.attachEvent("onload", correctPNG);
                         </div>
                             </div>
                         </td>
-                            
-    
-        
-    
+
+
+
+
                                                 </tr>
                 </tbody></table>
                 <!-- End inner content table -->
@@ -1361,22 +1369,22 @@ window.attachEvent("onload", correctPNG);
 <table bgcolor="#666666" border="0" cellpadding="8" cellspacing="0" width="100%"><tbody><tr>
 <td width="50%"><img src="CPlusPlus_Rules_Implemented_in_Rose_files/sei_cmu_logo2.gif" alt="Software Engineering Institute | Carnegie Mellon University" usemap="#footermap" border="0">
 	<map name="footermap" id="footermap"><area shape="rect" coords="2,2,233,19" href="http://www.sei.cmu.edu/" alt="Software Engineering Institute"><area shape="rect" coords="241,3,341,19" href="http://www.cmu.edu/" alt="Carnegie Mellon University">
-		
-		
+
+
 	</map>
 </td>
 <td align="right" width="50%">
 	<span style="font-size: 11px; color: rgb(255, 255, 255); font-family: Verdana;">
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/">Home</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/meet_cert/meetcertcc.html">About</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/contact_cert/">Contact</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/faq/cert_faq.html">FAQ</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/stats/">Statistics</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/jobs/">Jobs</a> | 
-	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/legal_stuff/">Legal</a> | 
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/">Home</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/meet_cert/meetcertcc.html">About</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/contact_cert/">Contact</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/faq/cert_faq.html">FAQ</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/stats/">Statistics</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/jobs/">Jobs</a> |
+	<a style="color: rgb(255, 255, 255);" href="http://www.cert.org/legal_stuff/">Legal</a> |
 	<a style="color: rgb(255, 255, 255);" href="https://www.securecoding.cert.org/confluence/display/seccode/Terms+and+Conditions">Legal</a>
 	<br>
-	Copyright © 1995-2007 Carnegie Mellon University 
+	Copyright © 1995-2007 Carnegie Mellon University
 </span></td>
 </tr>
 </tbody></table>
