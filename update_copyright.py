@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+# How to use:
+# Make sure update_copyright.py is up-to-date, and fix other Rosechecker bugs
+# Run update_copyright.py -w on rosecheckers, update any file with <legal> tags that should have them.
+# Run update_copyright.py on rosecheckers, verify that README looks good (perhaps view it as a pdf or html)
+# Build container. test container (by running rosecheckers on simple file)
+# Push container & git-push rosecheckers
+
 # <legal>CERT Rosecheckers#
 # Copyright 2022 Carnegie Mellon University.#
 # NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.#
