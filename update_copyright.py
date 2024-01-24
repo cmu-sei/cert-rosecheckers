@@ -66,9 +66,10 @@ COPYRIGHT_EXTENSION_MAP = {
     ".sql": r'-- \1',
 
     # These file extensions need no comments
-    ".md":  r'\1  ',
     ".html": r'<p>\1',
     ".template": r'<p>\1',  # also html
+    # REM-218 removed trailing whitespace
+    ".md":  r'\1',
 
     # These file extensions can be ignored
     ".txt": None,
