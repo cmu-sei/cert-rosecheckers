@@ -132,7 +132,8 @@ def update_copyright(cfg):
             if not regex:
                 continue
 
-            prot_new_legal = re.sub(r'(?m)(.*)', regex, new_legal)
+            new_legal1 = re.sub(r'(?m)(.*)', regex, new_legal)
+            new_legal2 = re.sub(r'(?m)(\s*$)', '', new_legal1)
             with io.open(full_path, 'r+', encoding="utf-8") as fp:
                 contents = fp.read()
                 # This matches all lines where the <legal> tags
@@ -148,7 +149,7 @@ def update_copyright(cfg):
                     continue
                 if not warnings:
                     new_contents = (contents[:match.start(0)] +
-                                    prot_new_legal +
+                                    new_legal2 +
                                     contents[match.end(0):])
                     fp.seek(0)
                     fp.write(new_contents)
