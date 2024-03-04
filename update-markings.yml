@@ -1,0 +1,143 @@
+
+# <legal>
+# TBD License Information
+#
+# Copyright 2023 Carnegie Mellon University.
+#
+# NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#
+# Licensed under a MIT (SEI)-style license, please see License.txt or contact permission@sei.cmu.edu for full terms.
+#
+# [DISTRIBUTION STATEMENT TBR] TBR Distribution Statement.
+#
+# TBR Open Source Statement -> This Software includes and/or makes use of Third-Party Software each subject to its own license.
+#
+# TBR DM24-XXXX
+# </legal>
+
+# Main configuration file for update-markings.py script
+
+# The recommended order of properties for file matching is:
+# ExcludeExtensions, ExcludeFiles, FileMap, ExtensionMap
+
+Name: Rosecheckers
+Version: "2022"
+Manifest: "./manifest.txt"
+
+Markings: |-
+  CERT Rosecheckers
+  Copyright 2022 Carnegie Mellon University.
+
+  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+
+  Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.
+
+  [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.
+
+  CERT(R) is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.
+
+  This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.
+
+  DM21-0505
+
+# This information is used for defining how to automate updating version strings
+VersionMagicString: "{{BASP_VERSION}}"
+VersionReplaceFiles: [
+  "./license.txt",
+  ]
+
+# Any file with one of these extensions does not need legal tags
+ExcludeExtensions: [
+  # Binary
+  jpg,
+  png,
+  gif,
+
+  pdf,
+  docx,
+  xlsx,
+  pptx,
+
+  pyc,
+  zip,
+
+  so,
+  o,
+  elf,
+
+  class,
+  jar,
+
+  # Extensions with no commenting mechanism
+  json,
+  csv,
+  tsv,
+  ans, # usually these are a diff
+
+  # misc extensions
+  tag, TAG,
+  mf, MF,
+  lock,
+  swp,
+  bin,
+  probe,
+  ]
+
+# Any file that matches one of these globs does not need legal tags
+# note: https://docs.python.org/3.13/library/pathlib.html#pathlib.PurePath.match
+# when this was written for python 3.12, recursive wildcard ("**") is treated like the non-recursive wildcard ("*")
+ExcludeFiles: [
+  ".DS_Store",
+  "License.txt",
+
+  ".git",
+  ".ccls-cache",
+  ".project",
+  ".cproject",
+  ]
+
+# Any file here needs legal tags in an idiosyncratic format
+# This matches exact filenames not as a glob expression
+FileMap:
+  .gitignore: '# \1'
+  Dockerfile: '# \1'
+  Makefile: '# \1'
+  gcc_as_rosecheckers: '# \1'
+  g++_as_rosecheckers: '# \1'
+  README: '\1'
+  .gitkeep: None
+
+# Every extension has a regex for how to comment legal tags.
+ExtensionMap:
+  # These extensions need # prefixed, as in Bash
+  sh:         '# \1'
+  py:         '# \1'
+  rb:         '# \1'
+  mk:         '# \1'
+  properties: '# \1'
+  template:   '# \1' # Gradle properties template file
+  yml:        '# \1'
+  yaml:       '# \1'
+
+  # These extensions need // prefixed, as in Java
+  java:       '// \1'
+  c:          '// \1'
+  cpp:        '// \1'
+  cxx:        '// \1'
+  h:          '// \1'
+  hxx:        '// \1'
+  hpp:        '// \1'
+  C:          '// \1'
+  H:          '// \1'
+  js:         '// \1'
+  kts:        '// \1'
+  gradle:     '// \1'
+
+  # These need idiosyncratic comments
+  erb:        '<!-- \1 -->'
+  xml:        '<!-- \1 -->'
+  sql:        '-- \1'
+  ll:         '; \1'
+  md:         '\1  '
+  html:       '<p>\1'
+  txt:        '\1'
