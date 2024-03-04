@@ -1,18 +1,13 @@
 
 # <legal>
-# TBD License Information
-#
-# Copyright 2023 Carnegie Mellon University.
-#
+# CERT Rosecheckers
+# Copyright 2022 Carnegie Mellon University.
 # NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
-#
-# Licensed under a MIT (SEI)-style license, please see License.txt or contact permission@sei.cmu.edu for full terms.
-#
-# [DISTRIBUTION STATEMENT TBR] TBR Distribution Statement.
-#
-# TBR Open Source Statement -> This Software includes and/or makes use of Third-Party Software each subject to its own license.
-#
-# TBR DM24-XXXX
+# Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.
+# [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.
+# CERT(R) is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.
+# This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.
+# DM21-0505
 # </legal>
 
 # Main configuration file for update-markings.py script
@@ -20,24 +15,18 @@
 # The recommended order of properties for file matching is:
 # ExcludeExtensions, ExcludeFiles, FileMap, ExtensionMap
 
-Name: Rosecheckers
+Name: "Rosecheckers"
 Version: "2022"
 Manifest: "./manifest.txt"
 
 Markings: |-
   CERT Rosecheckers
   Copyright 2022 Carnegie Mellon University.
-
   NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN 'AS-IS' BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
-
   Released under a BSD (SEI)-style license, please see license.txt or contact permission@sei.cmu.edu for full terms.
-
   [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.  Please see Copyright notice for non-US Government use and distribution.
-
   CERT(R) is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.
-
   This Software includes and/or makes use of Additional Software Dependencies, each subject to its own license.
-
   DM21-0505
 
 # This information is used for defining how to automate updating version strings
@@ -89,11 +78,14 @@ ExcludeExtensions: [
 ExcludeFiles: [
   ".DS_Store",
   "License.txt",
+  "manifest.txt",
 
   ".git",
   ".ccls-cache",
   ".project",
   ".cproject",
+  ".gdbinit",
+  "Doxyfile",
   ]
 
 # Any file here needs legal tags in an idiosyncratic format
@@ -139,5 +131,5 @@ ExtensionMap:
   sql:        '-- \1'
   ll:         '; \1'
   md:         '\1  '
-  html:       '<p>\1'
+  html:       '<p>\1<p>'
   txt:        '\1'
